@@ -41,6 +41,14 @@ body {
   letter-spacing: -1px;
 }
 
+a {
+  color: #c15000;
+}
+
+a:hover {
+  color: #672b00;
+}
+
 .is-short {
   width: 40%;
 }
@@ -57,9 +65,20 @@ body {
   opacity: 0.6;
 }
 
+.box.exp-box {
+  box-shadow: none;
+  border: solid 2px black;
+  border-radius: 0px;
+  padding: 30px;
+}
+
 @media only screen and (max-width: 830px) {
   /* For mobile phones: */
   .is-short {
     width: 100%;
+  }
+
+  .title.is-2 {
+    font-size: 2.3em;
   }
 }
