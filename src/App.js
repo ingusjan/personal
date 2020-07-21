@@ -3,6 +3,7 @@ import "./bulma.css";
 import "./index.css";
 import LinkBox from "./components/LinkBox";
 import ExpBox from "./components/ExpBox";
+import vf from "./img/vf.png";
 
 function App() {
   return (
@@ -11,15 +12,24 @@ function App() {
         <img
           src={"./me-min.jpg"}
           style={{
-            width: "125px",
+            width: "160px",
             borderRadius: "50%",
             marginBottom: "15px",
           }}
         />
         <h1 className="title is-2">Ingus Jansons</h1>
         <h1 className="subtitle is-5 is-short" style={{ marginTop: "10px" }}>
-          Working at Vodafone Group as a Software Engineer while also studying
-          for my degree (B.Sc.) - Living in Newbury 🇬🇧
+          Working at Vodafone Group{" "}
+          <img
+            src={vf}
+            width={20}
+            style={{
+              margin: "0px 3px 5px 3px",
+              verticalAlign: "middle",
+            }}
+          />{" "}
+          as a Software Engineer while also studying for my degree (B.Sc.) -
+          Living in Newbury 🇬🇧
         </h1>
 
         <ul style={{ marginBottom: "20px" }}>
