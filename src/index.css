@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Inter-Black;
+  src: url(./fonts/Inter-Black.otf);
+}
+@font-face {
+  font-family: Inter-BlackItalic;
+  src: url(./fonts/Inter-BlackItalic.otf);
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url(./fonts/Inter-Bold.otf);
+}
+@font-face {
+  font-family: Inter-Regular;
+  src: url(./fonts/Inter-Regular.otf);
+}
+@font-face {
+  font-family: Inter-Medium;
+  src: url(./fonts/Inter-Medium.otf);
+}
+
+html {
+  font-family: "Inter-Regular", monospace;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter-Regular", monospace;
+  font-size: 16px;
+}
+
+.title .subtitle a {
+  font-family: "Inter-Bold", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.is-short {
+  width: 40%;
+}
+
+.box.link-box {
+  box-shadow: none;
+  border: solid 2px black;
+  border-radius: 0px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.box.link-box:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 830px) {
+  /* For mobile phones: */
+  .is-short {
+    width: 100%;
+  }
+}
