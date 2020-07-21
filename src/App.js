@@ -48,7 +48,9 @@ function App() {
         <div className="column">
           <a href="https://illumimedia.co/" target="_blank" type="external">
             <div className="box link-box">
-              <h3 className="subtitle is-5">Illumi Media</h3>
+              <h3 className="subtitle is-5" style={{ marginBottom: "5px" }}>
+                Illumi Media
+              </h3>
               <p>Design powerhouse for content creators.</p>
             </div>
           </a>
@@ -57,7 +59,9 @@ function App() {
         <div className="column">
           <a href="https://creatorsites.net" target="_blank" type="external">
             <div className="box link-box">
-              <h3 className="subtitle is-5">Creator Sites</h3>
+              <h3 className="subtitle is-5" style={{ marginBottom: "5px" }}>
+                Creator Sites
+              </h3>
               <p>Store all of your links in one place & share one link.</p>
             </div>
           </a>
@@ -70,7 +74,9 @@ function App() {
             type="external"
           >
             <div className="box link-box">
-              <h3 className="subtitle is-5">SpaceX Tracker</h3>
+              <h3 className="subtitle is-5" style={{ marginBottom: "5px" }}>
+                SpaceX Tracker
+              </h3>
               <p>(Almost) accurate data about SpaceX launches.</p>
             </div>
           </a>
