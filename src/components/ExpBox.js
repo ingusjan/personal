@@ -22,7 +22,7 @@ export default class ExpBox extends Component {
         <div className="box exp-box">
           <img
             src={this.getImage()}
-            style={{ width: "75px", marginBottom: "15px" }}
+            style={{ height: "65px", marginBottom: "15px" }}
           />
           <h3 className="subtitle is-5" style={{ marginBottom: "5px" }}>
             {this.props.title}
