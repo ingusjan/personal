@@ -1,11 +1,17 @@
-import React from "react";
+import React, { Component, useState, setState } from "react";
 import "./bulma.css";
 import "./index.css";
 import LinkBox from "./components/LinkBox";
 import ExpBox from "./components/ExpBox";
 import vf from "./img/vf.png";
+import ReactGa from "react-ga";
 
-function App() {
+const App = () => {
+  React.useEffect(() => {
+    ReactGa.initialize("UA-158955035-3");
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  });
+
   return (
     <>
       <div className="container is-fluid" style={{ marginTop: "6%" }}>
@@ -138,6 +144,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
