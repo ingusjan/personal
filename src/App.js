@@ -19,7 +19,7 @@ const App = () => {
           src={"./me-min.jpg"}
           style={{
             width: "160px",
-            borderRadius: "50%",
+            borderRadius: "35% 65% 70% 30% / 52% 47% 53% 48% ",
             marginBottom: "15px",
           }}
         />
@@ -90,7 +90,7 @@ const App = () => {
             <LinkBox
               link="https://creatorsites.net"
               title="Creator Sites"
-              desc="Store all of your links in one place & share one link."
+              desc="Store all of your links in one place."
             />
           </div>
 
@@ -131,7 +131,7 @@ const App = () => {
         style={{ marginTop: "10%", marginBottom: "10px" }}
       >
         <p>
-          This page is open-source on GitHub (
+          I have open-sourced this page on GitHub (
           <a
             href="https://github.com/ingusjan/personal"
             target="_blank"
