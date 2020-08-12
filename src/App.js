@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useState, setState } from "react";
 import "./bulma.css";
 import "./index.css";
 import LinkBox from "./components/LinkBox";
@@ -12,6 +12,7 @@ import mongodb from "./img/mongodb.png";
 import nodejs from "./img/nodejs.svg";
 import php from "./img/php.png";
 import mysql from "./img/mysql.png";
+import ReactGa from "react-ga";
 
 function getAge(dateString) {
   var today = new Date();
@@ -24,7 +25,12 @@ function getAge(dateString) {
   return age;
 }
 
-function App() {
+const App = () => {
+  React.useEffect(() => {
+    ReactGa.initialize("UA-158955035-3");
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  });
+
   return (
     <>
       <div className="container is-fluid" style={{ marginTop: "6%" }}>
@@ -201,6 +207,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
