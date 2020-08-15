@@ -38,16 +38,41 @@ body {
 .title.is-2 {
   font-family: "Inter-Bold";
   font-weight: 800;
-  font-size: 2.2em;
+  font-size: 2.5em;
   letter-spacing: -1px;
+  color: #fefdff;
+}
+
+.title.is-1 {
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 3.5em;
+  letter-spacing: -1px;
+  color: #fefdff;
+}
+
+.subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #eb4511;
+}
+
+.is-orange {
+  color: #eb4511;
+}
+
+.is-titanium {
+  color: #c1bfb5;
 }
 
 a {
-  color: #c15000;
+  text-decoration: underline;
+  color: #8eb1c7;
 }
 
 a:hover {
-  color: #672b00;
+  color: #abcce0;
 }
 
 .is-short {
@@ -56,18 +81,102 @@ a:hover {
 
 .box.link-box {
   box-shadow: none;
-  border: solid 2px black;
-  border-radius: 0px;
+  border-radius: 8px;
   padding: 30px;
   cursor: pointer;
-  min-height: 210px;
+  min-height: 415px;
   transition: all 0.1s ease-in-out;
+  background-color: #b02e0c;
+  color: #fefdff;
+}
+
+.pattern-bg {
+  background: radial-gradient(
+      circle at 100% 150%,
+      #822108 24%,
+      #88240a 24%,
+      #88240a 28%,
+      #822108 28%,
+      #822108 36%,
+      #88240a 36%,
+      #88240a 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #822108 24%,
+      #88240a 24%,
+      #88240a 28%,
+      #822108 28%,
+      #822108 36%,
+      #88240a 36%,
+      #88240a 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      #88240a 10%,
+      #822108 10%,
+      #822108 23%,
+      #88240a 23%,
+      #88240a 30%,
+      #822108 30%,
+      #822108 43%,
+      #88240a 43%,
+      #88240a 50%,
+      #822108 50%,
+      #822108 63%,
+      #88240a 63%,
+      #88240a 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      #88240a 5%,
+      #822108 5%,
+      #822108 15%,
+      #88240a 15%,
+      #88240a 20%,
+      #822108 20%,
+      #822108 29%,
+      #88240a 29%,
+      #88240a 34%,
+      #822108 34%,
+      #822108 44%,
+      #88240a 44%,
+      #88240a 49%,
+      transparent 49%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      #88240a 5%,
+      #822108 5%,
+      #822108 15%,
+      #88240a 15%,
+      #88240a 20%,
+      #822108 20%,
+      #822108 29%,
+      #88240a 29%,
+      #88240a 34%,
+      #822108 34%,
+      #822108 44%,
+      #88240a 44%,
+      #88240a 49%,
+      transparent 49%,
+      transparent
+    );
+
+  background-size: 100px 50px;
 }
 
 .box.link-box:hover {
   transform: scale(1.02);
   box-shadow: #00000040 0px 12px 18px;
-  background: #fff8f4;
+  background: #bb3513;
 }
 
 .box.exp-box {
