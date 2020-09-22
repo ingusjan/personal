@@ -1,6 +1,7 @@
 import React, { Component, useState, setState } from "react";
 import "./bulma.css";
 import "./index.css";
+import "tailwindcss/tailwind.css";
 import LinkBox from "./components/LinkBox";
 import ExpBox from "./components/ExpBox";
 import vf from "./img/vf.png";
@@ -14,6 +15,7 @@ import php from "./img/php.png";
 import mysql from "./img/mysql.png";
 import ReactGa from "react-ga";
 import Intro from "./components/Intro";
+import * as Unicons from "@iconscout/react-unicons";
 
 const App = () => {
   React.useEffect(() => {
@@ -23,71 +25,100 @@ const App = () => {
 
   return (
     <>
-      <Intro />
+      <div class="mt-8 mb-8 container mx-auto px-4">
+        <img src={"./me-min.jpg"} class="rounded-full mb-4 block w-32" />
+        <h1 class="font-sans font-semibold text-4xl text-gray-800">
+          Ingus Jansons
+        </h1>
+        <h2 class="font-sans font-semibold text-lg text-orange-500">
+          UIX Software Engineer
+        </h2>
 
-      <div class="hero is-fullheight" style={{ backgroundColor: "#9a2709" }}>
-        <div className="hero-body">
-          <div className="container is-fluid" style={{ marginTop: "-10%" }}>
-            <h1 class="title is-2 has-text-centered">Applications</h1>
-            <h2 class="subtitle is-5 has-text-centered">
-              Projects I've created in my spare time
-            </h2>
-
-            <div className="columns" style={{ marginTop: "50px" }}>
-              <div className="column">
-                <LinkBox
-                  imgStyles={{
-                    width: "110px",
-                    filter:
-                      "invert(100%) sepia(94%) saturate(0%) hue-rotate(148deg) brightness(107%) contrast(107%)",
-                  }}
-                  img={illumi}
-                  tech="Wordpress, WooCommerce, PHP and LightSpeed Server Technology"
-                  link="https://illumimedia.co/"
-                  title="Illumi Media"
-                  desc="Design powerhouse for creators"
-                  story="It started off at the age of 15 when I helped my friends with some graphic design work and quickly, through some inner friendship circles gained access to huge talent that needed branding. From there on, I built the Illumi Media brand."
-                />
-              </div>
-
-              <div className="column">
-                <LinkBox
-                  imgStyles={{ height: "50px" }}
-                  img={csites}
-                  tech="ReactJS, MongoDB, Express, Heroku, Google Analytics, HotJar"
-                  link="https://creatorsites.net"
-                  title="Creator Sites"
-                  desc="All your links in one place"
-                  story="Being my first ever production project, Creator Sites was born because I was frustrated with how little link aggregators offered, while being the main entry point for most content creators. I now have over 70 active users, many of whom are large content creators."
-                />
-              </div>
-
-              <div className="column">
-                <LinkBox
-                  link="https://spacex-tracker.netlify.app"
-                  title="SpaceX Tracker"
-                  tech="ReactJS, Netlify, Bulma, Axios"
-                  desc="(Almost) accurate data about SpaceX launches"
-                  story="There's not much of a story to this one. I found a SpaceX API and wanted to play around with it and create a minimalistic, yet useful tracker for all flights and even a full-screen countdown. I did just that, designed and deployed through Netlify within 3 days!"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <p
-          class="has-text-centered is-titanium"
-          style={{ marginTop: "20px", marginBottom: "20px" }}
+        <a
+          href="mailto:ingusjan@gmail.com"
+          class="mt-4 w-56 px-4 py-2 block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
         >
-          I have open-sourced this page on GitHub (
-          <a
-            href="https://github.com/ingusjan/personal"
-            target="_blank"
-            type="external"
-          >
-            https://github.com/ingusjan/personal
-          </a>
-          )
+          <Unicons.UilEnvelope
+            size="21"
+            color="white"
+            class="mr-1 mt-1/2 inline-flex"
+          />{" "}
+          ingusjan@gmail.com
+        </a>
+
+        <p class="mt-4 font-sans text-xs text-gray-500 hover:text-gray-800 transition ease-in-out duration-150">
+          Spam emails will be blocked and reported automatically.
         </p>
+
+        <p class="mt-5 font-sans font-bold text-md text-gray-700">
+          Current occupation
+        </p>
+        <p class="font-sans text-md text-gray-600">
+          Software Engineer, Vodafone Group
+        </p>
+
+        <table class="table-fixed mt-8 w-full border-2 border-gray-200 rounded-md">
+          <thead class="bg-gray-100 ">
+            <tr>
+              <th class="px-4 py-2 pl-4 w-1/2 text-gray-700">Skill</th>
+              <th class="px-4 py-2 pl-4 w-1/2 text-gray-700">Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                React.js
+              </td>
+              <td class="border px-4 py-2 text-red-600">Expert</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                Express.js
+              </td>
+              <td class="border px-4 py-2 text-red-600">Expert</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                Adobe Photoshop
+              </td>
+              <td class="border px-4 py-2 text-red-600">Expert</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                Bulma.css
+              </td>
+              <td class="border px-4 py-2 text-red-600">Expert</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                MongoDB
+              </td>
+              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                Adobe Premiere Pro
+              </td>
+              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                Influencer Marketing
+              </td>
+              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">PHP</td>
+              <td class="border px-4 py-2 text-green-600">Beginner</td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="border px-4 py-2 font-semibold text-gray-700">
+                jQuery
+              </td>
+              <td class="border px-4 py-2 text-green-600">Beginner</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   );

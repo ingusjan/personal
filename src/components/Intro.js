@@ -29,7 +29,7 @@ export default class Intro extends Component {
                   border: "6px solid #EB4511",
                 }}
               />
-              <h1 class="title is-1 has-text-centered">Ingus Jansons</h1>
+              <h1 class="title is-1 has-text-centered text-teal-300">Ingus Jansons</h1>
               <h2 class="subtitle is-4 has-text-centered">
                 {this.getAge("2001/06/13")}, Front-End Software Engineer
               </h2>
