@@ -1,20 +1,8 @@
-import React, { Component, useState, setState } from "react";
+import React from "react";
 import "./bulma.css";
 import "./index.css";
 import "tailwindcss/tailwind.css";
-import LinkBox from "./components/LinkBox";
-import ExpBox from "./components/ExpBox";
-import vf from "./img/vf.png";
-import illumi from "./img/illumi-dark.png";
-import csites from "./img/creatorsites.png";
-import react from "./img/react.svg";
-import express from "./img/express.png";
-import mongodb from "./img/mongodb.png";
-import nodejs from "./img/nodejs.svg";
-import php from "./img/php.png";
-import mysql from "./img/mysql.png";
 import ReactGa from "react-ga";
-import Intro from "./components/Intro";
 import * as Unicons from "@iconscout/react-unicons";
 
 const App = () => {
@@ -26,17 +14,27 @@ const App = () => {
   return (
     <>
       <div class="mt-8 mb-8 container mx-auto px-4">
-        <img src={"./me-min.jpg"} class="rounded-full mb-4 block w-32" alt="Ingus Jansons" />
+        <img
+          src={"./me-min.jpg"}
+          class="rounded-full mb-4 block w-32"
+          alt="Ingus Jansons"
+        />
         <h1 class="font-sans font-semibold text-4xl text-gray-800">
           Ingus Jansons
         </h1>
         <h2 class="font-sans font-semibold text-lg text-orange-500">
           UIX Software Engineer
         </h2>
+        <p class="text-gray-600">
+          Based in Newbury, UK{" "}
+          <span class="text-lg" role="img" aria-label="UK Flag">
+            🇬🇧
+          </span>
+        </p>
 
         <a
           href="mailto:ingusjan@gmail.com"
-          class="mt-4 w-56 px-4 py-2 block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
+          class="mt-5 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
         >
           <Unicons.UilEnvelope
             size="21"
@@ -50,24 +48,48 @@ const App = () => {
           Spam emails will be blocked and reported automatically.
         </p>
 
+        <div style={{ display: "flex" }}>
+          <a
+            href="https://t.me/ingusjan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:bg-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+          >
+            <Unicons.UilMessage
+              size="21"
+              color="white"
+              class="mr-1 mt-1/2 inline-flex"
+            />{" "}
+            Telegram
+          </a>
+          <a
+            href="https://github.com/ingusjan"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-2 mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition ease-in-out duration-150"
+          >
+            <Unicons.UilGithub
+              size="21"
+              color="white"
+              class="mr-1 mt-1/2 inline-flex"
+            />{" "}
+            GitHub
+          </a>
 
-        <div style={{display: "flex"}}>
-        <a
-          href="https://t.me/ingusjan"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{width: "8.5rem"}}
-          class="mt-4 px-4 py-2 block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:blue-orange-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
-        >
-          <Unicons.UilMessage
-            size="21"
-            color="white"
-            class="mr-1 mt-1/2 inline-flex"
-          />{" "}
-          Telegram
-        </a>
+          <a
+            href="https://www.linkedin.com/in/ingus-jansons/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-2 mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:bg-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+          >
+            <Unicons.UilLinkedin
+              size="21"
+              color="white"
+              class="mr-1 mt-1/2 inline-flex"
+            />{" "}
+            LinkedIn
+          </a>
         </div>
-       
 
         <p class="mt-5 font-sans font-bold text-md text-gray-700">
           Current occupation
