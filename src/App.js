@@ -26,7 +26,7 @@ const App = () => {
   return (
     <>
       <div class="mt-8 mb-8 container mx-auto px-4">
-        <img src={"./me-min.jpg"} class="rounded-full mb-4 block w-32" />
+        <img src={"./me-min.jpg"} class="rounded-full mb-4 block w-32" alt="Ingus Jansons" />
         <h1 class="font-sans font-semibold text-4xl text-gray-800">
           Ingus Jansons
         </h1>
@@ -49,6 +49,25 @@ const App = () => {
         <p class="mt-4 font-sans text-xs text-gray-500 hover:text-gray-800 transition ease-in-out duration-150">
           Spam emails will be blocked and reported automatically.
         </p>
+
+
+        <div style={{display: "flex"}}>
+        <a
+          href="https://t.me/ingusjan"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{width: "8.5rem"}}
+          class="mt-4 px-4 py-2 block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:blue-orange-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+        >
+          <Unicons.UilMessage
+            size="21"
+            color="white"
+            class="mr-1 mt-1/2 inline-flex"
+          />{" "}
+          Telegram
+        </a>
+        </div>
+       
 
         <p class="mt-5 font-sans font-bold text-md text-gray-700">
           Current occupation
