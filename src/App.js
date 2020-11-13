@@ -15,8 +15,8 @@ const App = () => {
     <>
       <div class="mt-8 mb-8 container mx-auto px-4">
         <img
-          src={"./me-min.jpg"}
-          class="rounded-full mb-4 block w-32"
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=dI18ZJohxI7mRpLFZAHQxzgNHiykt4ycd8U7YB8K0kA"
+          class="rounded-full mb-4 block w-32 h-32"
           alt="Ingus Jansons"
         />
         <h1 class="font-sans font-semibold text-4xl text-gray-800">
@@ -26,9 +26,15 @@ const App = () => {
           UIX Software Engineer
         </h2>
         <p class="text-gray-600">
-          Based in Newbury, UK{" "}
+          Based in Gloucester, UK{" "}
           <span class="text-lg" role="img" aria-label="UK Flag">
             🇬🇧
+          </span>
+        </p>
+        <p class="text-gray-500">
+          Born in Riga, Latvia{" "}
+          <span class="text-lg" role="img" aria-label="UK Flag">
+            🇱🇻
           </span>
         </p>
 
@@ -92,12 +98,22 @@ const App = () => {
         </div>
 
         <p class="mt-5 font-sans font-bold text-md text-gray-700">
-          Current occupation
+          Current occupation(s)
         </p>
         <p class="font-sans text-md text-gray-600">
           Software Engineer, Vodafone Group
         </p>
-
+        <p class="font-sans text-md text-gray-600">
+          Head of Operations,{" "}
+          <a
+            class="underline"
+            href="https://illumimedia.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Illumi Media
+          </a>
+        </p>
         <table class="table-fixed mt-8 w-full border-2 border-gray-200 rounded-md">
           <thead class="bg-gray-100 ">
             <tr>
