@@ -1,184 +1,117 @@
-import React from "react";
-import "./bulma.css";
-import "./index.css";
-import "tailwindcss/tailwind.css";
+import React, { useState, useEffect } from "react";
 import ReactGa from "react-ga";
-import * as Unicons from "@iconscout/react-unicons";
+import Project from "./components/Project";
 
-const App = () => {
-  React.useEffect(() => {
+function App() {
+  const [dark, setDark] = useState(true);
+
+  useEffect(() => {
     ReactGa.initialize("UA-158955035-3");
     ReactGa.pageview(window.location.pathname + window.location.search);
   });
 
   return (
-    <>
-      <div class="mt-8 mb-8 container mx-auto px-4">
+    <div className={`${dark && "dark"} `}>
+      <div className="w-screen h-screen leading-relaxed overflow-y-scroll p-6 xl:p-52 bg-gray-100 dark:bg-gray-800 dark:text-gray-200">
         <img
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=dI18ZJohxI7mRpLFZAHQxzgNHiykt4ycd8U7YB8K0kA"
-          class="rounded-full mb-4 block w-32 h-32"
           alt="Ingus Jansons"
+          className="w-32 rounded-full mb-3"
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_200_200/0/1603106914563?e=1613606400&v=beta&t=lA-W9r7myMdNVCuuhfTMIpX_2fgi0c0HBzk3BbdrCR0"
         />
-        <h1 class="font-sans font-semibold text-4xl text-gray-800">
-          Ingus Jansons
-        </h1>
-        <h2 class="font-sans font-semibold text-lg text-orange-500">
-          UIX Software Engineer
+        <h1 className="text-4xl">Ingus Jansons</h1>
+        <h2 className="text-2xl text-purple-400">
+          Front-end Software Engineer
         </h2>
-        <p class="text-gray-600">
-          Based in Gloucester, UK{" "}
-          <span class="text-lg" role="img" aria-label="UK Flag">
-            🇬🇧
-          </span>
-        </p>
-        <p class="text-gray-500">
-          Born in Riga, Latvia{" "}
-          <span class="text-lg" role="img" aria-label="UK Flag">
-            🇱🇻
-          </span>
+        <p className="text-md text-gray-500 mt-1">Based in Gloucester, UK</p>
+
+        <p className="mt-5 xl:w-1/2">
+          Coming from a Social Media Marketing and Management background, I'm a
+          Software Engineer with a big passion for front-end and user experience
+          working with ReactJS. Ex-founder of an Influencer Marketing Agency,
+          Illumi Media working with clients like MrBeast (45 million
+          subscribers).{" "}
         </p>
 
-        <a
-          href="mailto:ingusjan@gmail.com"
-          class="mt-5 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-orange-600 hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
-        >
-          <Unicons.UilEnvelope
-            size="21"
-            color="white"
-            class="mr-1 mt-1/2 inline-flex"
-          />{" "}
-          ingusjan@gmail.com
-        </a>
-
-        <p class="mt-4 font-sans text-xs text-gray-500 hover:text-gray-800 transition ease-in-out duration-150">
-          Spam emails will be blocked and reported automatically.
-        </p>
-
-        <div style={{ display: "flex" }}>
+        <h3 className="text-xl mt-12 font-semibold">Technology</h3>
+        <p className="mb-6">
           <a
-            href="https://t.me/ingusjan"
+            href="https://www.github.com/ingusjan"
+            className="text-sm text-purple-400"
             target="_blank"
-            rel="noopener noreferrer"
-            class="mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:bg-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+            rel="noreferrer"
           >
-            <Unicons.UilMessage
-              size="21"
-              color="white"
-              class="mr-1 mt-1/2 inline-flex"
-            />{" "}
-            Telegram
+            See more on GitHub →
           </a>
-          <a
-            href="https://github.com/ingusjan"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="ml-2 mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition ease-in-out duration-150"
-          >
-            <Unicons.UilGithub
-              size="21"
-              color="white"
-              class="mr-1 mt-1/2 inline-flex"
-            />{" "}
-            GitHub
-          </a>
+        </p>
+        <p>
+          Huge fan of the MERN stack and how quickly you can go from a basic app
+          to an MVP. <br /> Currently using ReactJS, Tailwind, Express, MongoDB,
+          Heroku and AWS.
+        </p>
 
+        <h3 className="text-xl mt-12 font-semibold">Employment</h3>
+        <p className="mb-6">
           <a
             href="https://www.linkedin.com/in/ingus-jansons/"
+            className="text-sm text-purple-400"
             target="_blank"
-            rel="noopener noreferrer"
-            class="ml-2 mt-4 px-4 py-2 inline-block border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:bg-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition ease-in-out duration-150"
+            rel="noreferrer"
           >
-            <Unicons.UilLinkedin
-              size="21"
-              color="white"
-              class="mr-1 mt-1/2 inline-flex"
-            />{" "}
-            LinkedIn
+            Read more on LinkedIn →
           </a>
+        </p>
+
+        <p className="bg-purple-400 text-sm text-gray-800 font-semibold py-1 px-3 my-1 inline-block rounded-full">
+          Vodafone Group
+        </p>
+        <p>Software Engineer (Sept. 2019 - Present)</p>
+        <p className="dark:bg-gray-700 bg-gray-200 text-sm mt-3 text-gray-600 dark:text-gray-400 font-semibold py-1 px-3 my-1 inline-block rounded-full">
+          Almighty Records
+        </p>
+        <p>Social Media Manager (Aug. 2018 - Feb. 2019)</p>
+
+        <p className="dark:bg-gray-700 bg-gray-200 text-sm mt-3 text-gray-600 dark:text-gray-400 font-semibold py-1 px-3 my-1 inline-block rounded-full">
+          Voddity
+        </p>
+        <p>YouTube Thumbnail Designer (Freelance)</p>
+
+        <p className="dark:bg-gray-700 bg-gray-200 text-sm mt-3 text-gray-600 dark:text-gray-400 font-semibold py-1 px-3 my-1 inline-block rounded-full">
+          Render.gg
+        </p>
+        <p>YouTube Thumbnail Designer (Freelance)</p>
+
+        <h3 className="text-xl mt-12 font-semibold">Projects</h3>
+
+        <div className="mt-5">
+          <Project
+            name="Creator Sites"
+            desc="Simple link sharing for Content Creators"
+            link="https://creatorsites.net"
+            status="Active"
+          />
+          <Project
+            name="Illumi Media"
+            desc="Graphics for Content Creators"
+            link="https://illumimedia.co"
+            status="Active"
+          />
+          <Project
+            name="Webarc Hosting"
+            desc="Affordable UK-based web Hosting"
+            link="https://webarc.host"
+            status="Active"
+          />
         </div>
 
-        <p class="mt-5 font-sans font-bold text-md text-gray-700">
-          Current occupation(s)
-        </p>
-        <p class="font-sans text-md text-gray-600">
-          Software Engineer, Vodafone Group
-        </p>
-        <p class="font-sans text-md text-gray-600">
-          Head of Operations,{" "}
-          <a
-            class="underline"
-            href="https://illumimedia.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Illumi Media
-          </a>
-        </p>
-        <table class="table-fixed mt-8 w-full border-2 border-gray-200 rounded-md">
-          <thead class="bg-gray-100 ">
-            <tr>
-              <th class="px-4 py-2 pl-4 w-1/2 text-gray-700">Skill</th>
-              <th class="px-4 py-2 pl-4 w-1/2 text-gray-700">Experience</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                React.js
-              </td>
-              <td class="border px-4 py-2 text-red-600">Expert</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                Express.js
-              </td>
-              <td class="border px-4 py-2 text-red-600">Expert</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                Adobe Photoshop
-              </td>
-              <td class="border px-4 py-2 text-red-600">Expert</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                Bulma.css
-              </td>
-              <td class="border px-4 py-2 text-red-600">Expert</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                MongoDB
-              </td>
-              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                Adobe Premiere Pro
-              </td>
-              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                Influencer Marketing
-              </td>
-              <td class="border px-4 py-2 text-orange-600">Intermediate</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">PHP</td>
-              <td class="border px-4 py-2 text-green-600">Beginner</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="border px-4 py-2 font-semibold text-gray-700">
-                jQuery
-              </td>
-              <td class="border px-4 py-2 text-green-600">Beginner</td>
-            </tr>
-          </tbody>
-        </table>
+        <button
+          class="absolute top-3 right-8 bg-gray-200 dark:bg-gray-700 p-2 px-4 rounded-lg"
+          onClick={() => setDark(!dark)}
+        >
+          {dark ? "☀ Light Mode" : "🌙 Dark Mode"}
+        </button>
       </div>
-    </>
+    </div>
   );
-};
+}
 
 export default App;

@@ -1,35 +1,32 @@
 {
-  "name": "personal",
+  "name": "react-tailwindcss-starter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@iconscout/react-unicons": "^1.1.5",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ga": "^3.1.2",
-    "react-scripts": "^4.0.0",
-    "tailwindcss": "^1.8.10"
+    "@craco/craco": "^6.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-scripts": "4.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
-    "build:css": "postcss src/tailwind.css -o src/index.css",
-    "watch:css": "postcss src/tailwind.css -o src/index.css -w",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.1"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
