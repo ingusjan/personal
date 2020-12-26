@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Project(props) {
   return (
-    <div className="py-3 px-4 mb-3 rounded-xl shadow-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 lg:w-1/2">
+    <div className="py-3 px-4 mb-3 rounded-sm shadow-lg bg-gray-50 dark:bg-gray-800 lg:w-1/2">
       <h4 className="text-lg">{props.name}</h4>
       <p className="text-gray-400">{props.desc}</p>
       <a
         href={props.link}
-        className="text-purple-400"
+        className="text-primary-400"
         target="_blank"
         rel="noreferrer"
       >
