@@ -28,7 +28,7 @@ export default function Project(props) {
           <div className="overflow-x-auto flex content-center items-center w-full h-full">
             {props.tech.map((x) => {
               return (
-                <span className="dark:bg-gray-700 py-2 px-4 mr-2 text-sm rounded-full">
+                <span className="dark:bg-gray-700 bg-gray-200 py-2 px-4 mr-2 text-sm rounded-full">
                   {x}
                 </span>
               );

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={`${dark && "dark"} `}>
-      <div className="w-screen h-screen leading-normal overflow-y-scroll p-6 xl:px-48 xl:py-16 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+      <div className="w-screen h-screen leading-normal antialiased overflow-y-scroll p-6 xl:px-48 xl:py-16 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
         <div
           className="h-64 w-full rounded-2xl"
           style={{
@@ -30,7 +30,7 @@ function App() {
         <div className="xl:pl-10">
           <img
             alt="Ingus Jansons"
-            className="w-36 rounded-full mb-3 -mt-20 border-white dark:border-gray-900 border-8"
+            className="w-36 rounded-full mb-3 -mt-20 border-gray-100 dark:border-gray-900 border-8"
             src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_200_200/0/1603106914563?e=1613606400&v=beta&t=lA-W9r7myMdNVCuuhfTMIpX_2fgi0c0HBzk3BbdrCR0"
           />
           <h1 className="text-4xl text-primary-400">Ingus Jansons</h1>
