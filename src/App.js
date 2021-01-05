@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={`${dark && "dark"} `}>
-      <div className="w-screen h-screen leading-normal antialiased overflow-y-scroll p-6 xl:px-48 xl:py-16 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
+      <div className="w-screen h-screen leading-normal antialiased overflow-y-scroll p-6 2xl:px-48 xl:py-16 bg-gray-100 dark:bg-gray-900 dark:text-gray-200">
         <div
           className="h-64 w-full rounded-2xl"
           style={{

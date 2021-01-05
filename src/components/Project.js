@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Project(props) {
   return (
-    <div className="py-4 px-5 mb-3 xl:w-1/3 min-w-1/3 max-w-1/3 h-full min-h-full max-h-full rounded-sm shadow-lg bg-gray-50 dark:bg-gray-800 lg:mr-5">
+    <div className="py-4 px-5 mb-3 2xl:w-1/3 min-w-1/3 max-w-1/3 h-full min-h-full max-h-full rounded-sm shadow-lg bg-gray-50 dark:bg-gray-800 lg:mr-5">
       <div className="flex content-center items-center mb-5">
         <div className="mr-5">
           <img src={props.img} alt={props.name} className="rounded-full w-14" />
