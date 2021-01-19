@@ -6,6 +6,10 @@ In this setup we're using CRACO (Create React App Configuration Override), rathe
 
 ## Start the application
 
+First, install all the dependencies:
+
+### `npm install` 
+
 In the project directory, you can run:
 
 ### `npm start`
