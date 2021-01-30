@@ -3,7 +3,7 @@ import { GitHub, Linkedin, Mail } from "react-feather";
 
 const Navbar = () => {
   return (
-    <div className="bg-white dark:bg-transparent py-2 px-4 lg:px-32 xl:px-64 w-screen flex items-center border-b dark:border-gray-800 shadow-sm">
+    <div className="bg-white dark:bg-transparent py-2 px-4 lg:px-32 xl:px-64 w-full flex items-center border-b dark:border-gray-800 shadow-sm">
       <Link href="/"><h2 className="hover:text-yellow-500 cursor-pointer text-xl font-semibold mr-5 lg:mr-8">@ingusjan</h2></Link>
       <div className="flex w-full justify-between">
         <div>
