@@ -22,14 +22,14 @@ export default function Home({ posts, projects }) {
         {projects.map((x) => {
           return (
             <div  className="cursor-pointer hover:text-yellow-500">
-            <Link href={x.link} target="_blank">
+            <a href={x.link} target="_blank">
               <li key={x.title}>
                 <h3 className="font-semibold text-lg mt-1">
                   {x.title}
                 </h3>
                 <p>{x.description}</p>
               </li>
-            </Link>
+            </a>
             </div>
 
           );
