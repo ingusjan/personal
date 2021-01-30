@@ -1,10 +1,14 @@
-# React Tailwind CSS Starter
+# Personal Site
 
-This is quite literally [Create React App](https://github.com/facebook/create-react-app), but with [Tailwind CSS](https://tailwindcss.com/docs/guides/create-react-app) already embedded and installed using their own instructions.
+Available on [https://ingus.dev](https://ingus.dev) hosted on Netlify.
 
 In this setup we're using CRACO (Create React App Configuration Override), rather than react-scripts.
 
 ## Start the application
+
+First, install all the dependencies:
+
+### `npm install` 
 
 In the project directory, you can run:
 
