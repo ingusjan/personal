@@ -1,15 +1,13 @@
-import Link from "next/link";
 import { fetchEntries, fetchProjects } from "../util/contentfulPosts";
 import dayjs from "dayjs";
 import Emoji from "../components/Emoji";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home({ posts, projects }) {
-  console.log(projects);
   return (
     <div className="font-sans">
       <img
-        className="w-20 rounded-full mb-3"
+        className="w-20 lg:w-24 rounded-full mb-3"
         src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_400_400/0/1603106914563?e=1617235200&v=beta&t=DX9oVnwsQZab7y5RpPsbMQTQYRjwXHMnw5615LT2DLU"
       ></img>
       <h1 className="text-3xl font-bold">
@@ -21,7 +19,23 @@ export default function Home({ posts, projects }) {
           Vodafone Group
         </a>
         .
+        <br />
+        BSc Student at Lancaster University.
       </p>
+
+      <div className="flex flex-col lg:flex-row mt-4 space-y-2 lg:space-y-0 lg:space-x-3">
+        <Link href="/about">
+          <button className="bg-yellow-500 w-full lg:w-auto hover:bg-yellow-400 text-sm rounded-md px-5 py-3 lg:py-2 text-white">
+            More about me
+          </button>
+        </Link>
+        <a href="https://linkedin.com/in/ingus-jansons" target="_blank">
+          <button className="bg-gray-200 w-full lg:w-auto hover:bg-gray-100 dark:hover:bg-gray-600 text-black dark:text-white dark:bg-gray-700 text-sm rounded-md px-5 py-3 lg:py-2">
+            Connect on LinkedIn
+          </button>
+        </a>
+      </div>
+      <h2 className="font-bold text-2xl mt-8 mb-6">Projects</h2>
       <div className="mt-7 mb-8 flex flex-col space-y-2 place-content-evenly">
         <div
           key="Illumi Media"
@@ -41,7 +55,7 @@ export default function Home({ posts, projects }) {
               <div>
                 <h3 className="font-bold text-xl mt-1">Illumi Media</h3>
                 <p className="text-gray-400 -mt-px">
-                  You focus on content, we'll do the rest
+                  Branding Studio for Content Creators
                 </p>
               </div>
             </div>
@@ -54,22 +68,21 @@ export default function Home({ posts, projects }) {
         >
           <a href="https://creatorsites.net" target="_blank">
             <div className="flex">
-            <div className="flex items-center">
-
-              <svg
-                className="fill-current w-9 h-9 align-middle mr-4"
-                viewBox="0 0 270 327"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M155.3 326.05C124.1 326.05 96.8 319.45 73.4 306.25C50 293.05 32 274.15 19.4 249.55C6.8 224.95 0.5 196.15 0.5 163.15C0.5 130.15 6.8 101.5 19.4 77.2C32 52.6 50 33.7 73.4 20.5C96.8 7.29998 124.1 0.699979 155.3 0.699979C194.6 0.699979 228.5 11.5 257 33.1C261.5 36.7 264.65 40.3 266.45 43.9C268.25 47.5 269.15 52 269.15 57.4C269.15 65.2 266.9 71.95 262.4 77.65C258.2 83.05 252.95 85.75 246.65 85.75C242.45 85.75 238.7 85.3 235.4 84.4C232.4 83.2 228.95 81.25 225.05 78.55C213.05 70.75 201.95 65.2 191.75 61.9C181.55 58.3 170.6 56.5 158.9 56.5C130.1 56.5 108.35 65.5 93.65 83.5C79.25 101.2 72.05 127.75 72.05 163.15C72.05 234.55 101 270.25 158.9 270.25C170 270.25 180.5 268.6 190.4 265.3C200.3 261.7 211.85 256 225.05 248.2C229.55 245.5 233.3 243.7 236.3 242.8C239.3 241.6 242.75 241 246.65 241C252.95 241 258.2 243.85 262.4 249.55C266.9 254.95 269.15 261.55 269.15 269.35C269.15 274.75 268.1 279.4 266 283.3C264.2 286.9 261.2 290.35 257 293.65C228.5 315.25 194.6 326.05 155.3 326.05Z" />
-              </svg>
+              <div className="flex items-center">
+                <svg
+                  className="fill-current w-9 h-9 align-middle mr-4"
+                  viewBox="0 0 270 327"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M155.3 326.05C124.1 326.05 96.8 319.45 73.4 306.25C50 293.05 32 274.15 19.4 249.55C6.8 224.95 0.5 196.15 0.5 163.15C0.5 130.15 6.8 101.5 19.4 77.2C32 52.6 50 33.7 73.4 20.5C96.8 7.29998 124.1 0.699979 155.3 0.699979C194.6 0.699979 228.5 11.5 257 33.1C261.5 36.7 264.65 40.3 266.45 43.9C268.25 47.5 269.15 52 269.15 57.4C269.15 65.2 266.9 71.95 262.4 77.65C258.2 83.05 252.95 85.75 246.65 85.75C242.45 85.75 238.7 85.3 235.4 84.4C232.4 83.2 228.95 81.25 225.05 78.55C213.05 70.75 201.95 65.2 191.75 61.9C181.55 58.3 170.6 56.5 158.9 56.5C130.1 56.5 108.35 65.5 93.65 83.5C79.25 101.2 72.05 127.75 72.05 163.15C72.05 234.55 101 270.25 158.9 270.25C170 270.25 180.5 268.6 190.4 265.3C200.3 261.7 211.85 256 225.05 248.2C229.55 245.5 233.3 243.7 236.3 242.8C239.3 241.6 242.75 241 246.65 241C252.95 241 258.2 243.85 262.4 249.55C266.9 254.95 269.15 261.55 269.15 269.35C269.15 274.75 268.1 279.4 266 283.3C264.2 286.9 261.2 290.35 257 293.65C228.5 315.25 194.6 326.05 155.3 326.05Z" />
+                </svg>
               </div>
 
               <div>
                 <h3 className="font-bold text-xl mt-1">Creator Sites</h3>
                 <p className="text-gray-400 -mt-px">
-                  Central hub for all your links
+                  Marketing Tool for Content Creators
                 </p>
               </div>
             </div>
@@ -104,7 +117,7 @@ export default function Home({ posts, projects }) {
           </a>
         </div>
       </div>
-      <h2 className="font-bold text-xl mt-3 mb-6">Blog</h2>
+      <h2 className="font-bold text-2xl mt-3 mb-6">Blog</h2>
       <ul>
         {posts.map((x) => {
           return (
