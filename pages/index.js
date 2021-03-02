@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function Home({ posts, projects }) {
   return (
-    <div className="font-sans mt-6">
+    <div className="font-sans">
       <img
-        className="w-20 lg:w-24 rounded-full mb-3"
+        className="w-24 rounded-full mb-3"
         src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_400_400/0/1603106914563?e=1617235200&v=beta&t=DX9oVnwsQZab7y5RpPsbMQTQYRjwXHMnw5615LT2DLU"
       ></img>
       <h1 className="text-3xl font-bold">
