@@ -49,7 +49,7 @@ const about = () => {
       </div>
       <div className="lg:w-1/2">
         <div className="flex flex-col lg:flex-row">
-          <div className="mx-auto lg:w-1/2 lg:h-1/2">
+          <div className="lg:mx-auto lg:w-1/2 lg:h-1/2">
             <Image
               src="/me_bw.jpg"
               alt="Ingus Jansons"
