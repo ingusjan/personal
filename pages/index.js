@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home({ posts, projects }) {
   return (
-    <div className="font-sans">
+    <div className="font-sans mt-6">
       <img
         className="w-20 lg:w-24 rounded-full mb-3"
         src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_400_400/0/1603106914563?e=1617235200&v=beta&t=DX9oVnwsQZab7y5RpPsbMQTQYRjwXHMnw5615LT2DLU"
@@ -35,6 +35,7 @@ export default function Home({ posts, projects }) {
           </button>
         </a>
       </div>
+
       <h2 className="font-bold text-2xl mt-8 mb-6">Projects</h2>
       <div className="mt-7 mb-8 flex flex-col space-y-2 place-content-evenly">
         <div
@@ -117,7 +118,8 @@ export default function Home({ posts, projects }) {
           </a>
         </div>
       </div>
-      <h2 className="font-bold text-2xl mt-3 mb-6">Blog</h2>
+      
+      <h2 className="font-bold text-2xl mt-8 mb-6">Blog</h2>
       <ul>
         {posts.map((x) => {
           return (
