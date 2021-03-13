@@ -8,8 +8,8 @@ export default function Home({ posts, projects }) {
     <div className="font-sans">
       <img
         className="w-24 rounded-full mb-3"
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQE0jqBBN1pP3w/profile-displayphoto-shrink_400_400/0/1603106914563?e=1617235200&v=beta&t=DX9oVnwsQZab7y5RpPsbMQTQYRjwXHMnw5615LT2DLU"
-      ></img>
+        src="https://media-exp1.licdn.com/dms/image/C4E03AQGJIUhsGrpI6Q/profile-displayphoto-shrink_400_400/0/1614892307536?e=1620864000&v=beta&t=GMJahjssWQ-FwAhpqSKyn-KX1yXahWoQxMt3XTYiQQA"
+      />
       <h1 className="text-3xl font-bold">
         Hi, <Emoji symbol="👋" label="Wave" /> I'm Ingus
       </h1>
