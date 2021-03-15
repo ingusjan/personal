@@ -5,48 +5,49 @@ const Navbar = (props) => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="bg-white dark:bg-transparent py-2 px-4 lg:px-32 xl:px-80 w-full flex items-center border-b dark:border-gray-800 shadow-sm">
-      <Link href="/">
-        <h2 className="hover:text-yellow-500 cursor-pointer text-xl font-semibold mr-5 lg:mr-8">
+    <div className='bg-white dark:bg-transparent py-2 px-4 lg:px-32 xl:px-80 w-full flex items-center border-b dark:border-gray-800 shadow-sm'>
+      <Link href='/'>
+        <h2 className='hover:text-yellow-500 cursor-pointer text-xl font-semibold mr-5 lg:mr-8'>
           @ingusjan
         </h2>
       </Link>
-      <div className="flex w-full justify-between">
+      <div className='flex w-full justify-between'>
         <div>
-          <ul className="flex space-x-4 overflow-x-auto">
-            <NavItem href="/about">About</NavItem>
+          <ul className='flex space-x-4 overflow-x-auto'>
+            <NavItem href='/about'>About</NavItem>
+            <NavItem href='/gear'>Gear</NavItem>
           </ul>
         </div>
 
         <div>
-          <ul className="flex space-x-4 overflow-x-auto">
+          <ul className='flex space-x-4 overflow-x-auto'>
             <a
-              className="hover:text-yellow-500"
-              target="_blank"
-              href="https://linkedin.com/in/ingus-jansons"
+              className='hover:text-yellow-500'
+              target='_blank'
+              href='https://linkedin.com/in/ingus-jansons'
             >
               <Linkedin />
             </a>
             <a
-              className="hover:text-yellow-500"
-              target="_blank"
-              href="https://github.com/ingusjan"
+              className='hover:text-yellow-500'
+              target='_blank'
+              href='https://github.com/ingusjan'
             >
               <GitHub />
             </a>
             <a
-              className="hover:text-yellow-500"
-              target="_blank"
-              href="mailto:ingusjancorp@gmail.com"
+              className='hover:text-yellow-500'
+              target='_blank'
+              href='mailto:ingusjancorp@gmail.com'
             >
               <Mail />
             </a>
             <button
-        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="inline-flex rounded-xl"
-      >
-        {theme === "light" ? <Moon /> : <Sun />}
-      </button>
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className='inline-flex rounded-xl'
+            >
+              {theme === "light" ? <Moon /> : <Sun />}
+            </button>
           </ul>
         </div>
       </div>
@@ -56,7 +57,7 @@ const Navbar = (props) => {
 
 const NavItem = (props) => {
   return (
-    <li className="hover:text-yellow-500">
+    <li className='hover:text-yellow-500'>
       <Link href={props.href}>{props.children}</Link>
     </li>
   );
