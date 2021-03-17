@@ -1,7 +1,7 @@
 import Image from "next/image";
 const about = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row">
+    <div className="container mx-auto flex flex-col-reverse lg:flex-row">
       <div className="lg:w-1/2 lg:pr-12">
         <h1 className="font-bold text-4xl mb-6 mt-5 lg:mt-0">Ingus Jansons</h1>
         <p>
