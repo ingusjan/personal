@@ -1,9 +1,9 @@
 import Emoji from "../components/Emoji";
 const gear = () => {
   return (
-    <div className='container mx-auto flex flex-col-reverse lg:flex-row'>
+    <div className='flex flex-col-reverse lg:flex-row'>
       <div className='lg:w-1/2 lg:pr-12'>
-        <h1 className='font-bold text-4xl mb-6 mt-5 lg:mt-0'>Gear</h1>
+        <h1 className='font-semibold text-4xl mb-6 mt-5 lg:mt-0'>Gear</h1>
 
         <p className='text-gray-500'>
           See what sort of setup I'm rocking{" "}

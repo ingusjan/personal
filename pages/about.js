@@ -1,9 +1,9 @@
 import Image from "next/image";
 const about = () => {
   return (
-    <div className="container mx-auto flex flex-col-reverse lg:flex-row">
+    <div className="flex flex-col-reverse lg:flex-row">
       <div className="lg:w-1/2 lg:pr-12">
-        <h1 className="font-bold text-4xl mb-6 mt-5 lg:mt-0">Ingus Jansons</h1>
+        <h1 className="font-semibold text-4xl mb-6 mt-5 lg:mt-0">Ingus Jansons</h1>
         <p>
           Avid World of Warcraft player, React & Design enthuasist.
           <br />
@@ -49,7 +49,7 @@ const about = () => {
       </div>
       <div className="lg:w-1/2">
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:mx-auto lg:w-1/2 lg:h-1/2">
+          <div className="mx-auto lg:w-1/2 lg:h-1/2">
             <Image
               src="/me_bw.jpg"
               alt="Ingus Jansons"
