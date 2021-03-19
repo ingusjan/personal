@@ -48,7 +48,7 @@ const Projects = () => {
   return projects.map((p) => {
     return (
       <a href={p.link} target="_blank">
-        <div className="mb-2 cursor-pointer transition hover:bg-gray-200 dark:hover:bg-gray-900 w-full p-5 border border-gray-300 dark:border-gray-800 flex flex-col lg:flex-row rounded-md">
+        <div className="mb-2 cursor-pointer transition hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 w-full p-5 border border-gray-300 dark:border-gray-800 flex flex-col lg:flex-row rounded-md">
           <div className="w-full lg:w-80 pb-2 lg:pb-0 lg:border-r border-gray-300 dark:border-gray-800">
             <p className="font-mono text-gray-400">name</p>
             {p.name}
