@@ -4,6 +4,7 @@ import Emoji from "../components/Emoji";
 import Link from "next/link";
 import Projects from "../components/Projects";
 import Revue from "../components/Revue";
+import { Twitter } from "react-feather";
 
 export default function Home({ posts, projects }) {
   return (
@@ -31,9 +32,10 @@ export default function Home({ posts, projects }) {
             More about me
           </button>
         </Link>
-        <a href='https://linkedin.com/in/ingus-jansons' target='_blank'>
-          <button className='bg-gray-300 transition w-full lg:w-auto hover:bg-gray-400 dark:hover:bg-gray-800 text-black dark:text-white dark:bg-gray-700 text-sm rounded-md px-5 py-3 lg:py-2'>
-            Connect on LinkedIn
+        <a href='https://twitter.com/optrixttv' target='_blank'>
+          <button className='border-2 text-[#1da1f2] hover:text-white font-semibold border-[#1da1f2] hover:bg-[#1989cf] transition w-full lg:w-auto text-sm rounded-md px-5 py-3 lg:py-2'>
+            <Emoji symbol='🐥' label='Bird' />{" "}
+            <span className='ml-2'>Follow on Twitter</span>
           </button>
         </a>
       </div>

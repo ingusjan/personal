@@ -28,7 +28,7 @@ const Revue = (props) => {
         className='flex flex-col lg:items-center lg:flex-row lg:space-x-4'
       >
         <div>
-          <label for='member_email'>Email address</label>
+          <label htmlFor='member_email'>Email address</label>
           <input
             className='w-full block rounded-md px-3 py-2 dark:bg-gray-800 dark:text-gray-100'
             placeholder='Your email address...'
@@ -41,8 +41,8 @@ const Revue = (props) => {
         </div>
 
         <div className='mt-5 lg:mt-0'>
-          <label for='member_first_name'>
-            First name <span class='opacity-40'>(Optional)</span>
+          <label htmlFor='member_first_name'>
+            First name <span className='opacity-40'>(Optional)</span>
           </label>
           <input
             className='w-full block rounded-md px-3 py-2 dark:bg-gray-800 dark:text-gray-100'
@@ -52,8 +52,8 @@ const Revue = (props) => {
           />
         </div>
         <div className='mt-5 lg:mt-0'>
-          <label for='member_last_name'>
-            Last name <span class='opacity-40'>(Optional)</span>
+          <label htmlFor='member_last_name'>
+            Last name <span className='opacity-40'>(Optional)</span>
           </label>
           <input
             className='w-full block rounded-md px-3 py-2 dark:bg-gray-800 dark:text-gray-100'
