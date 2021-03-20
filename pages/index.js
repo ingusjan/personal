@@ -38,7 +38,7 @@ export default function Home({ posts, projects }) {
         </a>
       </div>
 
-      <h2 className='text-xl mt-16 w-4/5 lg:w-full text-gray-100'>
+      <h2 className='text-xl mt-16 w-4/5 lg:w-full'>
         Subscribe to UX/UI for Backend Developers{" "}
         <Emoji symbol='🧑🏼‍🎨' label='Designer' />{" "}
         <Emoji symbol='🚀' label='Rocket Ship' />
