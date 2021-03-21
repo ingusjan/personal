@@ -1,8 +1,6 @@
 # Personal Site
 
-Available on [https://ingus.dev](https://ingus.dev) hosted on Netlify.
-
-In this setup we're using CRACO (Create React App Configuration Override), rather than react-scripts.
+Available on [https://ingus.dev](https://ingus.dev) built with Next.js, hosted on Vercel.
 
 ## Start the application
 
