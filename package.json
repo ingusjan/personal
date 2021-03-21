@@ -10,7 +10,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.2",
     "autoprefixer": "^10.2.4",
-    "contentful": "^8.1.7",
+    "contentful": "^8.2.0",
     "dayjs": "^1.10.4",
     "next": "10.0.5",
     "next-themes": "0.0.10",
