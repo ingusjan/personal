@@ -14,7 +14,7 @@ const blog = ({ posts }) => {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <img
-          className="lg:w-1/3 mt-5 rounded-md"
+          className="lg:w-1/3 my-5 rounded-md"
           quality="25%"
           layout="responsive"
           height="auto"
