@@ -8,47 +8,29 @@ import Image from "next/image";
 
 const blog = ({ posts }) => {
   const options = {
-    renderMark: {
-      [MARKS.BOLD]: (text) => <p className="font-bold">{text}</p>,
-    },
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
+        <>
         <img
-          className="lg:w-1/3 my-5 rounded-md"
+          className="rounded-md"
           quality="25%"
           layout="responsive"
           height="auto"
           width="auto"
+          alt={node.data.target.fields.description}
           src={"https://" + node.data.target.fields.file.url}
         />
+        <p className="text-sm opacity-75">{node.data.target.fields.description}</p>
+        </>
       ),
-      [BLOCKS.UL_LIST]: (node, children) => (
-        <ul className="my-5 list-disc">{children}</ul>
-      ),
-      [BLOCKS.LIST_ITEM]: (node, children) => (
-        <li className="list-inside list-disc">{children}</li>
-      ),
-      [BLOCKS.HEADING_2]: (node, children) => (
-        <h2 className="text-xl font-semibold my-5">{children}</h2>
-      ),
-      [BLOCKS.LIST_ITEM]: (node, children) => {
-        const UnTaggedChildren = documentToReactComponents(node, {
-          renderNode: {
-            [BLOCKS.PARAGRAPH]: (node, children) => children,
-            [BLOCKS.LIST_ITEM]: (node, children) => children,
-          },
-        });
-
-        return <li className="list-inside">{UnTaggedChildren}</li>;
-      },
     },
     renderText: (text) => text.replace("!", "?"),
   };
   const post = posts[0];
   dayjs.extend(relativeTime);
   return (
-    <div>
-      <p className="mb-7 opacity-40 hover:underline">
+    <div className="prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg">
+      <p className="mb-7 hover:underline">
         <Link href="/">Return to home</Link>
       </p>
       <h1 className="font-bold text-3xl tracking-tight">{post.title}</h1>
