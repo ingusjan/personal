@@ -1,4 +1,5 @@
 import Emoji from "../components/Emoji";
+import Image from "next/image";
 const gear = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row'>
@@ -52,12 +53,13 @@ const gear = () => {
       <div className='lg:w-1/2'>
         <div className='flex flex-col lg:flex-row'>
           <div className='lg:mx-auto lg:w-1/2 lg:h-1/2'>
-            {/* <Image
-              src='/me_bw.jpg'
+            <Image
+              src='/setup.jpeg'
               alt='Ingus Jansons'
-              width={450}
-              height={450}
-            /> */}
+              layout='responsive'
+              width={900}
+              height={650}
+            />
           </div>
         </div>
       </div>
