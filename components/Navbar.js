@@ -5,10 +5,10 @@ const Navbar = (props) => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className='bg-white dark:bg-transparent py-2 px-4 lg:px-32 xl:px-80 w-full flex items-center border-b dark:border-gray-800 shadow-sm'>
-      <div className='container mx-auto flex'>
+    <div className='bg-white dark:bg-transparent py-2 w-full flex items-center border-b dark:border-gray-800 shadow-sm'>
+      <div className='container mx-auto px-3 xl:px-0 flex'>
         <Link href='/'>
-          <h2 className='text-gray-500 dark:text-gray-100 transition hover:text-gray-400 cursor-pointer text-xl font-semibold mr-6 lg:mr-12'>
+          <h2 className='text-gray-500 dark:text-gray-100 transition hover:text-gray-400 dark:hover:text-gray-400 cursor-pointer text-xl font-semibold mr-6 lg:mr-12'>
             @ingusjan
           </h2>
         </Link>

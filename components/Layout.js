@@ -17,7 +17,9 @@ const Layout = (props) => {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto px-3 xl:px-0 py-4 lg:mt-6">{children}</div>
+      <div className='container mx-auto px-3 xl:px-0 py-4 lg:mt-6'>
+        {children}
+      </div>
       <Footer />
     </div>
   );
