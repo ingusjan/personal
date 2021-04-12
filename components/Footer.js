@@ -4,8 +4,10 @@ const Footer = () => {
   return (
     <div className="w-full text-sm mt-32 pt-4 pb-8 px-4 lg:px-32 xl:px-80 border-t dark:border-gray-800">
       <div className="container mx-auto">
-        <p className="text-gray-500">© {dayjs().year()} Ingus Jansons</p>
-        <p className="text-gray-600 inline-flex align-center">
+        <p className="text-gray-500 dark:text-gray-400">
+          © {dayjs().year()} Ingus Jansons
+        </p>
+        <p className="text-gray-500 dark:text-gray-400 inline-flex align-center">
           Built using
           {/* className='fill-current w-9 h-9 align-middle mr-4' */}
           <svg

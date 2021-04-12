@@ -18,27 +18,25 @@ const Navbar = (props) => {
             <NavItem href="/gear">Gear</NavItem>
           </ul>
 
-          <div>
-            <ul className="flex items-center space-x-4 overflow-x-auto">
-              <NavIcon
-                label="Ingus Jansons on LinkedIn"
-                icon={<Linkedin />}
-                href="https://linkedin.com/in/ingus-jansons"
-              />
-              <NavIcon
-                label="Ingus Jansons on GitHub"
-                icon={<GitHub />}
-                href="https://github.com/ingusjan"
-              />
+          <div className="flex items-center space-x-4 overflow-x-auto">
+            <NavIcon
+              label="Ingus Jansons on LinkedIn"
+              icon={<Linkedin />}
+              href="https://linkedin.com/in/ingus-jansons"
+            />
+            <NavIcon
+              label="Ingus Jansons on GitHub"
+              icon={<GitHub />}
+              href="https://github.com/ingusjan"
+            />
 
-              <button
-                aria-label="Toggle Dark or Light mode"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="inline-flex rounded-xl"
-              >
-                {theme === "light" ? <Moon /> : <Sun />}
-              </button>
-            </ul>
+            <button
+              aria-label="Toggle Dark or Light mode"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="inline-flex rounded-xl"
+            >
+              {theme === "light" ? <Moon /> : <Sun />}
+            </button>
           </div>
         </div>
       </div>

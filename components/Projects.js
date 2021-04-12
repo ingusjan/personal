@@ -28,6 +28,7 @@ const Projects = () => {
       name: "PrettyRad Shirts",
       lang: "Shopify",
       desc: "eCommerce specialising in T-Shirt Designs",
+      link: "https://www.instagram.com/prettyradshirts/",
     },
   ];
 
