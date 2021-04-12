@@ -4,7 +4,7 @@ const Projects = () => {
       name: "Personal",
       lang: "Next.js",
       desc: "The very open-source site you're looking at now",
-      link: "https://github.com/ingusjan/personal"
+      link: "https://github.com/ingusjan/personal",
     },
     {
       name: "Creator Sites",
@@ -39,15 +39,15 @@ const Projects = () => {
         return "bg-pink-400";
       case "Shopify":
         return "bg-green-400";
-        case "Next.js":
-          return "bg-gray-600";
+      case "Next.js":
+        return "bg-gray-600";
       default:
         return "bg-gray-400";
     }
   };
   return projects.map((p) => {
     return (
-      <a href={p.link} target="_blank">
+      <a href={p.link} target="_blank" rel="noopener">
         <div className="mb-2 cursor-pointer transition hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 w-full p-5 border border-gray-300 dark:border-gray-800 flex flex-col lg:flex-row rounded-md">
           <div className="w-full lg:w-80 pb-2 lg:pb-0 lg:border-r border-gray-300 dark:border-gray-800">
             <p className="font-mono text-gray-400">name</p>
