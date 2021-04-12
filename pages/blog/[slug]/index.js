@@ -11,16 +11,18 @@ const blog = ({ posts }) => {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <>
-        <img
-          className="rounded-md"
-          quality="25%"
-          layout="responsive"
-          height="auto"
-          width="auto"
-          alt={node.data.target.fields.description}
-          src={"https://" + node.data.target.fields.file.url}
-        />
-        <p className="text-sm opacity-75">{node.data.target.fields.description}</p>
+          <img
+            className="rounded-md"
+            quality="25%"
+            layout="responsive"
+            height="auto"
+            width="auto"
+            alt={node.data.target.fields.description}
+            src={"https://" + node.data.target.fields.file.url}
+          />
+          <p className="text-sm opacity-75">
+            {node.data.target.fields.description}
+          </p>
         </>
       ),
     },
@@ -47,7 +49,6 @@ const blog = ({ posts }) => {
 };
 
 export const getStaticProps = async (context) => {
-  console.log(context.params)
   const res = await fetchEntry(context.params.slug);
   const posts = await res.map((p) => {
     return p.fields;
