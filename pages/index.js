@@ -1,4 +1,4 @@
-import { fetchEntries, fetchProjects } from "../util/contentfulPosts";
+import { fetchEntries } from "../util/contentfulPosts";
 import dayjs from "dayjs";
 import Emoji from "../components/Emoji";
 import Link from "next/link";
@@ -91,15 +91,9 @@ export const getStaticProps = async () => {
     return p.fields;
   });
 
-  const resProjects = await fetchProjects();
-  const projects = await resProjects.map((p) => {
-    return p.fields;
-  });
-
   return {
     props: {
       posts,
-      projects,
     },
   };
 };

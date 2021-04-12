@@ -47,7 +47,8 @@ const blog = ({ posts }) => {
 };
 
 export const getStaticProps = async (context) => {
-  const res = await fetchEntry(context.params.id);
+  console.log(context.params)
+  const res = await fetchEntry(context.params.slug);
   const posts = await res.map((p) => {
     return p.fields;
   });

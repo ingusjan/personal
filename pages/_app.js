@@ -14,11 +14,7 @@ function MyApp({ Component, pageProps }) {
             content='Ingus Jansons is a Software Engineer based in Gloucester, UK - born in Riga, Latvia.'
           />
           <title>Ingus Jansons - Software Engineer</title>
-          <link rel='preconnect' href='https://fonts.gstatic.com' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap'
-            rel='stylesheet'
-          />
+    
         </Head>
         <NextNprogress
           color='#29D'
