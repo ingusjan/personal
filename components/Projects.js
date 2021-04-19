@@ -7,6 +7,12 @@ const Projects = () => {
       link: "https://github.com/ingusjan/personal",
     },
     {
+      name: "ThruRate",
+      lang: "TypeScript",
+      desc: "Click-through Monitoring Tool for Content Creators",
+      link: "https://thrurate.com",
+    },
+    {
       name: "Creator Sites",
       lang: "React.js",
       desc: "Link marketing tool for Online Influencers",
@@ -42,6 +48,8 @@ const Projects = () => {
         return "bg-green-400";
       case "Next.js":
         return "bg-gray-600";
+      case "TypeScript":
+        return "bg-blue-400";
       default:
         return "bg-gray-400";
     }
