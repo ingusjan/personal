@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 
 const blog = ({ posts }) => {
   const { theme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState("dark");
 
   const options = {
     renderMark: {
@@ -48,10 +48,6 @@ const blog = ({ posts }) => {
   const post = posts[0];
   dayjs.extend(relativeTime);
 
-  useEffect(() => {
-    setCurrentTheme(theme);
-  }, [theme]);
-
   const getColour = () => {
     switch (currentTheme) {
       case "dark":
@@ -64,6 +60,9 @@ const blog = ({ posts }) => {
     }
   };
 
+  useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
   return (
     <>
       <Head>
@@ -111,7 +110,7 @@ const blog = ({ posts }) => {
 
           zIndex: "-1",
         }}
-        className='rounded-lg w-[100%] h-1/2 absolute top-0 bg-no-repeat bg-cover left-0'
+        className='hidden lg:block absolute rounded-lg w-[100%] h-[650px] top-0 bg-no-repeat bg-cover left-0'
       />
       <div className='prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg'>
         <p className='mb-7 hover:underline'>
