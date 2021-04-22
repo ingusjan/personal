@@ -1,8 +1,17 @@
 import Emoji from "../components/Emoji";
 import Image from "next/image";
+import Head from "next/head";
 const gear = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row'>
+      <Head>
+        <title>Gear - Ingus Jansons</title>
+        <meta property='title' content='Gear - Ingus Jansons' key='title' />
+        <meta
+          name='description'
+          content='See what sort of equipment I use on a day-to-day basis.'
+        />
+      </Head>
       <div className='lg:w-1/2 lg:pr-12'>
         <h1 className='font-semibold text-4xl mb-6 mt-5 lg:mt-0'>Gear</h1>
 

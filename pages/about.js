@@ -1,7 +1,17 @@
+import Head from "next/head";
 import Image from "next/image";
 const about = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row'>
+      <Head>
+        <title>About - Ingus Jansons</title>
+        <meta property='title' content='About - Ingus Jansons' key='title' />
+        <meta
+          name='description'
+          content='Avid World of Warcraft player, React & Design enthuasist.
+          Welcome to my piece of the Internet.'
+        />
+      </Head>
       <div className='lg:w-1/2 lg:pr-12'>
         <h1 className='font-semibold text-4xl mb-6 mt-5 lg:mt-0'>
           Ingus Jansons

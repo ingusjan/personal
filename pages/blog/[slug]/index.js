@@ -6,9 +6,24 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import dark from "react-syntax-highlighter/dist/cjs/styles/hljs/stackoverflow-dark";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const blog = ({ posts }) => {
+  const { theme } = useTheme();
+
   const options = {
+    renderMark: {
+      [MARKS.CODE]: (text) => {
+        return (
+          <SyntaxHighlighter style={dark} language='javascript'>
+            {text}
+          </SyntaxHighlighter>
+        );
+      },
+    },
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <>
@@ -31,11 +46,24 @@ const blog = ({ posts }) => {
   };
   const post = posts[0];
   dayjs.extend(relativeTime);
+
+  const getColour = () => {
+    switch (theme) {
+      case "dark":
+        return "0 0 0";
+      case "light":
+        return "255 255 255";
+
+      default:
+        return "0 0 0";
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>{post.title} - Ingus Jansons</title>
         {/* <!-- Primary Meta Tags --> */}
+        <title>{post.title} - Ingus Jansons</title>
         <meta
           property='title'
           content={`${post.title} - Ingus Jansons`}
@@ -70,9 +98,22 @@ const blog = ({ posts }) => {
           content={post.coverPhoto.fields.file.url}
         />
       </Head>
+      {console.log(theme)}
+      <div
+        style={{
+          backgroundImage: `linear-gradient(rgb(${
+            theme === "dark" ? "0 0 0" : "255 255 255"
+          } / 90%) , rgb(${
+            theme === "dark" ? "0 0 0" : "255 255 255"
+          } / 90%) 100px), url(${post.coverPhoto.fields.file.url}) `,
+
+          zIndex: "-1",
+        }}
+        className='rounded-lg w-[100%] h-1/2 absolute top-0 bg-no-repeat bg-cover left-0'
+      />
       <div className='prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg'>
         <p className='mb-7 hover:underline'>
-          <Link href='/'>Return to home</Link>
+          <Link href='/blogs'>Return to blogs</Link>
         </p>
         <h1
           className='font-bold text-3xl tracking-tight'
