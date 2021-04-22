@@ -1,4 +1,5 @@
 import "tailwindcss/tailwind.css";
+import "../styles/global.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
@@ -14,7 +15,6 @@ function MyApp({ Component, pageProps }) {
             content='Ingus Jansons is a Software Engineer based in Gloucester, UK - born in Riga, Latvia.'
           />
           <title>Ingus Jansons - Software Engineer</title>
-    
         </Head>
         <NextNprogress
           color='#29D'
