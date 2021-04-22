@@ -73,9 +73,34 @@ const blog = ({ posts }) => {
         <p className='mb-7 hover:underline'>
           <Link href='/'>Return to home</Link>
         </p>
-        <h1 className='font-bold text-3xl tracking-tight'>{post.title}</h1>
+        <h1
+          className='font-bold text-3xl tracking-tight'
+          style={{ marginBottom: 0 }}
+        >
+          {post.title}
+        </h1>
 
-        <p className='opacity-50'>
+        <div className='flex items-center'>
+          <img
+            src={"/me_bw.jpg"}
+            className='rounded-full w-12'
+            alt='Ingus Jansons'
+          />
+          <div className='ml-3 leading-tight'>
+            <Link href='/'>
+              <span
+                className='no-underline text-white hover:underline cursor-pointer'
+                style={{ margin: 0 }}
+              >
+                Ingus Jansons
+              </span>
+            </Link>
+            <p className='text-sm' style={{ margin: 0 }}>
+              Software Engineer, Vodafone Group
+            </p>
+          </div>
+        </div>
+        <p className='opacity-50' style={{ marginTop: 0 }}>
           Published {dayjs(post.publishedDate).format("DD/MM/YYYY")}
           <span> • {dayjs(post.publishedDate).fromNow()}</span>
         </p>
