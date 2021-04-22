@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 
 const blog = ({ posts }) => {
   const { theme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState("light");
 
   const options = {
     renderMark: {
@@ -47,8 +48,12 @@ const blog = ({ posts }) => {
   const post = posts[0];
   dayjs.extend(relativeTime);
 
+  useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
+
   const getColour = () => {
-    switch (theme) {
+    switch (currentTheme) {
       case "dark":
         return "0 0 0";
       case "light":
@@ -101,11 +106,9 @@ const blog = ({ posts }) => {
       {console.log(theme)}
       <div
         style={{
-          backgroundImage: `linear-gradient(rgb(${
-            theme === "dark" ? "0 0 0" : "255 255 255"
-          } / 90%) , rgb(${
-            theme === "dark" ? "0 0 0" : "255 255 255"
-          } / 90%) 100px), url(${post.coverPhoto.fields.file.url}) `,
+          backgroundImage: `linear-gradient(rgb(${getColour()} / 90%) , rgb(${getColour()} / 90%) 100px), url(${
+            post.coverPhoto.fields.file.url
+          }) `,
 
           zIndex: "-1",
         }}
