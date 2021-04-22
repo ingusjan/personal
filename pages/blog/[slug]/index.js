@@ -5,6 +5,7 @@ import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 const blog = ({ posts }) => {
   const options = {
@@ -12,15 +13,15 @@ const blog = ({ posts }) => {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <>
           <img
-            className="rounded-md"
-            quality="25%"
-            layout="responsive"
-            height="auto"
-            width="auto"
+            className='rounded-md'
+            quality='25%'
+            layout='responsive'
+            height='auto'
+            width='auto'
             alt={node.data.target.fields.description}
             src={"https://" + node.data.target.fields.file.url}
           />
-          <p className="text-sm opacity-75">
+          <p className='text-sm opacity-75'>
             {node.data.target.fields.description}
           </p>
         </>
@@ -31,20 +32,67 @@ const blog = ({ posts }) => {
   const post = posts[0];
   dayjs.extend(relativeTime);
   return (
-    <div className="prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg">
-      <p className="mb-7 hover:underline">
-        <Link href="/">Return to home</Link>
-      </p>
-      <h1 className="font-bold text-3xl tracking-tight">{post.title}</h1>
-      <p className="opacity-50">
-        Published {dayjs(post.publishedDate).format("DD/MM/YYYY")}
-        <span> • {dayjs(post.publishedDate).fromNow()}</span>
-      </p>
+    <>
+      <Head>
+        <title>{post.title} - Ingus Jansons</title>
+        {/* <!-- Primary Meta Tags --> */}
+        <meta
+          property='title'
+          content={`${post.title} - Ingus Jansons`}
+          key='title'
+        />
+        <meta name='description' content={post.description} />
 
-      <div className="my-7">
-        {documentToReactComponents(post.body, options)}
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content={`https://ingus.co.uk/blog/${post.slug}`}
+        />
+        <meta property='og:title' content={`${post.title} - Ingus Jansons`} />
+        <meta property='og:description' content={post.description} />
+        <meta property='og:image' content={post.coverPhoto.fields.file.url} />
+
+        {/* <!-- Twitter --> */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta
+          property='twitter:url'
+          content={`https://ingus.co.uk/blog/${post.slug}`}
+        />
+        <meta
+          property='twitter:title'
+          content={`${post.title} - Ingus Jansons`}
+        />
+        <meta property='twitter:description' content={post.description} />
+        <meta
+          property='twitter:image'
+          content={post.coverPhoto.fields.file.url}
+        />
+      </Head>
+      <div className='prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg'>
+        <p className='mb-7 hover:underline'>
+          <Link href='/'>Return to home</Link>
+        </p>
+        <h1 className='font-bold text-3xl tracking-tight'>{post.title}</h1>
+
+        <p className='opacity-50'>
+          Published {dayjs(post.publishedDate).format("DD/MM/YYYY")}
+          <span> • {dayjs(post.publishedDate).fromNow()}</span>
+        </p>
+        <img
+          className='rounded-md'
+          quality='25%'
+          layout='responsive'
+          height='auto'
+          width='auto'
+          src={post.coverPhoto.fields.file.url}
+          alt={post.coverPhoto.fields.description}
+        />
+        <div className='my-7'>
+          {documentToReactComponents(post.body, options)}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
