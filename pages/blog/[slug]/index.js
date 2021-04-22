@@ -89,7 +89,7 @@ const blog = ({ posts }) => {
           <div className='ml-3 leading-tight'>
             <Link href='/'>
               <span
-                className='no-underline text-white hover:underline cursor-pointer'
+                className='no-underline text-yellow-600 font-semibold hover:underline cursor-pointer dark:text-white'
                 style={{ margin: 0 }}
               >
                 Ingus Jansons
