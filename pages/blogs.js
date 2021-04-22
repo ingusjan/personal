@@ -20,14 +20,14 @@ const blogs = ({ posts }) => {
       </Head>
       <h1 className='text-4xl font-semibold mb-6'>Blog</h1>
       <p>See what sort of things I write in my spare time.</p>
-      <div className='mt-8 flex flex-col lg:flex-row flex-wrap justify-around space-y-2 lg:space-y-0 lg:space-x-3'>
+      <div className='mt-8 flex flex-row flex-wrap justify-around space-y-2 lg:space-y-0 lg:space-x-3'>
         {posts.map((x) => {
           return (
             <Link key={x.id} href='/blog/[slug]' as={`/blog/${x.slug}`}>
               <div
                 key={x.slug}
-                style={{ marginBottom: "1em" }}
-                className='hover:text-yellow-500 cursor-pointer w-full lg:w-[31%]'
+                style={{ marginBottom: "2em" }}
+                className='hover:text-yellow-500 cursor-pointer w-[100%] lg:w-[31%]'
               >
                 <Image
                   className='rounded-md'
