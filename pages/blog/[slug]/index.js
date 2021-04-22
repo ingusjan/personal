@@ -103,7 +103,6 @@ const blog = ({ posts }) => {
           content={post.coverPhoto.fields.file.url}
         />
       </Head>
-      {console.log(theme)}
       <div
         style={{
           backgroundImage: `linear-gradient(rgb(${getColour()} / 90%) , rgb(${getColour()} / 90%) 100px), url(${
@@ -125,10 +124,13 @@ const blog = ({ posts }) => {
           {post.title}
         </h1>
 
-        <div className='flex items-center'>
-          <img
+        <div className='flex items-center my-8'>
+          <Image
+            width={50}
+            height={50}
+            layout='fixed'
             src={"/me_bw.jpg"}
-            className='rounded-full w-12'
+            className='rounded-full'
             alt='Ingus Jansons'
           />
           <div className='ml-3 leading-tight'>
