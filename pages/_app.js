@@ -7,7 +7,7 @@ import NextNprogress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider enableSystem={false} defaultTheme='dark' attribute='class'>
+    <ThemeProvider attribute='class'>
       <Layout>
         <Head>
           <meta
