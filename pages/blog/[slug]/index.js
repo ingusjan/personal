@@ -100,17 +100,20 @@ const blog = ({ posts }) => {
             </p>
           </div>
         </div>
-        <p className='opacity-50' style={{ marginTop: 0 }}>
+        <p
+          className='text-gray-500 dark:text-gray-400'
+          style={{ marginTop: 0 }}
+        >
           Published {dayjs(post.publishedDate).format("DD/MM/YYYY")}
           <span> • {dayjs(post.publishedDate).fromNow()}</span>
         </p>
-        <img
+        <Image
           className='rounded-md'
-          quality='25%'
+          quality='75%'
           layout='responsive'
-          height='auto'
-          width='auto'
-          src={post.coverPhoto.fields.file.url}
+          height={450}
+          width={880}
+          src={`https:${post.coverPhoto.fields.file.url}`}
           alt={post.coverPhoto.fields.description}
         />
         <div className='my-7'>
