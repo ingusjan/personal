@@ -42,6 +42,7 @@ const blog = ({ posts }) => {
           key='title'
         />
         <meta name='description' content={post.description} />
+        <meta name='author' content='Ingus Jansons' />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property='og:type' content='website' />
