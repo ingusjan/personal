@@ -2,7 +2,7 @@ import Emoji from "../components/Emoji";
 import Link from "next/link";
 import Projects from "../components/Projects";
 import Revue from "../components/Revue";
-import { Twitter } from "react-feather";
+import { Linkedin, Twitter } from "react-feather";
 import Image from "next/image";
 
 export default function Home() {
@@ -39,11 +39,15 @@ export default function Home() {
             More about me
           </button>
         </Link>
-        <a rel='noopener' href='https://twitter.com/optrixttv' target='_blank'>
-          <button className='border-2 text-[#1da1f2] items-center hover:text-white font-semibold border-[#1da1f2] hover:bg-[#1989cf] transition w-full lg:w-auto text-sm rounded-md px-5 py-3 lg:py-2'>
+        <a
+          rel='noopener'
+          href='https://linkedin.com/in/ingus-jansons/'
+          target='_blank'
+        >
+          <button className='border-2 text-[#2867B2] items-center hover:text-white font-semibold border-[#2867B2] hover:bg-[#215494] transition w-full lg:w-auto text-sm rounded-md px-5 py-3 lg:py-2'>
             <div className='inline-flex items-center justify-items-center align-middle'>
-              <Twitter size={16} className='inline-flex' />
-              <span className='ml-2 inline-flex'>Follow on Twitter</span>
+              <Linkedin size={16} className='inline-flex' />
+              <span className='ml-2 inline-flex'>Connect on LinkedIn</span>
             </div>
           </button>
         </a>
