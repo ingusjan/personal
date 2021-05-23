@@ -12,27 +12,27 @@ const blogs = ({ posts }) => {
     <div>
       <Head>
         <title>Blog - Ingus Jansons</title>
-        <meta property='title' content='Blog - Ingus Jansons' key='title' />
+        <meta property="title" content="Blog - Ingus Jansons" key="title" />
         <meta
-          name='description'
-          content='See what sort of things I write in my spare time.'
+          name="description"
+          content="See what sort of things I write in my spare time."
         />
       </Head>
-      <h1 className='text-4xl font-semibold mb-6'>Blog</h1>
+      <h1 className="text-4xl font-semibold mb-6 animate-down">Blog</h1>
       <p>See what sort of things I write in my spare time.</p>
-      <div className='mt-8 flex flex-row flex-wrap justify-around space-y-2 lg:space-y-0 lg:space-x-3'>
+      <div className="mt-8 flex flex-row flex-wrap justify-around space-y-2 lg:space-y-0 lg:space-x-3">
         {posts.map((x) => {
           return (
-            <Link key={x.id} href='/blog/[slug]' as={`/blog/${x.slug}`}>
+            <Link key={x.id} href="/blog/[slug]" as={`/blog/${x.slug}`}>
               <div
                 key={x.slug}
                 style={{ marginBottom: "2em" }}
-                className='hover:text-yellow-500 cursor-pointer w-[100%] lg:w-[31%]'
+                className="hover:text-yellow-500 cursor-pointer w-[100%] lg:w-[31%]"
               >
                 <Image
-                  className='rounded-md'
-                  quality='75%'
-                  layout='responsive'
+                  className="rounded-md"
+                  quality="75%"
+                  layout="responsive"
                   height={450}
                   width={880}
                   src={`https:${x.coverPhoto.fields.file.url}`}
@@ -40,10 +40,10 @@ const blogs = ({ posts }) => {
                 />
 
                 <div>
-                  <p className='text-gray-500 dark:text-gray-400 text-sm mt-2 mb-px'>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-px">
                     {dayjs(x.publishedDate).format("Do MMMM, YYYY")}
                   </p>
-                  <h3 className='font-semibold text-xl'>{x.title}</h3>
+                  <h3 className="font-semibold text-xl">{x.title}</h3>
                 </div>
               </div>
             </Link>

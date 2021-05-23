@@ -76,28 +76,28 @@ const Revue = (props) => {
             {submitLabel ? submitLabel : "Subscribe"}
           </button>
         </div>
-        <div className="mt-3 lg:mt-6 lg:w-64 text-center lg:text-left text-sm text-gray-500 dark:text-gray-400">
-          <p>
-            By subscribing, you agree with Revue’s{" "}
-            <a
-              target="_blank"
-              href="https://www.getrevue.co/terms"
-              rel="noopener"
-            >
-              Terms
-            </a>{" "}
-            and{" "}
-            <a
-              target="_blank"
-              href="https://www.getrevue.co/privacy"
-              rel="noopener"
-            >
-              Privacy Policy
-            </a>
-            .
-          </p>
-        </div>
       </form>
+      <div className="mt-3 text-center lg:text-left text-xs text-gray-500 dark:text-gray-400">
+        <p>
+          By subscribing, you agree with Revue’s{" "}
+          <a
+            target="_blank"
+            href="https://www.getrevue.co/terms"
+            rel="noopener"
+          >
+            Terms
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            href="https://www.getrevue.co/privacy"
+            rel="noopener"
+          >
+            Privacy Policy
+          </a>
+          .
+        </p>
+      </div>
     </div>
   );
 };

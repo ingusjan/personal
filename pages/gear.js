@@ -3,30 +3,32 @@ import Image from "next/image";
 import Head from "next/head";
 const gear = () => {
   return (
-    <div className='flex flex-col-reverse lg:flex-row'>
+    <div className="flex flex-col-reverse lg:flex-row">
       <Head>
         <title>Gear - Ingus Jansons</title>
-        <meta property='title' content='Gear - Ingus Jansons' key='title' />
+        <meta property="title" content="Gear - Ingus Jansons" key="title" />
         <meta
-          name='description'
-          content='See what sort of equipment I use on a day-to-day basis.'
+          name="description"
+          content="See what sort of equipment I use on a day-to-day basis."
         />
       </Head>
-      <div className='lg:w-1/2 lg:pr-12'>
-        <h1 className='font-semibold text-4xl mb-6 mt-5 lg:mt-0'>Gear</h1>
+      <div className="lg:w-1/2 lg:pr-12">
+        <h1 className="font-semibold text-4xl mb-6 mt-5 lg:mt-0 animate-down">
+          Gear
+        </h1>
 
-        <p className='text-gray-500'>
+        <p className="text-gray-500">
           See what sort of setup I'm rocking{" "}
-          <Emoji label='guitar' symbol='🎸' />
+          <Emoji label="guitar" symbol="🎸" />
         </p>
 
-        <p className='mt-6'>
+        <p className="mt-6">
           <strong>Why two machines? </strong> I tend to use my Windows PC for
           Gaming and sometimes coding, but if I'm working on something front-end
           intensive, I will always favour my Mac.
         </p>
 
-        <h2 className='font-bold text-2xl mt-8 mb-6'>Peripherals</h2>
+        <h2 className="font-bold text-2xl mt-8 mb-6">Peripherals</h2>
         <p>
           <ul>
             <li>Razer Blackwidow Chroma V2</li>
@@ -38,7 +40,7 @@ const gear = () => {
           </ul>
         </p>
 
-        <h2 className='font-bold text-2xl mt-8 mb-6'>Windows PC</h2>
+        <h2 className="font-bold text-2xl mt-8 mb-6">Windows PC</h2>
         <p>
           <ul>
             <li>Windows 10 Pro</li>
@@ -48,7 +50,7 @@ const gear = () => {
           </ul>
         </p>
 
-        <h2 className='font-bold text-2xl mt-8 mb-6'>MacBook Pro</h2>
+        <h2 className="font-bold text-2xl mt-8 mb-6">MacBook Pro</h2>
         <p>
           <ul>
             <li>MacBook Pro 13" (2020 Model)</li>
@@ -59,13 +61,13 @@ const gear = () => {
         </p>
       </div>
 
-      <div className='lg:w-1/2'>
-        <div className='flex flex-col lg:flex-row'>
-          <div className='lg:mx-auto lg:w-1/2 lg:h-1/2'>
+      <div className="lg:w-1/2">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:mx-auto lg:w-1/2 lg:h-1/2">
             <Image
-              src='/setup.jpeg'
-              alt='Ingus Jansons'
-              layout='responsive'
+              src="/setup.jpeg"
+              alt="Ingus Jansons"
+              layout="responsive"
               width={900}
               height={650}
             />

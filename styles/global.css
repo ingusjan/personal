@@ -1,3 +1,47 @@
+.animate-up {
+  animation: translate-up 0.75s cubic-bezier(0.5, 0, 0, 1) forwards;
+}
+
+.animate-down {
+  animation: translate-down 0.75s cubic-bezier(0.5, 0, 0, 1) forwards;
+}
+
+@-webkit-keyframes translate-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes translate-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes translate-up {
+  0% {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes translate-up {
+  0% {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 /* work-sans-100 - latin */
 @font-face {
   font-display: swap;
