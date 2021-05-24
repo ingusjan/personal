@@ -65,7 +65,7 @@ const gear = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mx-auto lg:w-1/2 lg:h-1/2">
             <Image
-              src="/setup.jpeg"
+              src="/img/setup.jpeg"
               alt="Ingus Jansons"
               layout="responsive"
               width={900}

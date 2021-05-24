@@ -7,20 +7,20 @@ import NextNprogress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider defaultTheme="dark" attribute="class">
       <Layout>
         <Head>
           <meta
-            name='description'
-            content='Ingus Jansons is a Software Engineer based in Gloucester, UK - born in Riga, Latvia.'
+            name="description"
+            content="Ingus Jansons is a Software Engineer based in Gloucester, UK - born in Riga, Latvia."
           />
           <title>Ingus Jansons - Software Engineer</title>
         </Head>
         <NextNprogress
-          color='#29D'
+          color="#29D"
           startPosition={0.3}
           stopDelayMs={200}
-          height='3'
+          height="3"
         />
         <Component {...pageProps} />
       </Layout>

@@ -7,13 +7,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="container max-w-4xl xl:mt-36 m-auto">
+    <div className="container max-w-5xl xl:mt-36 m-auto">
       <Image
         className="rounded-full animate-up"
         alt="Photo of Ingus Jansons"
-        width="96px"
-        height="96px"
-        src="/me_bw.jpg"
+        width="115px"
+        height="115px"
+        src="/img/me.jpg"
       />
       <h1 className="text-4xl font-semibold animate-up mt-3">
         Hi, <Emoji symbol="👋" label="Wave" /> I'm Ingus
@@ -21,7 +21,7 @@ export default function Home() {
       <p className="text-gray-500 dark:text-gray-400 mt-3 animate-up">
         Founder & Small Business Owner, UX/UI Software Engineer at{" "}
         <a
-          className="underline"
+          className="text-[#ff4d4d] bg-[#ff4d4d20] px-1 py-px rounded-md"
           rel="noopener"
           href="https://vodafone.com"
           target="_blank"

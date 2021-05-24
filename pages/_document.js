@@ -13,7 +13,7 @@ class MyDocument extends Document {
           title="Ingus Jansons - Software Engineer"
           desc="Ingus Jansons is a Software Engineer in the UK born in Latvia"
         ></Head>
-        <body className="bg-gray-100 dark:bg-black dark:text-gray-100">
+        <body className="bg-gray-100 dark:bg-[#13161b] dark:text-gray-100">
           <Main />
           <NextScript />
         </body>
