@@ -62,16 +62,16 @@ const Projects = () => {
   };
 
   return (
-    <div className="grid grid-flow-row md:grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
+    <div className='grid grid-flow-row md:grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4'>
       {projects.map((p) => {
         return (
-          <a href={p.link} target="_blank" rel="noopener">
-            <div className="flex flex-col justify-center items-center p-4 bg-[#20242b] text-center h-64 rounded-lg hover:bg-[#393e46] border border-[#393e46] cursor-pointer transition">
-              <img className="w-16 mb-2" src={p.img} alt={p.name} />
-              <h3 className="text-lg font-semibold mb-1">{p.name}</h3>
-              <p className="w-64">{p.desc}</p>
+          <a href={p.link} target='_blank' rel='noopener'>
+            <div className='flex flex-col justify-center items-center p-4 bg-gray-100 dark:bg-[#20242b] text-center h-64 rounded-lg hover:bg-gray-200 dark:hover:bg-[#393e46] border border-gray-300 dark:border-[#393e46] cursor-pointer transition'>
+              <img className='w-16 mb-2' src={p.img} alt={p.name} />
+              <h3 className='text-lg font-semibold mb-1'>{p.name}</h3>
+              <p className='w-64'>{p.desc}</p>
 
-              <p className="underline mt-2">
+              <p className='underline mt-2'>
                 {p.link.replace("https://", "").replace("www.", "")}
               </p>
             </div>
