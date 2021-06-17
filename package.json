@@ -14,7 +14,7 @@
     "autoprefixer": "^10.2.4",
     "contentful": "^8.2.0",
     "dayjs": "^1.10.4",
-    "next": "10.0.5",
+    "next": "^11.0.0",
     "next-themes": "0.0.10",
     "nextjs-progressbar": "0.0.8",
     "postcss": "^8.2.8",
