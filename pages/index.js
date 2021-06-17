@@ -14,8 +14,10 @@ export default function Home() {
         height="115px"
         src="/img/me.jpg"
       />
-      <h1 className="text-4xl font-semibold animate-up mt-3">Ingus Jansons</h1>
-      <p className="text-gray-500 dark:text-gray-400 mt-3 animate-up">
+      <h1 className="text-3xl lg:text-4xl font-semibold animate-up mt-3">
+        Ingus Jansons
+      </h1>
+      <p className="text-gray-500 dark:text-gray-400 text-sm lg:text-base mt-3 animate-up">
         Founder & Small Business Owner, UX/UI Software Engineer at{" "}
         <a
           className="text-[#ff4d4d] bg-[#ff4d4d20] px-1 hover:opacity-75 py-px rounded-md inline-flex items-center"
