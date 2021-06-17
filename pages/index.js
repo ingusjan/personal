@@ -67,7 +67,7 @@ export default function Home() {
       <h2 className="text-xl mt-16 mb-1 text-gray-500 dark:text-white">
         Projects
       </h2>
-      <p className="text-sm mb-3 text-gray-500 dark:text-gray-400">
+      <p className="text-sm mb-6 text-gray-500 dark:text-gray-400">
         See what I've built in my spare time.
       </p>
 
