@@ -1,11 +1,18 @@
 const Projects = () => {
   const projects = [
     {
-      name: "Personal",
-      lang: "Next.js",
-      desc: "The very open-source site you're looking at now",
-      link: "https://github.com/ingusjan/personal",
-      img: "/img/NextJs.svg",
+      name: "Creator Sites",
+      lang: "React.js",
+      desc: "Link Marketing Tool used by 250+ Creators",
+      link: "https://creatorsites.net",
+      img: "/img/CreatorSites.svg",
+    },
+    {
+      name: "Illumi Media",
+      lang: "WooCommerce",
+      desc: "Go-to Branding Studio for 300+ Content Creators",
+      link: "https://illumimedia.co",
+      img: "/img/IllumiMedia.svg",
     },
     {
       name: "ThruRate",
@@ -13,34 +20,6 @@ const Projects = () => {
       desc: "Click-through Monitoring Tool for Content Creators",
       link: "https://thrurate.com",
       img: "/img/ThruRate.svg",
-    },
-    {
-      name: "Creator Sites",
-      lang: "React.js",
-      desc: "Link marketing tool for Online Influencers",
-      link: "https://creatorsites.net",
-      img: "/img/CreatorSites.svg",
-    },
-    {
-      name: "SpaceX Tracker",
-      lang: "React.js",
-      desc: "SpaceX Launch tracker using SpaceX's REST API",
-      link: "https://spacex.ingus.dev",
-      img: "/img/ReactJs.svg",
-    },
-    {
-      name: "Illumi Media",
-      lang: "WooCommerce",
-      desc: "EC2-hosted eCommerce for Content Creators",
-      link: "https://illumimedia.co",
-      img: "/img/IllumiMedia.svg",
-    },
-    {
-      name: "PrettyRad Shirts",
-      lang: "Shopify",
-      desc: "eCommerce specialising in T-Shirt Designs",
-      link: "https://www.instagram.com/prettyradshirts/",
-      img: "/img/PrettyRadShirts.svg",
     },
   ];
 
@@ -62,13 +41,13 @@ const Projects = () => {
   };
 
   return (
-    <div className="grid grid-flow-row md:grid-flow-col grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-end">
       {projects.map((p) => {
         return (
           <a href={p.link} target="_blank" rel="noopener">
             <div className="flex flex-col justify-center items-center p-4 bg-[#20242b] text-center h-64 rounded-lg hover:bg-[#393e46] border border-[#393e46] cursor-pointer transition">
               <img className="w-16 mb-2" src={p.img} alt={p.name} />
-              <h3 className="text-lg font-semibold mb-1">{p.name}</h3>
+              <h3 className="text-lg font-semibold my-2">{p.name}</h3>
               <p className="w-64">{p.desc}</p>
 
               <p className="underline mt-2">

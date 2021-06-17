@@ -1,9 +1,8 @@
-import Emoji from "../components/Emoji";
 import Link from "next/link";
 import Projects from "../components/Projects";
-import Revue from "../components/Revue";
-import { Linkedin, Twitter } from "react-feather";
+import { Linkedin, Mail } from "react-feather";
 import Image from "next/image";
+import Technologies from "../components/Technologies";
 
 export default function Home() {
   return (
@@ -15,28 +14,31 @@ export default function Home() {
         height="115px"
         src="/img/me.jpg"
       />
-      <h1 className="text-4xl font-semibold animate-up mt-3">
-        Hi, <Emoji symbol="👋" label="Wave" /> I'm Ingus
-      </h1>
+      <h1 className="text-4xl font-semibold animate-up mt-3">Ingus Jansons</h1>
       <p className="text-gray-500 dark:text-gray-400 mt-3 animate-up">
         Founder & Small Business Owner, UX/UI Software Engineer at{" "}
         <a
-          className="text-[#ff4d4d] bg-[#ff4d4d20] px-1 py-px rounded-md"
+          className="text-[#ff4d4d] bg-[#ff4d4d20] px-1 hover:opacity-75 py-px rounded-md inline-flex items-center"
           rel="noopener"
-          href="https://vodafone.com"
+          href="https://vodafone.co.uk"
           target="_blank"
         >
+          <img
+            src="/img/vodafone.svg"
+            alt="Vodafone"
+            className="inline-flex w-4 mx-1"
+          />
           Vodafone Group
         </a>
-        .
         <br />
         BSc Student at Lancaster University.
       </p>
 
       <div className="flex flex-col w-full lg:flex-row mt-4 space-y-2 lg:space-y-0 lg:space-x-3 animate-up delay-200">
-        <Link href="/about">
+        <Link href="mailto:ingusjancorp@gmail.com">
           <button className="bg-yellow-700 transition w-full lg:w-auto hover:bg-yellow-800 text-sm rounded-md px-5 py-3 lg:py-2 text-white">
-            More about me
+            <Mail className="inline-flex" size={16} />
+            <span className="ml-2 inline-flex">Get in touch</span>
           </button>
         </Link>
         <a
@@ -53,17 +55,21 @@ export default function Home() {
         </a>
       </div>
 
-      <h2 className="text-xl mt-16 w-4/5 lg:w-full">
-        Subscribe to my Newsletter
+      <h2 className="text-xl mt-16 mb-1 text-gray-500 dark:text-white">
+        Technology
       </h2>
-      <p className="mt-2 text-gray-500 dark:text-gray-400">
-        Whenever-timed issues about best UX/UI practices.
+      <p className="text-sm mb-12 text-gray-500 dark:text-gray-400">
+        The tech I like to use to build apps.
       </p>
-      <Revue />
 
-      <h2 className="text-xl mt-16 mb-3 text-gray-500 dark:text-gray-400">
+      <Technologies />
+
+      <h2 className="text-xl mt-16 mb-1 text-gray-500 dark:text-white">
         Projects
       </h2>
+      <p className="text-sm mb-3 text-gray-500 dark:text-gray-400">
+        See what I've built in my spare time.
+      </p>
 
       <Projects />
     </div>

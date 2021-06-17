@@ -17,7 +17,7 @@ const about = () => {
           Ingus Jansons
         </h1>
         <p>
-          Avid World of Warcraft player, React & Design enthuasist.
+          Software Engineer, React & Design enthuasist.
           <br />
           <span className="opacity-50">
             Welcome to my piece of the Internet.
@@ -45,7 +45,8 @@ const about = () => {
           <br />
           If I see something that is misaligned, ignores accessibility, doesn't
           follow Brand Guidelines or impedes an otherwise great User Experience,
-          I will always go out of my way to educate on the matter.
+          I will try my best to improve the experience with modern and
+          human-readable tactics.
         </p>
         <h2 className="font-bold text-2xl mt-8 mb-6">Learning</h2>
         <p>

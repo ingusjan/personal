@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GitHub, Linkedin, Mail, Moon, Sun } from "react-feather";
+import { GitHub, Linkedin, Instagram } from "react-feather";
 import { useTheme } from "next-themes";
 import Headroom from "react-headroom";
 const Navbar = (props) => {
@@ -8,9 +8,9 @@ const Navbar = (props) => {
   return (
     <Headroom>
       <div className="bg-white dark:bg-[#0f1115] py-2 w-full flex items-center border-b dark:border-gray-800 shadow-sm">
-        <div className="container mx-auto px-3 xl:px-0 flex">
+        <div className="container mx-auto px-3 xl:px-0 flex flex-col lg:flex-row">
           <Link href="/">
-            <h2 className="text-gray-500 w-60 dark:text-gray-100 transition hover:text-gray-400 dark:hover:text-gray-400 cursor-pointer text-xl font-semibold mr-6 lg:mr-4">
+            <h2 className="text-gray-500 text-lg lg:text-xl w-60 dark:text-gray-100 transition hover:text-gray-400 dark:hover:text-gray-400 cursor-pointer  font-semibold mr-6 lg:mr-4">
               Ingus Jansons
             </h2>
           </Link>
@@ -18,7 +18,7 @@ const Navbar = (props) => {
             <ul className="flex space-x-4 overflow-x-auto">
               <NavItem href="/blogs">Blog</NavItem>
               <NavItem href="/about">About</NavItem>
-              <NavItem href="/gear">Gear</NavItem>
+              <NavItem href="/gear">Setup</NavItem>
             </ul>
 
             <div className="flex items-center space-x-4 overflow-x-auto">
@@ -31,6 +31,12 @@ const Navbar = (props) => {
                 label="Ingus Jansons on GitHub"
                 icon={<GitHub />}
                 href="https://github.com/ingusjan"
+              />
+
+              <NavIcon
+                label="Ingus Jansons on Instagram"
+                icon={<Instagram />}
+                href="https://instagram.com/ingusjan"
               />
 
               {/* <button

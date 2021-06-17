@@ -1,21 +1,9 @@
 import { useState } from "react";
 
 const Revue = (props) => {
-  const {
-    showFirstName,
-    showLastName,
-    emailLabel,
-    firstNameLabel,
-    lastNameLabel,
-    emailInput,
-    firstNameInput,
-    lastNameInput,
-    submitLabel,
-  } = props;
+  const { submitLabel } = props;
 
   const [email, setEmail] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
 
   return (
     <div className="mt-8" id="revue-embed">

@@ -17,10 +17,11 @@ function MyApp({ Component, pageProps }) {
           <title>Ingus Jansons - Software Engineer</title>
         </Head>
         <NextNprogress
-          color="#29D"
+          color="#b45309"
           startPosition={0.3}
           stopDelayMs={200}
           height="3"
+          showOnShallow={true}
         />
         <Component {...pageProps} />
       </Layout>
