@@ -19,7 +19,7 @@ const blog = ({ posts }) => {
     renderMark: {
       [MARKS.CODE]: (text) => {
         return (
-          <SyntaxHighlighter style={dark} language="javascript">
+          <SyntaxHighlighter style={dark} language='javascript'>
             {text}
           </SyntaxHighlighter>
         );
@@ -29,15 +29,15 @@ const blog = ({ posts }) => {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <>
           <img
-            className="rounded-md"
-            quality="25%"
-            layout="responsive"
-            height="auto"
-            width="auto"
+            className='rounded-md'
+            quality='25%'
+            layout='responsive'
+            height='auto'
+            width='auto'
             alt={node.data.target.fields.description}
             src={"https://" + node.data.target.fields.file.url}
           />
-          <p className="text-sm opacity-75">
+          <p className='text-sm opacity-75'>
             {node.data.target.fields.description}
           </p>
         </>
@@ -69,36 +69,36 @@ const blog = ({ posts }) => {
         {/* <!-- Primary Meta Tags --> */}
         <title>{post.title} - Ingus Jansons</title>
         <meta
-          property="title"
+          property='title'
           content={`${post.title} - Ingus Jansons`}
-          key="title"
+          key='title'
         />
-        <meta name="description" content={post.description} />
-        <meta name="author" content="Ingus Jansons" />
+        <meta name='description' content={post.description} />
+        <meta name='author' content='Ingus Jansons' />
 
         {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
+        <meta property='og:type' content='website' />
         <meta
-          property="og:url"
+          property='og:url'
           content={`https://ingus.co.uk/blog/${post.slug}`}
         />
-        <meta property="og:title" content={`${post.title} - Ingus Jansons`} />
-        <meta property="og:description" content={post.description} />
-        <meta property="og:image" content={post.coverPhoto.fields.file.url} />
+        <meta property='og:title' content={`${post.title} - Ingus Jansons`} />
+        <meta property='og:description' content={post.description} />
+        <meta property='og:image' content={post.coverPhoto.fields.file.url} />
 
         {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property='twitter:card' content='summary_large_image' />
         <meta
-          property="twitter:url"
+          property='twitter:url'
           content={`https://ingus.co.uk/blog/${post.slug}`}
         />
         <meta
-          property="twitter:title"
+          property='twitter:title'
           content={`${post.title} - Ingus Jansons`}
         />
-        <meta property="twitter:description" content={post.description} />
+        <meta property='twitter:description' content={post.description} />
         <meta
-          property="twitter:image"
+          property='twitter:image'
           content={post.coverPhoto.fields.file.url}
         />
       </Head>
@@ -110,59 +110,56 @@ const blog = ({ posts }) => {
 
           zIndex: "-1",
         }}
-        className="hidden lg:block absolute rounded-lg w-[100%] h-[650px] top-0 bg-no-repeat bg-cover left-0"
+        className='hidden lg:block absolute rounded-lg w-[100%] h-[650px] top-0 bg-no-repeat bg-cover left-0'
       />
-      <div className="prose dark:prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg">
-        <p className="mb-7 hover:underline">
-          <Link href="/blogs">Return to blogs</Link>
+      <div className='prose  prose-light prose-yellow mx-auto max-w-2xl lg:prose-lg'>
+        <p className='mb-7 hover:underline'>
+          <Link href='/blogs'>Return to blogs</Link>
         </p>
         <h1
-          className="font-bold text-3xl tracking-tight"
+          className='font-bold text-3xl tracking-tight'
           style={{ marginBottom: 0 }}
         >
           {post.title}
         </h1>
 
-        <div className="flex items-center my-8">
+        <div className='flex items-center my-8'>
           <Image
             width={50}
             height={50}
-            layout="fixed"
+            layout='fixed'
             src={"/img/me.jpg"}
-            className="rounded-full"
-            alt="Ingus Jansons"
+            className='rounded-full'
+            alt='Ingus Jansons'
           />
-          <div className="ml-3 leading-tight">
-            <Link href="/">
+          <div className='ml-3 leading-tight'>
+            <Link href='/'>
               <span
-                className="no-underline text-yellow-600 font-semibold hover:underline cursor-pointer dark:text-white"
+                className='no-underline text-yellow-600 font-semibold hover:underline cursor-pointer  text-white'
                 style={{ margin: 0 }}
               >
                 Ingus Jansons
               </span>
             </Link>
-            <p className="text-sm" style={{ margin: 0 }}>
+            <p className='text-sm' style={{ margin: 0 }}>
               Software Engineer, Vodafone Group
             </p>
           </div>
         </div>
-        <p
-          className="text-gray-500 dark:text-gray-400"
-          style={{ marginTop: 0 }}
-        >
+        <p className='text-gray-500  text-gray-400' style={{ marginTop: 0 }}>
           Published {dayjs(post.publishedDate).format("DD/MM/YYYY")}
           <span> • {dayjs(post.publishedDate).fromNow()}</span>
         </p>
         <Image
-          className="rounded-md"
-          quality="75%"
-          layout="responsive"
+          className='rounded-md'
+          quality='75%'
+          layout='responsive'
           height={450}
           width={880}
           src={`https:${post.coverPhoto.fields.file.url}`}
           alt={post.coverPhoto.fields.description}
         />
-        <div className="my-7">
+        <div className='my-7'>
           {documentToReactComponents(post.body, options)}
         </div>
       </div>
