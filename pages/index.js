@@ -37,7 +37,7 @@ export default function Home() {
       </p>
 
       <div className='flex flex-col w-full lg:flex-row mt-4 space-y-2 lg:space-y-0 lg:space-x-3 animate-up delay-200'>
-        <a
+        {/* <a
           className='inline-flex'
           href='https://calendly.com/ingus'
           target='_blank'
@@ -50,7 +50,7 @@ export default function Home() {
               {/* <p className='text-xs opacity-75'>£49 GBP per hour</p> */}
             </div>
           </button>
-        </a>
+        </a> */}
         <a
           rel='noopener'
           href='https://linkedin.com/in/ingus-jansons/'
