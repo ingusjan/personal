@@ -3,7 +3,7 @@ const Projects = () => {
     {
       name: "Creator Sites",
       lang: "React.js",
-      desc: "Link Marketing Tool used by 250+ Creators",
+      desc: "Link Marketing Tool used by 260+ Creators",
       link: "https://creatorsites.net",
       img: "/img/CreatorSites.svg",
     },
@@ -41,16 +41,16 @@ const Projects = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-end">
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-end'>
       {projects.map((p, i) => {
         return (
-          <a key={i} href={p.link} target="_blank" rel="noopener">
-            <div className="flex flex-col justify-center items-center p-4 bg-[#20242b] text-center h-64 rounded-lg hover:bg-[#393e46] border border-[#393e46] cursor-pointer transition">
-              <img className="w-16 mb-2" src={p.img} alt={p.name} />
-              <h3 className="text-lg font-semibold my-2">{p.name}</h3>
-              <p className="w-64">{p.desc}</p>
+          <a key={i} href={p.link} target='_blank' rel='noopener'>
+            <div className='flex flex-col justify-center items-center p-4 bg-[#20242b] text-center h-64 rounded-lg hover:bg-[#393e46] border border-[#393e46] cursor-pointer transition'>
+              <img className='w-16 mb-2' src={p.img} alt={p.name} />
+              <h3 className='text-lg font-semibold my-2'>{p.name}</h3>
+              <p className='w-64'>{p.desc}</p>
 
-              <p className="underline mt-2">
+              <p className='underline mt-2'>
                 {p.link.replace("https://", "").replace("www.", "")}
               </p>
             </div>
