@@ -1,0 +1,8 @@
+body {
+  /* set the font family to Inter */
+  font-family: "Inter", "sans-serif";
+}
+
+a {
+  @apply underline;
+}

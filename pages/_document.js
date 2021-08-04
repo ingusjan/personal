@@ -8,12 +8,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='en'>
-        <Head
-          title='Ingus Jansons - Software Engineer'
-          desc='Ingus Jansons is a Software Engineer in the UK born in Latvia'
-        ></Head>
-        <body className='bg-gray-100  bg-[#13161b]  text-gray-100'>
+      <Html lang="en">
+        <Head />
+        <body className="bg-gray-50 dark:bg-gray-900">
           <Main />
           <NextScript />
         </body>
