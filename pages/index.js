@@ -31,7 +31,7 @@ export default function Home() {
         }}
       />
 
-      <div className="relative bg-white dark:bg-gray-900 dark:text-gray-50 p-8 xl:p-12 mx-auto xl:w-1/2 2xl:w-1/3 -mt-48 rounded-xl shadow-xl dark:shadow-none dark:border dark:border-gray-800">
+      <div className="relative bg-white dark:bg-gray-900 dark:text-gray-50 p-8 xl:p-12 mx-auto xl:w-1/2 2xl:w-1/3 -mt-48 rounded-xl shadow-xl dark:shadow-none dark:border dark:border-gray-800 mb-12">
         <button
           onClick={toggleTheme}
           className="right-12 absolute hover:bg-gray-100 dark:hover:bg-gray-800 active:bg-gray-200 p-2 rounded-2xl transition"
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
 
               <div className="ml-5">
-                <h4 className="font-bold">{p.title}</h4>
+                <h4 className="font-semibold">{p.title}</h4>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
                   {p.desc}
                 </p>
