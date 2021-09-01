@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { GitHub, Instagram, Linkedin, Moon, Sun } from "react-feather";
+import { GitHub, Instagram, Linkedin, Moon, Sun, Youtube } from "react-feather";
 import { useTheme } from "next-themes";
 import positions from "../data/positions";
 import tags from "../data/tags.json";
+import Link from "next/link";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ingus Jansons - Front-end Designer &and; Engineer</title>
+        <title>Ingus Jansons - Front-end Designer {"&"} Engineer</title>
         <meta
           name="description"
           content="Ingus Jansons is a Front-end Designer and Engineer based in Gloucester, UK."
@@ -36,7 +37,7 @@ export default function Home() {
           onClick={toggleTheme}
           className="right-12 absolute hover:bg-gray-100 dark:hover:bg-gray-800 active:bg-gray-200 p-2 rounded-2xl transition"
         >
-          {theme === "dark" ? <Sun size={26} /> : <Moon size={26} />}
+          {theme === "dark" ? <Sun size={21} /> : <Moon size={21} />}
         </button>
 
         {/* --- MAIN INFORMATION SECTION --- */}
@@ -44,7 +45,7 @@ export default function Home() {
           <Image
             width="128px"
             height="128px"
-            src="/img/ingus.png"
+            src="/img/ingus_bw.jpg"
             alt="Ingus Jansons"
             className="rounded-full"
           />
@@ -107,16 +108,28 @@ export default function Home() {
               <GitHub size={26} />
             </a>
           </div>
+
+          <div className="mt-10 inline-flex items-center space-x-2">
+            <Youtube size={18} />
+            <p className="text-sm">Looking for my YouTube work?</p>
+            <Link href="/portfolio">
+              <a className="text-sm font-bold no-underline hover:underline">
+                View my portfolio{" "}
+                <span className="text-gray-500 dark:text-gray-400">&rarr;</span>
+              </a>
+            </Link>
+          </div>
         </div>
+
         {/* --- END OF MAIN INFORMATION SECTION --- */}
 
         {/* --- START OF POSITIONS --- */}
         <div className="mt-12">
-          <h3 className="font-bold text-2xl mb-3">Positions</h3>
+          <h3 className="font-bold text-2xl mb-3">Work</h3>
 
           {positions.map((p, i) => (
-            <div className="hover:bg-gray-50 dark:hover:bg-gray-800 flex items-center border-b dark:border-gray-700 py-5 px-2">
-              <div className="inline-flex">
+            <div className="hover:bg-gray-50 dark:hover:bg-gray-800 flex items-start border-b dark:border-gray-700 py-5 px-2">
+              <div className="inline-flex min-w-[40px]">
                 <Image
                   src={p.img}
                   className="rounded-md"
@@ -131,6 +144,11 @@ export default function Home() {
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
                   {p.desc}
                 </p>
+                {p.doing && (
+                  <p className="text-gray-500 dark:text-gray-400 leading-normal text-sm mt-2">
+                    {p.doing}
+                  </p>
+                )}
               </div>
             </div>
           ))}

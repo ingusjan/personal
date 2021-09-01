@@ -1,32 +1,38 @@
 [
   {
-    "title": "Software Engineer",
+    "title": "Frontend Engineer",
     "desc": "Vodafone · Sep 2019 - Now",
-    "img": "/img/logos/vodafone.svg"
+    "img": "/img/logos/vodafone.svg",
+    "doing": "Enriching current and future B2B apps by designing & building meaningful, performant User Interfaces. Revolutionising the future of Front-end at the Front-end Engineering Guild."
   },
   {
-    "title": "Founder",
+    "title": "Influencer Manager",
     "desc": "Illumi Media · Dec 2017 - Now",
-    "img": "/img/logos/illumimedia.svg"
+    "img": "/img/logos/illumimedia.svg",
+    "doing": "Working with over 200+ content creators to brand their channels, improve watch-time and optimise content for the YouTube algorithm. Some clients include MrBeast (95M subs.), Loeya (1.4M), LilyPichu (2.7M), and many more."
   },
   {
     "title": "YouTube Thumbnail Designer",
-    "desc": "Voddity · June 2019 - Dec 2019",
-    "img": "/img/logos/voddity.jpg"
+    "desc": "Voddity · June 2019 - Jan 2020",
+    "img": "/img/logos/voddity.jpg",
+    "doing": "Designed thumbnails for Influencers like Destiny (800k) and JakenBake."
   },
   {
     "title": "YouTube Thumbnail Designer",
-    "desc": "Render.gg · June 2019 - Dec 2019",
-    "img": "/img/logos/rendergg.png"
+    "desc": "Render.gg · June 2019 - Jan 2020",
+    "img": "/img/logos/rendergg.png",
+    "doing": "Designed thumbnails for Influencers like Fnatic Loeya and Misfits Sceptic."
   },
   {
     "title": "Social Media Manager",
     "desc": "Almighty Records · Aug 2018 - Feb 2019",
-    "img": "/img/logos/almighty.jpg"
+    "img": "/img/logos/almighty.jpg",
+    "doing": "Managing all social media platforms, marketing strategies and customer relations. During my time, I was responsible for increasing Twitter following by 87%, Instagram following by 247%"
   },
   {
     "title": "Work Experience",
     "desc": "Renishaw · Jul 2018",
-    "img": "/img/logos/renishaw.jpg"
+    "img": "/img/logos/renishaw.jpg",
+    "doing": "I was tasked to create a client and server program in Python using Raspberry Pi which would record data and create analytics. Furthermore, the server would visualize said data using bar charts."
   }
 ]
