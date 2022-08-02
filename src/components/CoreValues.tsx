@@ -29,10 +29,7 @@ const CoreValues = () => {
   return (
     <div className="mt-3 flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6">
       {values.map(({ title, color, icon }, i) => (
-        <div
-          key={i}
-          className={`${color} opacity-70 hover:opacity-100 transition flex items-center`}
-        >
+        <div key={i} className={`${color} flex items-center`}>
           {icon}
           <p className="ml-2 text-base">{title}</p>
         </div>

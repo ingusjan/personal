@@ -3,6 +3,7 @@ import CoreValues from "./components/CoreValues";
 import Positions from "./components/Positions";
 import Me from "./assets/ingus.png";
 import "tippy.js/dist/tippy.css";
+import Education from "./components/Education";
 
 const App = () => {
   const age = new Date().getFullYear() - new Date("2001-06-13").getFullYear();
@@ -34,6 +35,9 @@ const App = () => {
 
       <h3 className="mb-8 text-xl font-semibold">Experience</h3>
       <Positions />
+
+      <h3 className="mb-8 text-xl font-semibold">Education</h3>
+      <Education />
     </Container>
   );
 };

@@ -20,7 +20,7 @@ const Positions = () => {
         "Built a new CallFlow Editor tool based on a previous legacy version, using React. The tool is used by Vodafone's customers to create their own call flows. Main challenge of this project was to integrate this tool in an Angular portal.",
       tech: ["React", "Tailwind", "Webpack", "GitLab NPM", "Semantic Release"],
       role: "Front-end Software Engineer",
-      date: "January 2021 - December 2021",
+      date: "September 2019 - December 2021",
     },
     {
       logo: "https://pbs.twimg.com/profile_images/1383616380247830558/5O7az61T_400x400.jpg",
@@ -88,7 +88,7 @@ const Positions = () => {
   ];
 
   return (
-    <div className="relative px-4 lg:px-2 overflow-x-hidden">
+    <div className="relative px-4 lg:px-2 overflow-x-hidden lg:overflow-x-visible">
       <ol className="relative border-l dark:border-gray-800">
         {positions.map((p, i) => (
           <li className="p-1 mb-10 ml-6">
