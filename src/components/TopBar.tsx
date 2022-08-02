@@ -26,7 +26,7 @@ const TopBar = () => {
   return (
     <div
       id="topNavbar"
-      className="z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full"
+      className="hidden z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full"
     >
       <div className="max-w-4xl mx-auto z-[2]">
         <div className="flex items-center justify-between">
@@ -43,7 +43,7 @@ const TopBar = () => {
             className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
           >
             <LinkedinLogo size={20} />
-            <span className="text-sm">Connect on LinkedIn</span>
+            <span className="text-sm">Connect</span>
           </a>
         </div>
       </div>
