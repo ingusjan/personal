@@ -4,6 +4,7 @@ import Positions from "./components/Positions";
 import Me from "./assets/ingus.png";
 import "tippy.js/dist/tippy.css";
 import Education from "./components/Education";
+import { LinkedinLogo } from "phosphor-react";
 
 const App = () => {
   const age = new Date().getFullYear() - new Date("2001-06-13").getFullYear();
@@ -19,9 +20,7 @@ const App = () => {
       />
 
       <h1 className="text-4xl font-bold">Ingus Jansons</h1>
-      <h2 className="text-sm mt-1 text-gray-400">
-        TypeScript Engineer & Founder
-      </h2>
+      <h2 className="mt-1 text-gray-400">TypeScript Engineer & Founder</h2>
 
       <p className="text-base mt-4 mb-8">
         {age} year-old from Rīga, Latvia. Living in the UK, leading and scaling
@@ -29,7 +28,16 @@ const App = () => {
         dabble in building tools for content creators.
       </p>
 
-      <CoreValues />
+      <a
+        href="https://www.linkedin.com/in/ingus-jansons/"
+        target="_blank"
+        className="bg-[#0077B5] hover:bg-[#005E93] select-none transition cursor-pointer px-3 py-2 rounded inline-flex items-center space-x-2"
+      >
+        <LinkedinLogo size={20} />
+        <span>Message me on LinkedIn</span>
+      </a>
+
+      {/* <CoreValues /> */}
 
       <hr className="border-gray-800 my-6" />
 
