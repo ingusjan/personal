@@ -1,0 +1,54 @@
+import { LinkedinLogo } from "phosphor-react";
+import { useEffect } from "react";
+import Me from "../assets/ingus.png";
+
+const TopBar = () => {
+  useEffect(() => (window.onscroll = () => setStickyNavbar()), []);
+
+  // Add the 'fixed' tailwind class when the user scrolls past the LinkedIn button
+  const setStickyNavbar = () => {
+    const navbar = document.getElementById("topNavbar");
+    const linkedInButton = document.getElementById("linkedInButton");
+
+    const sticky = linkedInButton?.offsetTop;
+
+    if (!sticky) return;
+
+    if (window.pageYOffset >= sticky) {
+      navbar?.classList.add("fixed");
+      navbar?.classList.remove("hidden");
+    } else {
+      navbar?.classList.add("hidden");
+      navbar?.classList.remove("fixed");
+    }
+  };
+
+  return (
+    <div
+      id="topNavbar"
+      className="z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full"
+    >
+      <div className="max-w-4xl mx-auto z-[2]">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <img className="rounded-full w-8 h-8" src={Me} />
+            <div className="leading-none">
+              <p className="font-semibold">Ingus Jansons</p>
+              <p className="text-xs text-gray-400">Software Engineer</p>
+            </div>
+          </div>
+          <a
+            href="https://www.linkedin.com/in/ingus-jansons/"
+            target="_blank"
+            className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
+          >
+            <LinkedinLogo size={20} />
+            <span className="text-sm">Connect on LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TopBar;

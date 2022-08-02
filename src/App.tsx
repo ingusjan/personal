@@ -1,5 +1,4 @@
 import Container from "./components/Container";
-import CoreValues from "./components/CoreValues";
 import Positions from "./components/Positions";
 import Me from "./assets/ingus.png";
 import "tippy.js/dist/tippy.css";
@@ -29,15 +28,14 @@ const App = () => {
       </p>
 
       <a
+        id="linkedInButton"
         href="https://www.linkedin.com/in/ingus-jansons/"
         target="_blank"
-        className="bg-[#0077B5] hover:bg-[#005E93] select-none transition cursor-pointer px-3 py-2 rounded inline-flex items-center space-x-2"
+        className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
       >
         <LinkedinLogo size={20} />
         <span>Message me on LinkedIn</span>
       </a>
-
-      {/* <CoreValues /> */}
 
       <hr className="border-gray-800 my-6" />
 
