@@ -114,47 +114,50 @@ const Positions = () => {
     <div className="relative px-4 lg:px-2 overflow-x-hidden lg:overflow-x-visible">
       <ol className="relative border-l dark:border-gray-800">
         {positions.map((p, i) => (
-          <li key={i} className="p-1 mb-10 ml-6">
-            <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-              <img
-                src={p.logo}
-                alt={p.title}
-                className="w-full h-full rounded-full"
-              />
-            </span>
-            <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-              {p.title}
-            </h3>
-            <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-              {p.role}
-            </time>
-            <p className="mb-4 text-base font-normal text-gray-400">
-              {p.description}
-            </p>
+          <li key={i} className="mb-10 ml-6">
+            <div className="bg-gray-800 px-4 py-3 rounded-lg">
+              <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <img
+                  src={p.logo}
+                  alt={p.title}
+                  className="w-full h-full rounded-full"
+                />
+              </span>
+              <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
+                {p.title}
+              </h3>
+              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+                {p.role}
+              </time>
+              <p className="mb-4 text-base font-normal text-gray-300">
+                {p.description}
+              </p>
 
-            <a
-              href={p.link}
-              className="text-blue-300 underline"
-              target="_blank"
-            >
-              {p.link}
-            </a>
+              <a
+                href={p.link}
+                className="text-blue-300 underline"
+                target="_blank"
+              >
+                {p.link}
+              </a>
 
-            <div className="mt-4 flex flex-wrap">
-              {p.tech.map((tech) => (
-                <div
-                  key={tech}
-                  className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-800 group-hover:bg-gray-700 group-hover:text-gray-300 transition text-gray-400"
-                >
-                  {tech}
-                </div>
-              ))}
+              <div className="mt-4 flex flex-wrap">
+                {p.tech.map((tech) => (
+                  <div
+                    key={tech}
+                    className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-600 text-gray-2"
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center space-x-2 mt-2 text-sm text-gray-500">
+                <Calendar size={16} />
+                <time>{p.date}</time>
+              </div>
             </div>
 
-            <div className="flex items-center space-x-2 mt-2 text-sm text-gray-500">
-              <Calendar size={16} />
-              <time>{p.date}</time>
-            </div>
             {p.subItems && (
               <ol className="mt-4 space-y-10 relative border-l dark:border-gray-800">
                 {p.subItems?.map((subItem, i) => (
@@ -162,7 +165,7 @@ const Positions = () => {
                     <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 bg-blue-200 rounded-full dark:bg-gray-700">
                       <BriefcaseMetal />
                     </span>
-                    <h4 className="flex items-center text-md font-semibold text-gray-900 dark:text-white">
+                    <h4 className="flex items-center font-semibold text-md text-gray-900 dark:text-white">
                       {subItem.title}
                     </h4>
                     <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
@@ -184,7 +187,7 @@ const Positions = () => {
                       {subItem.tech.map((tech) => (
                         <div
                           key={tech}
-                          className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-800 group-hover:bg-gray-700 group-hover:text-gray-300 transition text-gray-400"
+                          className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-800  text-gray-300"
                         >
                           {tech}
                         </div>
