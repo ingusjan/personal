@@ -5,7 +5,7 @@ const Positions = () => {
     {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/2039px-Vodafone_icon.svg.png",
       title: "Vodafone Group",
-      link: "https://www.vodafone.co.uk/business",
+      link: "https://www.vodafone.co.uk/business/unified-communications",
       description:
         "Working at Vodafone Group's Engineering division on B2B web applications using React TypeScript, AWS and Micro FEs in the Enterprise Apps team.",
       tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],

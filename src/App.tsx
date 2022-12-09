@@ -20,22 +20,27 @@ const App = () => {
       <h2 className="mt-1 text-gray-400">TypeScript Engineer & Founder</h2>
 
       <p className="prose prose-invert min-w-full my-5">
-        <strong>Lead TypeScript Engineer</strong> &{" "}
-        <strong>Code Quality Enthusiast</strong> from Rīga, Latvia. Living in
-        the UK for over 10 years. I'm currently leading and scaling Front-end
-        Projects for businesses with enterpise requirements. I also dabble in
-        building tools for content creators.
+        Čau!👋 Originaly from Rīga, Latvia 🇱🇻 and living in the UK 🇬🇧 for over
+        10 years, I'm currently leading and scaling Front-end Projects in fun
+        and fast-paced companies. I also dabble in building tools for content
+        creators.
+        <br /> <br />
+        My natural talent tends to lead me to provide a strong, dependable
+        backbone for any Frontend team. I'm also code quality and standards
+        obsessed, always looking to optimise my team's workflows.
       </p>
 
-      <a
-        id="linkedInButton"
-        href="https://www.linkedin.com/in/ingus-jansons/"
-        target="_blank"
-        className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
-      >
-        <LinkedinLogo weight="bold" size={20} />
-        <span>Message me on LinkedIn</span>
-      </a>
+      <div className="flex  space-x-2">
+        <a
+          id="linkedInButton"
+          href="https://www.linkedin.com/in/ingus-jansons/"
+          target="_blank"
+          className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
+        >
+          <LinkedinLogo weight="bold" size={20} />
+          <span>Message me on LinkedIn</span>
+        </a>
+      </div>
 
       <hr className="border-gray-800 my-6" />
 
