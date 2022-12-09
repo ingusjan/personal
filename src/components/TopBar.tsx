@@ -1,6 +1,6 @@
 import { LinkedinLogo } from "phosphor-react";
 import { useEffect } from "react";
-import Me from "../assets/ingus.png";
+import Me from "../assets/me.jpg";
 
 const TopBar = () => {
   useEffect(() => (window.onscroll = () => setStickyNavbar()), []);
