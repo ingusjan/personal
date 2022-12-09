@@ -42,7 +42,7 @@ const TopBar = () => {
             target="_blank"
             className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
           >
-            <LinkedinLogo size={20} />
+            <LinkedinLogo weight="bold" size={20} />
             <span className="text-sm">Connect</span>
           </a>
         </div>

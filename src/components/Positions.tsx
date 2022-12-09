@@ -3,7 +3,7 @@ import { BriefcaseMetal, Calendar } from "phosphor-react";
 const Positions = () => {
   const positions = [
     {
-      logo: "http://editorial.designtaxi.com/editorial-images/news-vodafone16102017/1.png",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/2039px-Vodafone_icon.svg.png",
       title: "Vodafone Group",
       link: "https://www.vodafone.co.uk/business",
       description:
@@ -15,7 +15,7 @@ const Positions = () => {
         {
           title: "Vodafone UC Hub",
           description:
-            "Innovated a Monorepo, Micro Frontend, TypeScript architecture and setup for a large-scale enterprise portal combining all of Vodafone's Unified Communications products..",
+            "Innovated a Monorepo, Micro Frontend, TypeScript architecture and setup for a large-scale enterprise portal combining all of Vodafone's Unified Communications products.",
           role: "Front-end Engineering Lead",
           date: "December 2021 - Present",
           link: "https://www.vodafone.co.uk/business/unified-communications/vodafone-with-ringcentral",
@@ -39,14 +39,22 @@ const Positions = () => {
       ],
     },
     {
-      logo: "https://pbs.twimg.com/profile_images/1383616380247830558/5O7az61T_400x400.jpg",
-      title: "ThruRate",
-      link: "https://thrurate.co",
+      logo: "https://pbs.twimg.com/profile_images/1601246487199055874/2wx3OvZT_400x400.jpg",
+      title: "Splitvid",
+      link: "https://splitvid.app",
       description:
         "Enabling content creators to run A/B Tests on their YouTube Videos.",
-      tech: ["Next.js", "React", "TypeScript", "Chakra UI", "Fastify"],
-      role: "SaaS Co-Founder & Front-end Lead",
-      date: "June 2022 - Present",
+      tech: [
+        "Vite",
+        "React",
+        "TypeScript",
+        "Chakra UI",
+        "Express",
+        "Mongo DB",
+        "Digital Ocean",
+      ],
+      role: "SaaS Solo Founder & Front-end Lead",
+      date: "July 2022 - Present",
     },
     {
       logo: "https://pbs.twimg.com/profile_images/1527706952477904896/KHMBuC2z_400x400.png",
@@ -60,7 +68,7 @@ const Positions = () => {
         "Next.js",
         "Google Cloud Functions",
       ],
-      role: "SaaS Founder & Developer",
+      role: "SaaS Solo Founder & Developer",
       date: "February 2022 - Present",
     },
     {
@@ -78,7 +86,7 @@ const Positions = () => {
         "CloudFlare Pages",
         "Digital Ocean & AWS",
       ],
-      role: "SaaS Founder & Developer",
+      role: "SaaS Solo Founder & Developer",
       date: "January 2020 - Present",
     },
     {
@@ -92,7 +100,7 @@ const Positions = () => {
       date: "August 2018 - February 2019",
     },
     {
-      logo: "https://media-exp1.licdn.com/dms/image/C4D0BAQGWvjBixEDhnw/company-logo_200_200/0/1621094805209?e=1667433600&v=beta&t=rsFB1eZUUuLU6qaszEDgNXoOugjvRJKdzA-KlVJqPU0",
+      logo: "https://illumimedia.co/logo.png",
       title: "Illumi Media",
       link: "https://fiverr.com/illumimedia",
       description:

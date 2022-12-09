@@ -3,14 +3,14 @@ import { Calendar } from "phosphor-react";
 const Education = () => {
   const positions = [
     {
-      logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQGKio0Euee3Lw/company-logo_200_200/0/1519856515388?e=1667433600&v=beta&t=CehxWmWU5Yw0EE6TDUtTnr5J_J4WjwYW2A-Pb8-83uA",
+      logo: "https://www.lancaster.ac.uk/media/wdp/style-assets/images/foundation/lu-shield.svg",
       title: "Lancaster University",
       description: "",
       role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
       date: "2020 - July 2023",
     },
     {
-      logo: "https://media-exp1.licdn.com/dms/image/C4D0BAQHDo015AjCecA/company-logo_200_200/0/1634241512966?e=1667433600&v=beta&t=HG1YimgB4bokUeVVJJQ3jiweREiGv4hTNEUEFReNBG4",
+      logo: "https://www.gloscol.ac.uk/media/672427/social-default-image.png",
       title: "Gloucestershire College",
       description:
         "Intermediate course in Organisational System Security, Project Planning, Web Development and more. Completed with the highest grade Distinction*",

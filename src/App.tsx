@@ -1,19 +1,17 @@
 import Container from "./components/Container";
 import Positions from "./components/Positions";
-import Me from "./assets/ingus.png";
+import Me from "./assets/me.jpg";
 import "tippy.js/dist/tippy.css";
 import Education from "./components/Education";
 import { LinkedinLogo } from "phosphor-react";
 
 const App = () => {
-  const age = new Date().getFullYear() - new Date("2001-06-13").getFullYear();
-
   return (
     <Container>
       <img
         className="rounded-full mb-2 border-4 border-gray-600"
-        width="120px"
-        height="120px"
+        width="150px"
+        height="150px"
         alt="Ingus Jansons"
         src={Me}
       />
@@ -21,10 +19,12 @@ const App = () => {
       <h1 className="text-4xl font-bold">Ingus Jansons</h1>
       <h2 className="mt-1 text-gray-400">TypeScript Engineer & Founder</h2>
 
-      <p className="text-base mt-4 mb-8">
-        {age} year-old from Rīga, Latvia. Living in the UK, leading and scaling
-        Front-end Projects for businesses with enterpise requirements. I also
-        dabble in building tools for content creators.
+      <p className="prose prose-invert min-w-full my-5">
+        <strong>Lead TypeScript Engineer</strong> &{" "}
+        <strong>Code Quality Enthusiast</strong> from Rīga, Latvia. Living in
+        the UK for over 10 years. I'm currently leading and scaling Front-end
+        Projects for businesses with enterpise requirements. I also dabble in
+        building tools for content creators.
       </p>
 
       <a
@@ -33,7 +33,7 @@ const App = () => {
         target="_blank"
         className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
       >
-        <LinkedinLogo size={20} />
+        <LinkedinLogo weight="bold" size={20} />
         <span>Message me on LinkedIn</span>
       </a>
 
