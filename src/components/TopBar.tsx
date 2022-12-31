@@ -31,11 +31,11 @@ const TopBar = () => {
       <div className="max-w-4xl mx-auto z-[2]">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <img className="rounded-full w-8 h-8" src={Me} />
+            <img className="rounded-full w-10 h-10" src={Me} />
             <div className="leading-none">
-              <p className="font-semibold">Ingus Jansons</p>
-              <p className="text-xs text-gray-400">
-                TypeScript Engineer & Founder
+              <p className="font-semibold text-xl">Ingus Jansons</p>
+              <p className="text-xs -mt-0.5 text-gray-400">
+                Lead TypeScript Engineer
               </p>
             </div>
           </div>

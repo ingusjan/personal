@@ -102,7 +102,7 @@ const Positions = () => {
     {
       logo: "https://illumimedia.co/logo.png",
       title: "Illumi Media",
-      link: "https://fiverr.com/illumimedia",
+      link: "https://illumimedia.co",
       description:
         "Self-service branding and design for content creators. Built a profitable e-commerce platform using WordPress, Stripe and AWS. Worked with talent management agencies like Voddity, Render.gg and more.",
       tech: [
