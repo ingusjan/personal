@@ -33,7 +33,7 @@ const TopBar = () => {
           <div className="flex items-center space-x-4">
             <img className="rounded-full w-10 h-10" src={Me} />
             <div className="leading-none">
-              <p className="font-semibold text-xl">Ingus Jansons</p>
+              <p className="font-semibold text-md lg:text-xl">Ingus Jansons</p>
               <p className="text-xs -mt-0.5 text-gray-400">
                 Lead TypeScript Engineer
               </p>
