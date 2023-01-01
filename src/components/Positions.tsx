@@ -119,7 +119,7 @@ const Positions = () => {
   ];
 
   return (
-    <div className="relative px-2 overflow-x-hidden lg:overflow-x-visible">
+    <div className="relative px-4 lg:px-2 overflow-x-hidden lg:overflow-x-visible">
       <ol className="relative border-l dark:border-gray-800">
         {positions.map((p, i) => (
           <li key={i} className="mb-10 ml-6">
