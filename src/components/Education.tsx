@@ -1,16 +1,18 @@
 import { Calendar } from "phosphor-react";
+import LogoGloscol from "../assets/img/gloscol.webp";
+import LogoLancaster from "../assets/img/lancaster.webp";
 
 const Education = () => {
   const positions = [
     {
-      logo: "https://www.lancaster.ac.uk/media/wdp/style-assets/images/foundation/lu-shield.svg",
+      logo: LogoLancaster,
       title: "Lancaster University",
       description: "",
       role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
       date: "2020 - July 2023",
     },
     {
-      logo: "https://www.gloscol.ac.uk/media/672427/social-default-image.png",
+      logo: LogoGloscol,
       title: "Gloucestershire College",
       description:
         "Intermediate course in Organisational System Security, Project Planning, Web Development and more. Completed with the highest grade Distinction*",
@@ -41,7 +43,7 @@ const Education = () => {
               {p.description}
             </p>
 
-            <div className="flex items-center space-x-2 mt-2 text-sm text-gray-500">
+            <div className="flex items-center space-x-2 mt-2 text-sm text-gray-400">
               <Calendar size={16} />
               <time>{p.date}</time>
             </div>

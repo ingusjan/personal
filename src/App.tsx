@@ -1,6 +1,6 @@
 import Container from "./components/Container";
 import Positions from "./components/Positions";
-import Me from "./assets/me.jpg";
+import Me from "./assets/img/me.webp";
 import Education from "./components/Education";
 import {
   Briefcase,
@@ -57,7 +57,7 @@ const App = () => {
           </div>
         </a>
 
-        <div className="flex items-center text-gray-500 transition-all ease-in-out">
+        <div className="flex items-center text-gray-400 transition-all ease-in-out">
           <FilePdf weight="fill" size="20px" className="mr-2" />
           Email me for a copy of my CV
         </div>

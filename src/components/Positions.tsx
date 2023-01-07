@@ -1,9 +1,15 @@
 import { BriefcaseMetal, Calendar } from "phosphor-react";
+import LogoVodafone from "../assets/img/vf.webp";
+import LogoSplitvid from "../assets/img/splitvid.webp";
+import LogoAlmighty from "../assets/img/almighty.webp";
+import LogoCreatorSites from "../assets/img/creatorsites.webp";
+import LogoIllumiMedia from "../assets/img/illumi.webp";
+import LogoRetroPlan from "../assets/img/retroplan.webp";
 
 const Positions = () => {
   const positions = [
     {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Vodafone_icon.svg/2039px-Vodafone_icon.svg.png",
+      logo: LogoVodafone,
       title: "Vodafone Group",
       link: "https://www.vodafone.co.uk/business/unified-communications",
       description:
@@ -39,7 +45,7 @@ const Positions = () => {
       ],
     },
     {
-      logo: "https://pbs.twimg.com/profile_images/1601246487199055874/2wx3OvZT_400x400.jpg",
+      logo: LogoSplitvid,
       title: "Splitvid",
       link: "https://splitvid.app",
       description:
@@ -57,7 +63,7 @@ const Positions = () => {
       date: "July 2022 - Present",
     },
     {
-      logo: "https://pbs.twimg.com/profile_images/1527706952477904896/KHMBuC2z_400x400.png",
+      logo: LogoRetroPlan,
       title: "Retro",
       link: "https://retroplan.io",
       description:
@@ -72,7 +78,7 @@ const Positions = () => {
       date: "February 2022 - Present",
     },
     {
-      logo: "https://pbs.twimg.com/profile_images/1397126872413179909/Ceadpd9E_400x400.png",
+      logo: LogoCreatorSites,
       title: "Creator Sites",
       link: "https://creatorsites.net",
       description:
@@ -90,7 +96,7 @@ const Positions = () => {
       date: "January 2020 - Present",
     },
     {
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/18/Almighty_records.jpg",
+      logo: LogoAlmighty,
       title: "Almighty Records",
       link: "https://almightyrecords.com",
       description:
@@ -100,7 +106,7 @@ const Positions = () => {
       date: "August 2018 - February 2019",
     },
     {
-      logo: "https://illumimedia.co/logo.png",
+      logo: LogoIllumiMedia,
       title: "Illumi Media",
       link: "https://illumimedia.co",
       description:
