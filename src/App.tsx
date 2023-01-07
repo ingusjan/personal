@@ -1,7 +1,6 @@
 import Container from "./components/Container";
 import Positions from "./components/Positions";
 import Me from "./assets/me.jpg";
-import "tippy.js/dist/tippy.css";
 import Education from "./components/Education";
 import {
   Briefcase,
@@ -9,7 +8,8 @@ import {
   FilePdf,
   LinkedinLogo,
 } from "phosphor-react";
-import TechTag from "./components/TechTag";
+import TechTags from "./components/TechTags";
+import "tippy.js/dist/tippy.css";
 import Marquee from "react-fast-marquee";
 
 const App = () => {
@@ -34,15 +34,15 @@ const App = () => {
       <h2 className="mt-1 text-gray-400">Lead TypeScript Engineer</h2>
 
       <p className="prose prose-invert min-w-full my-5">
-        Čau!👋 I'm Ingus, originaly from Rīga, Latvia 🇱🇻 and living in the UK 🇬🇧
-        for over 10 years. I'm currently leading and scaling Front-end Projects
-        in fun and fast-paced companies. I also dabble in building SaaS tools
-        for content creators.
+        Čau!👋 I'm Ingus, born in Rīga, Latvia 🇱🇻 and living in the UK 🇬🇧 for
+        over 10 years. I'm currently leading and scaling Front-end Projects in
+        fun and fast-paced companies. I also dabble in building SaaS tools for
+        content creators.
         <br /> <br />
         Simply put, I love building fast, fluid, maintainable and scaleable web
-        applications. I take great pride in ensuring that my team always follows
-        top coding standards and that we're always on the lookout for better and
-        more efficient ways to do things.
+        applications. I take great pride in making sure my team always follows
+        top coding standards and that we're always on the lookout for modern and
+        efficient ways of doing things.
       </p>
 
       <div className="my-6 space-y-1">
@@ -51,7 +51,7 @@ const App = () => {
           href="mailto:hello@ingus.co.uk"
           className="hover:underline"
         >
-          <div className="flex items-center text-gray-500 hover:text-white transition-all ease-in-out">
+          <div className="flex items-center text-gray-200 hover:text-white transition-all ease-in-out">
             <EnvelopeSimple weight="fill" size="20px" className="mr-2" />
             hello@ingus.co.uk
           </div>
@@ -94,31 +94,8 @@ const App = () => {
         extensively...
       </p>
       <div className="flex items-center py-1">
-        <Marquee gradientColor={[17, 24, 39]}>
-          <TechTag text="TypeScript" />
-          <TechTag text="Next.js (SSR/SSG)" />
-          <TechTag text="React" />
-          <TechTag text="Electron" />
-          <TechTag text="Chakra UI" />
-          <TechTag text="Tailwind" />
-          <TechTag text="Styled Components" />
-          <TechTag text="Storybook" />
-          <TechTag text="Lerna Monorepos" />
-          <TechTag text="Webpack 5" />
-          <TechTag text="Module Federation" />
-          <TechTag text="Vite" />
-          <TechTag text="MongoDB" />
-          <TechTag text="MySQL" />
-          <TechTag text="Cloud Firestore" />
-          <TechTag text="Express" />
-          <TechTag text="Fastify" />
-          <TechTag text="Wordpress" />
-          <TechTag text="Contentful" />
-          <TechTag text="CloudFlare DNS" />
-          <TechTag text="Heroku" />
-          <TechTag text="DigitalOcean" />
-          <TechTag text="Firebase" />
-          <TechTag text="AWS" />
+        <Marquee speed={75} gradientColor={[17, 24, 39]}>
+          <TechTags />
         </Marquee>
       </div>
 
