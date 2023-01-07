@@ -3,20 +3,32 @@ import Positions from "./components/Positions";
 import Me from "./assets/me.jpg";
 import "tippy.js/dist/tippy.css";
 import Education from "./components/Education";
-import { FilePdf, LinkedinLogo } from "phosphor-react";
+import {
+  Briefcase,
+  EnvelopeSimple,
+  FilePdf,
+  LinkedinLogo,
+} from "phosphor-react";
 import TechTag from "./components/TechTag";
 import Marquee from "react-fast-marquee";
 
 const App = () => {
   return (
     <Container>
-      <img
-        className="rounded-full mb-2 border-4 border-gray-600"
-        width="150px"
-        height="150px"
-        alt="Ingus Jansons"
-        src={Me}
-      />
+      <div className="flex items-start justify-between">
+        <img
+          className="rounded-full mb-2 border-4 border-gray-800"
+          width="150px"
+          height="150px"
+          alt="Ingus Jansons"
+          src={Me}
+        />
+
+        <div className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-green-800 border border-green-700">
+          <Briefcase weight="fill" size="15px" className="mr-2" />
+          Open to Vacancies
+        </div>
+      </div>
 
       <h1 className="text-4xl font-bold">Ingus Jansons</h1>
       <h2 className="mt-1 text-gray-400">Lead TypeScript Engineer</h2>
@@ -33,6 +45,24 @@ const App = () => {
         more efficient ways to do things.
       </p>
 
+      <div className="my-6 space-y-1">
+        <a
+          id="emailButton"
+          href="mailto:hello@ingus.co.uk"
+          className="hover:underline"
+        >
+          <div className="flex items-center text-gray-500 hover:text-white transition-all ease-in-out">
+            <EnvelopeSimple weight="fill" size="20px" className="mr-2" />
+            hello@ingus.co.uk
+          </div>
+        </a>
+
+        <div className="flex items-center text-gray-500 transition-all ease-in-out">
+          <FilePdf weight="fill" size="20px" className="mr-2" />
+          Email me for a copy of my CV
+        </div>
+      </div>
+
       <div className="flex space-x-2">
         <a
           id="linkedInButton"
@@ -43,7 +73,7 @@ const App = () => {
           <LinkedinLogo weight="bold" size={20} />
           <span>Connect on LinkedIn</span>
         </a>
-        <a
+        {/* <a
           id="pdfButton"
           href="/src/assets/Ingus%20Jansons%20-%20Curriculum%20Vitae.pdf"
           target="_blank"
@@ -51,7 +81,7 @@ const App = () => {
         >
           <FilePdf weight="bold" size={20} />
           <span>Resumé / CV</span>
-        </a>
+        </a> */}
       </div>
 
       <hr className="border-gray-800 my-6" />
