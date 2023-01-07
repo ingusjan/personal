@@ -160,7 +160,7 @@ const Positions = () => {
                 ))}
               </div>
 
-              <div className="flex items-center space-x-2 mt-2 text-sm text-gray-500">
+              <div className="flex items-center space-x-2 mt-2 text-sm text-gray-400">
                 <Calendar size={16} />
                 <time>{p.date}</time>
               </div>
@@ -202,7 +202,7 @@ const Positions = () => {
                       ))}
                     </div>
 
-                    <div className="flex items-center space-x-2 mt-2 text-sm text-gray-500">
+                    <div className="flex items-center space-x-2 mt-2 text-sm text-gray-400">
                       <Calendar size={16} />
                       <time>{subItem.date}</time>
                     </div>
