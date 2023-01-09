@@ -31,7 +31,7 @@ const Positions = () => {
           title: "Vodafone Business UC with RingCentral",
           description:
             "I was one of a handful of employees who collaborated with RingCentral and an external UX/UI design contracting firm to create a user flow for an upcoming collaboration that worked best for both our customer groups.",
-          role: "User Experience",
+          role: "User Experience Consultant",
           date: "June 2021 - August 2021",
           link: "https://www.vodafone.co.uk/business/unified-communications/vodafone-with-ringcentral",
           tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
