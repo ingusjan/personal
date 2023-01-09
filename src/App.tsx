@@ -38,10 +38,14 @@ const App = () => (
       fast-paced companies. I also dabble in building SaaS tools for content
       creators.
       <br /> <br />
-      Simply put, I love building fast, fluid, maintainable and scaleable web
-      applications. I take great pride in making sure my team always follows top
-      coding standards and that we're always on the lookout for modern and
-      efficient ways of doing things.
+      Simply put,{" "}
+      <span className="border-b-2 border-dashed hover:bg-blue-900 border-blue-500">
+        I love building fast, fluid, maintainable and scaleable web
+        applications.
+      </span>{" "}
+      I take great pride in making sure my team always follows top coding
+      standards and that we're always on the lookout for modern and efficient
+      ways of doing things.
     </p>
 
     <div className="my-6 space-y-1">
