@@ -7,9 +7,10 @@ const Education = () => {
     {
       logo: LogoLancaster,
       title: "Lancaster University",
-      description: "",
+      description:
+        "Studying for the Digital Technology Solutions Bachelor's Degree in Software Engineering.  I am on track to graduate with a 1st Class Bachelor's Degree in July 2023. The course covers topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
       role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
-      date: "2020 - July 2023",
+      date: "September 2019 - July 2023",
     },
     {
       logo: LogoGloscol,
@@ -17,7 +18,7 @@ const Education = () => {
       description:
         "Intermediate course in Organisational System Security, Project Planning, Web Development and more. Completed with the highest grade Distinction*",
       role: "BTEC Level 3, Software Engineering",
-      date: "2017 - 2019",
+      date: "September 2017 - July 2019",
     },
   ];
 

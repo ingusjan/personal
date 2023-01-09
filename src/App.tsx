@@ -92,15 +92,12 @@ const App = () => (
       but just in case you need a birds-eye view of the tech I've used
       extensively...
     </p>
-    <div className="flex items-center py-1">
-      <Marquee pauseOnHover speed={75} gradientColor={[17, 24, 39]}>
-        <TechTags />
-      </Marquee>
-    </div>
+
+    <TechTags />
 
     <hr className="border-gray-800 my-6" />
 
-    <h3 className="mb-8 text-xl font-semibold">Experience</h3>
+    <h3 className="mb-8 text-xl font-semibold">Work Experience</h3>
     <Positions />
 
     <h3 className="mb-8 text-xl font-semibold">Education</h3>

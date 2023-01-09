@@ -19,18 +19,27 @@ const Positions = () => {
       date: "September 2019 - Present",
       subItems: [
         {
-          title: "Vodafone UC Hub",
+          title: "Vodafone Business UC Hub",
           description:
-            "Innovated a Monorepo, Micro Frontend, TypeScript architecture and setup for a large-scale enterprise portal combining all of Vodafone's Unified Communications products.",
-          role: "Front-end Engineering Lead",
+            "Frontend Engineering Lead responsible for pioneering, architecting and building a Next Generation UC Vodafone Business platform using the latest and greatest from the React ecosystem.",
+          role: "Lead Front-end Software Engineer",
           date: "December 2021 - Present",
+          link: "",
+          tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
+        },
+        {
+          title: "Vodafone Business UC with RingCentral",
+          description:
+            "I was one of a handful of employees who collaborated with RingCentral and an external UX/UI design contracting firm to create a user flow for an upcoming collaboration that worked best for both our customer groups.",
+          role: "User Experience",
+          date: "June 2021 - August 2021",
           link: "https://www.vodafone.co.uk/business/unified-communications/vodafone-with-ringcentral",
           tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
         },
         {
-          title: "Vodafone CallFlow Editor",
+          title: "Vodafone Business Interactive Voice",
           description:
-            "Built a new CallFlow Editor tool based on a previous legacy version, using React. The tool is used by Vodafone's customers to create their own call flows. Main challenge of this project was to integrate this tool in an Angular portal.",
+            "Developed a rewritten, “Beta” version of an existing Angular drag-and-drop Call Flow creation tool using React, Webpack and Tailwind. The new solution was built into a distributable private NPM package, versioned by the Semantic Release framework.",
           role: "Front-end Software Engineer",
           date: "September 2019 - December 2021",
           link: "https://www.vodafone.com/business/solutions/unified-communication/vodafone-business-interactive-voice",
@@ -49,7 +58,7 @@ const Positions = () => {
       title: "Splitvid",
       link: "https://splitvid.app",
       description:
-        "Enabling content creators to run A/B Tests on their YouTube Videos.",
+        "Currently in Development. Enabling content creators to run A/B Tests on their YouTube Videos.",
       tech: [
         "Vite",
         "React",
@@ -191,7 +200,7 @@ const Positions = () => {
 
                     <a
                       href={subItem.link}
-                      className="text-blue-300 underline"
+                      className="text-blue-300 underline break-all"
                       target="_blank"
                     >
                       {subItem.link}
