@@ -39,7 +39,7 @@ const App = () => (
       creators.
       <br /> <br />
       Simply put,{" "}
-      <span className="border-b-2 border-dashed hover:bg-blue-900 border-blue-500">
+      <span className="border-b hover:bg-blue-500/20 border-blue-500">
         I love building fast, fluid, maintainable and scaleable web
         applications.
       </span>{" "}
