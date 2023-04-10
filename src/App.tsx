@@ -9,8 +9,31 @@ import {
   LinkedinLogo,
 } from "phosphor-react";
 import TechTags from "./components/TechTags";
+import DevParadigmBox from "./components/DevParadigmBox";
+import {
+  AWSIcon,
+  ChakraIcon,
+  CypressIcon,
+  DigitalOceanIcon,
+  ExpressIcon,
+  FigmaIcon,
+  FirebaseIcon,
+  GitIcon,
+  IllustratorIcon,
+  JestIcon,
+  LernaIcon,
+  MongoIcon,
+  NextIcon,
+  NodeIcon,
+  PhotoshopIcon,
+  ReactIcon,
+  StyledComponentsIcon,
+  TailwindIcon,
+  TypeScriptIcon,
+  WebpackIcon,
+} from "./components/icons";
+import GitLabIcon from "./components/icons/GitLabIcon";
 import "tippy.js/dist/tippy.css";
-import Marquee from "react-fast-marquee";
 
 const App = () => (
   <Container>
@@ -23,29 +46,19 @@ const App = () => (
         src={Me}
       />
 
-      <div className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-green-800 border border-green-700">
+      {/* <div className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-green-800 border border-green-700">
         <Briefcase weight="fill" size="15px" className="mr-2" />
         Open to Vacancies
-      </div>
+      </div> */}
     </div>
 
     <h1 className="text-4xl font-bold">Ingus Jansons</h1>
-    <h2 className="mt-1 text-gray-400">Lead TypeScript Engineer</h2>
+    <h2 className="mt-1 text-gray-400">Lead Frontend Engineer</h2>
 
     <p className="prose prose-invert min-w-full my-5">
-      Čau!👋 I'm Ingus, born in Rīga, Latvia 🇱🇻 and living in the UK 🇬🇧 for over
-      10 years. I'm currently leading and scaling Front-end Projects in fun and
-      fast-paced companies. I also dabble in building SaaS tools for content
-      creators.
-      <br /> <br />
-      Simply put,{" "}
-      <span className="border-b hover:bg-blue-500/20 border-blue-500">
-        I love building fast, fluid, maintainable and scaleable web
-        applications.
-      </span>{" "}
-      I take great pride in making sure my team always follows top coding
-      standards and that we're always on the lookout for modern and efficient
-      ways of doing things.
+      Čau!👋 I'm Ingus, born in Rīga, Latvia 🇱🇻 I'm currently leading and
+      scaling Front-end Projects using React and TypeScript. I also dabble in
+      building SaaS tools for content creators.
     </p>
 
     <div className="my-6 space-y-1">
@@ -76,26 +89,126 @@ const App = () => (
         <LinkedinLogo weight="bold" size={20} />
         <span>Connect on LinkedIn</span>
       </a>
-      {/* <a
-          id="pdfButton"
-          href="/src/assets/Ingus%20Jansons%20-%20Curriculum%20Vitae.pdf"
-          target="_blank"
-          className="bg-transparent border border-gray-600 hover:bg-gray-800 select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
-        >
-          <FilePdf weight="bold" size={20} />
-          <span>Resumé / CV</span>
-        </a> */}
     </div>
 
     <hr className="border-gray-800 my-6" />
 
-    <h3 className="mb-4 text-xl font-semibold">Technology</h3>
+    <h3 className="mb-4 text-xl font-semibold">Development</h3>
 
-    <p className="mb-6 prose prose-invert">
-      I know that a bunch of tags can't fully describe one's Front-end skills,
-      but just in case you need a birds-eye view of the tech I've used
-      extensively...
-    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <DevParadigmBox
+        title="Apps"
+        desc="Browser apps, websites, mobile and cross-platform desktop app development. \n\n From SSG, SSR to SPAs, I have extensive experience optimising for all rendering methods."
+        techTags={[
+          {
+            text: "TypeScript",
+            icon: <TypeScriptIcon size={14} className="fill-blue-500" />,
+          },
+          {
+            text: "React",
+            icon: <ReactIcon className="fill-cyan-500" />,
+          },
+          {
+            text: "Electron",
+            icon: <ReactIcon className="fill-cyan-500" />,
+          },
+          {
+            text: "Next.js (SSR/SSG)",
+            icon: <NextIcon size={15} />,
+          },
+          {
+            text: "Chakra UI",
+            icon: <ChakraIcon size={14} className="text-teal-400" />,
+          },
+          {
+            text: "Tailwind CSS",
+            icon: <TailwindIcon className="text-cyan-500" />,
+          },
+          {
+            text: "Styled Components",
+            icon: <StyledComponentsIcon />,
+          },
+          {
+            text: "Micro Frontends",
+            icon: <WebpackIcon className="fill-cyan-500" />,
+          },
+          {
+            text: "Figma",
+            icon: <FigmaIcon size={14} className="fill-purple-500" />,
+          },
+          {
+            text: "Adobe Photoshop",
+            icon: <PhotoshopIcon className="fill-blue-400" />,
+          },
+          {
+            text: "Adobe Illustrator",
+            icon: <IllustratorIcon />,
+          },
+        ]}
+      />
+      <DevParadigmBox
+        title="APIs"
+        desc="RESTful APIs, microservices, serverless functions, and more.
+        \n\n I have experience building and scaling APIs for both internal and external use.
+        "
+        techTags={[
+          {
+            text: "Express",
+            icon: <ExpressIcon />,
+          },
+          {
+            text: "Node.js",
+            icon: <NodeIcon size={14} className="fill-green-500" />,
+          },
+          {
+            text: "MongoDB",
+            icon: <MongoIcon className="fill-green-500" />,
+          },
+          {
+            text: "AWS",
+            icon: <AWSIcon className="fill-yellow-500" />,
+          },
+          {
+            text: "DigitalOcean",
+            icon: <DigitalOceanIcon />,
+          },
+          {
+            text: "Firebase",
+            icon: <FirebaseIcon />,
+          },
+        ]}
+      />
+      <DevParadigmBox
+        title="QA"
+        desc="I've worked with a variety of tools to ensure our code is always of the highest quality. \n\n I also have an eye for precise, sharp design and great UX which I apply to my work."
+        techTags={[
+          {
+            text: "Git",
+            icon: <GitIcon />,
+          },
+          {
+            text: "GitLab CI/CD",
+            icon: <GitLabIcon />,
+          },
+          {
+            text: "Jest",
+            icon: <JestIcon size={15} />,
+          },
+          {
+            text: "Cypress",
+            icon: <CypressIcon className="fill-cyan-500" />,
+          },
+          {
+            text: "Lerna Monorepos",
+            icon: <LernaIcon />,
+          },
+          {
+            text: "Module Federation",
+            icon: <WebpackIcon className="fill-cyan-500" />,
+          },
+        ]}
+      />
+    </div>
 
     <TechTags />
 

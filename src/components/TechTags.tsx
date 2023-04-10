@@ -34,26 +34,6 @@ const tech = [
     icon: <NextIcon size={15} />,
   },
   {
-    text: "React",
-    icon: <ReactIcon className="fill-cyan-500" />,
-  },
-  {
-    text: "Electron",
-    icon: <ReactIcon className="fill-cyan-500" />,
-  },
-  {
-    text: "Chakra UI",
-    icon: <ChakraIcon size={14} className="text-teal-400" />,
-  },
-  {
-    text: "Tailwind CSS",
-    icon: <TailwindIcon className="text-cyan-500" />,
-  },
-  {
-    text: "Styled Components",
-    icon: <StyledComponentsIcon />,
-  },
-  {
     text: "Lerna Monorepos",
     icon: <LernaIcon />,
   },
@@ -116,7 +96,7 @@ const tech = [
 ];
 
 const TechTagsMarquee = () => (
-  <Marquee pauseOnHover speed={75} gradientColor={[17, 24, 39]}>
+  <Marquee pauseOnHover speed={25} gradientColor={[17, 24, 39]}>
     <div className="flex flex-wrap">
       {tech.map((tech) => (
         <div className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-gray-800 border border-gray-700">
@@ -133,14 +113,14 @@ const TechTags = () => {
   const [isList, setIsList] = useState(false);
 
   return (
-    <div>
-      <div className="mb-6">
+    <div className="mt-6">
+      {/* <div className="mb-6">
         <Checkbox
           value={isList}
           text="Show as List"
           onChange={() => setIsList(!isList)}
         />
-      </div>
+      </div> */}
       {isList ? (
         <div className="flex flex-wrap">
           {tech.map((tech) => (

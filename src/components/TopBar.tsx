@@ -34,7 +34,7 @@ const TopBar = () => {
             <img className="rounded-full w-10 h-10" src={Me} />
             <div className="leading-none">
               <p className="font-semibold text-md lg:text-xl">Ingus Jansons</p>
-              <p className="text-xs text-gray-400">Lead TypeScript Engineer</p>
+              <p className="text-xs text-gray-400">Lead Frontend Engineer</p>
             </div>
           </div>
           <a

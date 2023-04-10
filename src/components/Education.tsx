@@ -1,6 +1,7 @@
 import { Calendar } from "phosphor-react";
 import LogoGloscol from "../assets/img/gloscol.webp";
 import LogoLancaster from "../assets/img/lancaster.webp";
+import LogoRoehampton from "../assets/img/roehampton.webp";
 
 const Education = () => {
   const positions = [
@@ -10,7 +11,15 @@ const Education = () => {
       description:
         "Studying for the Digital Technology Solutions Bachelor's Degree in Software Engineering.  I am on track to graduate with a 1st Class Bachelor's Degree in July 2023. The course covers topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
       role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
-      date: "September 2019 - July 2023",
+      date: "September 2020 - July 2023",
+    },
+    {
+      logo: LogoRoehampton,
+      title: "Roehampton University",
+      description:
+        "Successfully completed the initial year of my Software Engineering Bachelor's degree at Roehampton University (delivered by QA) before transferring to Lancaster University.",
+      role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
+      date: "September 2019 - September 2020",
     },
     {
       logo: LogoGloscol,
