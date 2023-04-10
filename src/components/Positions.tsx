@@ -24,7 +24,7 @@ const Positions = () => {
             "Frontend Engineering Lead responsible for pioneering, architecting and building a Next Generation UC Vodafone Business platform using the latest and greatest from the React ecosystem.",
           role: "Lead Front-end Software Engineer",
           date: "December 2021 - Present",
-          link: "",
+          link: "https://www.vodafone.co.uk/business/unified-communications",
           tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
         },
         {
