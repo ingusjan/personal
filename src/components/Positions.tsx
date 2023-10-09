@@ -1,13 +1,34 @@
 import { BriefcaseMetal, Calendar } from "phosphor-react";
 import LogoVodafone from "../assets/img/vf.webp";
-import LogoSplitvid from "../assets/img/splitvid.webp";
 import LogoAlmighty from "../assets/img/almighty.webp";
 import LogoCreatorSites from "../assets/img/creatorsites.webp";
 import LogoIllumiMedia from "../assets/img/illumi.webp";
 import LogoRetroPlan from "../assets/img/retroplan.webp";
+import LogoDoxyMe from "../assets/img/doxyme.webp";
 
 const Positions = () => {
   const positions = [
+    {
+      logo: LogoDoxyMe,
+      title: "Doxy.me",
+      link: "https://www.doxy.me",
+      description:
+        "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by over 1 million healthcare professionals. I work on the core product, building new features and improving existing ones.",
+      tech: ["Nest.js", "Next.js", "Agile", "TypeScript", "React"],
+      role: "Software Engineer",
+      date: "September 2023 - Present",
+      subItems: [
+        {
+          title: "Doxy.me Core Product - Group Calling",
+          description:
+            "I'm responsible for contributing to a core feature that allows healthcare professionals to host group calls with up to 50 participants. Currently being re-written from Angular to React.",
+          role: "Fullstack Software Engineer",
+          date: "September 2023 - Present",
+          link: "https://help.doxy.me/en/articles/95902-start-a-group-call",
+          tech: ["WebRTC", "TypeScript", "React", "Storybook"],
+        },
+      ],
+    },
     {
       logo: LogoVodafone,
       title: "Vodafone Group",
@@ -16,14 +37,14 @@ const Positions = () => {
         "Working at Vodafone Group's Engineering division on B2B web applications using React TypeScript, AWS and Micro FEs in the Enterprise Apps team.",
       tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
       role: "Software Engineer",
-      date: "September 2019 - Present",
+      date: "September 2019 - September 2023",
       subItems: [
         {
           title: "Vodafone Business UC Hub",
           description:
             "Frontend Engineering Lead responsible for pioneering, architecting and building a Next Generation UC Vodafone Business platform using the latest and greatest from the React ecosystem.",
           role: "Lead Front-end Software Engineer",
-          date: "December 2021 - Present",
+          date: "December 2021 - September 2023",
           link: "https://www.vodafone.co.uk/business/unified-communications",
           tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
         },
@@ -52,24 +73,6 @@ const Positions = () => {
           ],
         },
       ],
-    },
-    {
-      logo: LogoSplitvid,
-      title: "Splitvid",
-      link: "https://splitvid.app",
-      description:
-        "Currently in Development. Enabling content creators to run A/B Tests on their YouTube Videos.",
-      tech: [
-        "Vite",
-        "React",
-        "TypeScript",
-        "Chakra UI",
-        "Express",
-        "Mongo DB",
-        "Digital Ocean",
-      ],
-      role: "SaaS Solo Founder & Front-end Lead",
-      date: "July 2022 - Present",
     },
     {
       logo: LogoRetroPlan,

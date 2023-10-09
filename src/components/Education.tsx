@@ -9,8 +9,8 @@ const Education = () => {
       logo: LogoLancaster,
       title: "Lancaster University",
       description:
-        "Studying for the Digital Technology Solutions Bachelor's Degree in Software Engineering.  I am on track to graduate with a 1st Class Bachelor's Degree in July 2023. The course covers topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
-      role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
+        "Studied for the Bachelor's Degree while at an Apprenticeship with Vodafone Group. Graduated with a 1st Class Bachelor's Degree in July 2023. The course covered topics such as Project Management, Corporate Strategies, Cyber Security & Ethics, Networking and more.",
+      role: "First Class BSc. (Hons.) Digital and Technology Solutions (DTS), Software Engineer",
       date: "September 2020 - July 2023",
     },
     {
@@ -18,7 +18,7 @@ const Education = () => {
       title: "Roehampton University",
       description:
         "Successfully completed the initial year of my Software Engineering Bachelor's degree at Roehampton University (delivered by QA) before transferring to Lancaster University.",
-      role: "BSc (Hons) Digital and Technology Solutions, Software Engineer",
+      role: "BSc. (Hons.) Digital and Technology Solutions, Software Engineer",
       date: "September 2019 - September 2020",
     },
     {
