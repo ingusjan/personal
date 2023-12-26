@@ -2,12 +2,7 @@ import Container from "./components/Container";
 import Positions from "./components/Positions";
 import Me from "./assets/img/me.webp";
 import Education from "./components/Education";
-import {
-  Briefcase,
-  EnvelopeSimple,
-  FilePdf,
-  LinkedinLogo,
-} from "phosphor-react";
+import { EnvelopeSimple, FilePdf, LinkedinLogo } from "phosphor-react";
 import TechTags from "./components/TechTags";
 import DevParadigmBox from "./components/DevParadigmBox";
 import {
@@ -33,7 +28,9 @@ import {
   WebpackIcon,
 } from "./components/icons";
 import GitLabIcon from "./components/icons/GitLabIcon";
+import LogoDoxyMe from "./assets/img/doxyme.webp";
 import "tippy.js/dist/tippy.css";
+import Tippy from "@tippyjs/react";
 
 const App = () => (
   <Container>
@@ -52,20 +49,30 @@ const App = () => (
       </div> */}
     </div>
 
-    <h1 className="text-4xl font-bold">Ingus Jansons</h1>
-    <h2 className="mt-1 text-gray-400">Lead Frontend Engineer</h2>
+    <div className="flex items-center align-middle space-x-2">
+      <h1 className="text-4xl font-bold">Ingus Jansons</h1>
+      <Tippy content="Doxy.me">
+        <img
+          src={LogoDoxyMe}
+          alt="Current employer badge"
+          className="w-7 h-7 bg-blue-200 rounded-full hover:ring-1 ring-gray-700 transition-all ease-in-out"
+        />
+      </Tippy>
+    </div>
+    <h2 className="mt-1 text-gray-400">Frontend Software Engineer</h2>
 
     <p className="prose prose-invert min-w-full my-5">
-      Čau!👋 I'm Ingus, born in Rīga, Latvia 🇱🇻 I'm currently leading and
-      scaling Front-end Projects using React and TypeScript. I also dabble in
-      building SaaS tools for content creators.
+      Čau!👋 I'm Ingus from Rīga, Latvia 🇱🇻 currently residing in the UK 🇬🇧 I
+      lead and scale Front-end Projects mainly using React, TypeScript &
+      Monorepos. I also dabble in building my own SaaS tools for content
+      creators.
     </p>
 
     <div className="my-6 space-y-1">
       <a
         id="emailButton"
         href="mailto:hello@ingus.co.uk"
-        className="hover:underline"
+        className="hover:underline inline-block"
       >
         <div className="flex items-center text-gray-200 hover:text-white transition-all ease-in-out">
           <EnvelopeSimple weight="fill" size="20px" className="mr-2" />

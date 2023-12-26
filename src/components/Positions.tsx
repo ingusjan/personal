@@ -11,17 +11,17 @@ const Positions = () => {
     {
       logo: LogoDoxyMe,
       title: "Doxy.me",
-      link: "https://www.doxy.me",
+      link: "https://doxy.me",
       description:
-        "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by over 1 million healthcare professionals. I work on the core product, building new features and improving existing ones.",
+        "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by ⅓ of the entire U.S. healthcare system. I work on the core product, building new features and improving existing ones.",
       tech: ["Nest.js", "Next.js", "Agile", "TypeScript", "React"],
       role: "Software Engineer",
       date: "September 2023 - Present",
       subItems: [
         {
-          title: "Doxy.me Core Product - Group Calling",
+          title: "Doxy.me Core Product - Group Call",
           description:
-            "I'm responsible for contributing to a core feature that allows healthcare professionals to host group calls with up to 50 participants. Currently being re-written from Angular to React.",
+            "Developing a refresh of a core feature that allows healthcare professionals to host group calls with up to 50 participants.",
           role: "Fullstack Software Engineer",
           date: "September 2023 - Present",
           link: "https://help.doxy.me/en/articles/95902-start-a-group-call",
@@ -34,7 +34,7 @@ const Positions = () => {
       title: "Vodafone Group",
       link: "https://www.vodafone.co.uk/business/unified-communications",
       description:
-        "Working at Vodafone Group's Engineering division on B2B web applications using React TypeScript, AWS and Micro FEs in the Enterprise Apps team.",
+        "Worked at Vodafone Group; UK's, India's and Italy's biggest mobile network operator. I worked on Vodafone Group Business web applications using React TypeScript, AWS and Micro FEs in the Enterprise Apps team. \n\nI achieved Top Performer status for two years in a row, despite working as an Apprentice completing my degree at the same time.",
       tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
       role: "Software Engineer",
       date: "September 2019 - September 2023",
@@ -152,12 +152,12 @@ const Positions = () => {
               <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
                 {p.title}
               </h3>
-              <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+              <p className="block mb-3 text-sm font-normal leading-none text-gray-400">
                 {p.role}
-              </time>
-              <p className="mb-4 text-base font-normal text-gray-300">
-                {p.description}
               </p>
+              <pre className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300">
+                {p.description}
+              </pre>
 
               <a
                 href={p.link}
