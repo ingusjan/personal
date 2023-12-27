@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 import Checkbox from "./Checkbox";
 import {
   AWSIcon,
-  ChakraIcon,
   CypressIcon,
   DigitalOceanIcon,
   ExpressIcon,
@@ -16,9 +15,6 @@ import {
   NextIcon,
   NodeIcon,
   PhotoshopIcon,
-  ReactIcon,
-  StyledComponentsIcon,
-  TailwindIcon,
   TypeScriptIcon,
   WebpackIcon,
 } from "./icons";
@@ -114,13 +110,12 @@ const TechTags = () => {
 
   return (
     <div className="mt-6">
-      {/* <div className="mb-6">
-        <Checkbox
-          value={isList}
-          text="Show as List"
-          onChange={() => setIsList(!isList)}
-        />
-      </div> */}
+      <Checkbox
+        value={isList}
+        text="Show as List"
+        onChange={() => setIsList(!isList)}
+      />
+
       {isList ? (
         <div className="flex flex-wrap">
           {tech.map((tech) => (
