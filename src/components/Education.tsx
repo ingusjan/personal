@@ -46,9 +46,9 @@ const Education = () => {
             <h3 className="flex items-center text-lg font-semibold text-gray-900 dark:text-white">
               {p.title}
             </h3>
-            <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
+            <p className="block mb-3 text-sm font-normal text-gray-400">
               {p.role}
-            </time>
+            </p>
             <p className="mb-4 text-base font-normal text-gray-400">
               {p.description}
             </p>

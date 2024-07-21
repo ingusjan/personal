@@ -1,4 +1,4 @@
-import { Briefcase, BriefcaseMetal, Calendar } from "@phosphor-icons/react";
+import { Briefcase, Calendar, Star } from "@phosphor-icons/react";
 import LogoVodafone from "../assets/img/vf.webp";
 import LogoAlmighty from "../assets/img/almighty.webp";
 import LogoCreatorSites from "../assets/img/creatorsites.webp";
@@ -6,8 +6,27 @@ import LogoIllumiMedia from "../assets/img/illumi.webp";
 import LogoRetroPlan from "../assets/img/retroplan.webp";
 import LogoDoxyMe from "../assets/img/doxyme.webp";
 
+type Position = {
+  logo: string;
+  title: string;
+  link: string;
+  description: string;
+  tech: string[];
+  role: string;
+  date: string;
+  subItems?: {
+    title: string;
+    role?: string;
+    description: string;
+    date: string;
+    tech?: string[];
+    link?: string;
+    isPromotion?: boolean;
+  }[];
+};
+
 const Positions = () => {
-  const positions = [
+  const positions: Position[] = [
     {
       logo: LogoDoxyMe,
       title: "Doxy.me",
@@ -22,24 +41,22 @@ const Positions = () => {
           title: "Frontend Quality and Team Enablement",
           description:
             "Building out the internal Doxy.me component library and setting company-wide standards for Frontend quality. Additionally, I work in the Platforms & Enablement team, helping our product teams ship features faster.",
-          role: "Fullstack Software Engineer",
           date: "July 2024 - Present",
         },
         {
           title: "Doxy.me Core Product - Analytics",
           description:
             "Built a refresh of our old Analytics page in our new V2 React codebase, using MUI X Charts & our existing API fetched using RTK Query. This was done in just two weeks including QA, Team Reviews, etc.",
-          role: "Fullstack Software Engineer",
           date: "July 2024 - July 2024",
+          tech: ["RTK Query", "MUI X Charts"],
         },
         {
           title: "Doxy.me Core Product - Group Call",
           description:
-            "Developing a refresh of a core feature that allows healthcare professionals to host group calls with up to 50 participants.",
-          role: "Fullstack Software Engineer",
+            "Developed a refresh of a core feature that allows healthcare professionals to host group calls with up to 20 participants. This included helping architect Doxy.me's in-call layout manager which intelligently positions all video feeds.",
           date: "September 2023 - June 2024",
           link: "https://help.doxy.me/en/articles/95902-start-a-group-call",
-          tech: ["WebRTC", "TypeScript", "React", "Storybook"],
+          tech: ["WebRTC", "Vonage", "Storybook"],
         },
       ],
     },
@@ -54,13 +71,20 @@ const Positions = () => {
       date: "September 2019 - September 2023",
       subItems: [
         {
+          isPromotion: true,
+          title: "Lead Frontend Software Engineer",
+          description:
+            "After 2 years of being an Apprentice Software Engineer, I was promoted to Lead Frontend Engineer. My new responsibilities included leading a team of 15 engineers, mentoring and coaching them to deliver high-quality software.",
+          date: "June 2023",
+        },
+        {
           title: "Vodafone Business UC Hub",
           description:
             "Frontend Engineering Lead responsible for pioneering, architecting and building a Next Generation UC Vodafone Business platform using the latest and greatest from the React ecosystem.",
           role: "Lead Front-end Software Engineer",
           date: "December 2021 - September 2023",
           link: "https://www.vodafone.co.uk/business/unified-communications",
-          tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
+          tech: ["Micro Frontends", "Leadership", "Agile"],
         },
         {
           title: "Vodafone Business UC with RingCentral",
@@ -69,7 +93,7 @@ const Positions = () => {
           role: "User Experience Consultant",
           date: "June 2021 - August 2021",
           link: "https://www.vodafone.co.uk/business/unified-communications/vodafone-with-ringcentral",
-          tech: ["Micro FEs", "Blue / Green", "Agile", "TypeScript", "React"],
+          tech: ["Figma", "External Consultancy", "Project Planning"],
         },
         {
           title: "Vodafone Business Interactive Voice",
@@ -79,11 +103,11 @@ const Positions = () => {
           date: "September 2019 - December 2021",
           link: "https://www.vodafone.com/business/solutions/unified-communication/vodafone-business-interactive-voice",
           tech: [
-            "React",
-            "Tailwind",
-            "Webpack",
-            "GitLab NPM",
+            "Tailwind CSS",
+            "Webpack 5",
+            "GitLab Private NPM",
             "Semantic Release",
+            "Bundle Size Optimisation",
           ],
         },
       ],
@@ -156,7 +180,7 @@ const Positions = () => {
         {positions.map((p, i) => (
           <li key={i} className="mb-10 ml-6">
             <div className="bg-gray-800 px-4 py-3 rounded-lg">
-              <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 rounded-full ring-8 ring-white dark:ring-gray-900">
                 <img
                   src={p.logo}
                   alt={p.title}
@@ -203,9 +227,15 @@ const Positions = () => {
                 {p.subItems?.map((subItem, i) => (
                   <li key={i} className="p-1 ml-6">
                     <span className="absolute -left-3.5">
-                      <span className="flex justify-center items-center w-7 h-7 bg-blue-200 rounded-full dark:bg-gray-700">
-                        <Briefcase size="20px" />
-                      </span>
+                      {subItem.isPromotion ? (
+                        <span className="flex justify-center items-center w-7 h-7 bg-yellow-200 rounded-full dark:bg-gray-700">
+                          <Star size="20px" />
+                        </span>
+                      ) : (
+                        <span className="flex justify-center items-center w-7 h-7 bg-blue-200 rounded-full dark:bg-gray-700">
+                          <Briefcase size="20px" />
+                        </span>
+                      )}
 
                       <img
                         src={p.logo}
@@ -214,13 +244,25 @@ const Positions = () => {
                       />
                     </span>
 
-                    <h4 className="flex items-center font-semibold text-md text-gray-900 dark:text-white">
-                      {subItem.title}
-                    </h4>
-                    <time className="block mb-3 text-sm font-normal leading-none text-gray-400">
-                      {subItem.role}
-                    </time>
-                    <p className="mb-4 text-base font-normal text-gray-400">
+                    <div className="flex align-center">
+                      {subItem.isPromotion && (
+                        <div className="text-sm font-bold px-2 border rounded mr-2">
+                          Promotion
+                        </div>
+                      )}
+
+                      <h4 className="flex items-center font-semibold text-md text-gray-900 dark:text-white">
+                        {subItem.title}
+                      </h4>
+                    </div>
+
+                    {subItem.role && (
+                      <p className="block  text-sm font-normal leading-none text-gray-400">
+                        {subItem.role}
+                      </p>
+                    )}
+
+                    <p className="mb-4 mt-3 text-base font-normal text-gray-400">
                       {subItem.description}
                     </p>
 

@@ -47,9 +47,7 @@ const Home = () => (
   <Container>
     <div className="flex items-start justify-between">
       <img
-        className="rounded-full mb-2 border-4 border-gray-800"
-        width="150px"
-        height="150px"
+        className="rounded-full mb-2 border-4 border-gray-800 w-28 h-28 md:w-[150px] md:h-[150px]"
         alt="Ingus Jansons"
         src={Me}
       />
@@ -60,9 +58,9 @@ const Home = () => (
       </div> */}
     </div>
     <div className="flex items-center align-middle space-x-2">
-      <h1 className="text-4xl font-bold">Ingus Jansons</h1>
+      <h1 className="text-3xl md:text-4xl font-bold">Ingus Jansons</h1>
     </div>
-    <div className="mt-1 flex items-center space-x-2 text-gray-300">
+    <div className="mt-1 flex items-center space-x-2 text-gray-300 text-sm md:text-md">
       <h2>{JOB_TITLE}</h2>
       <img
         src={LogoDoxyMe}
