@@ -197,13 +197,15 @@ const Positions = () => {
                 {p.description}
               </p>
 
-              <a
-                href={p.link}
-                className="text-blue-300 underline break-all"
-                target="_blank"
-              >
-                {p.link}
-              </a>
+              {p.link && (
+                <a
+                  href={p.link}
+                  className="text-blue-300 underline break-all"
+                  target="_blank"
+                >
+                  {p.link}
+                </a>
+              )}
 
               <div className="mt-4 flex flex-wrap">
                 {p.tech.map((tech) => (
