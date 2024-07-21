@@ -7,7 +7,7 @@ const Container = ({ children }: { children: ReactNode }) => {
     <>
       <TopBar />
       <div className="bg-gray-900 text-white w-full h-[100vh] px-4">
-        <div className="max-w-4xl pt-4 lg:pt-14 mx-auto z-[2]">
+        <div className="max-w-5xl pt-4 lg:pt-14 mx-auto z-[2]">
           {children}
           <Footer />
         </div>

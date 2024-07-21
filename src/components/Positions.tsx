@@ -1,4 +1,4 @@
-import { BriefcaseMetal, Calendar } from "phosphor-react";
+import { Briefcase, BriefcaseMetal, Calendar } from "@phosphor-icons/react";
 import LogoVodafone from "../assets/img/vf.webp";
 import LogoAlmighty from "../assets/img/almighty.webp";
 import LogoCreatorSites from "../assets/img/creatorsites.webp";
@@ -19,11 +19,25 @@ const Positions = () => {
       date: "September 2023 - Present",
       subItems: [
         {
+          title: "Frontend Quality and Team Enablement",
+          description:
+            "Building out the internal Doxy.me component library and setting company-wide standards for Frontend quality. Additionally, I work in the Platforms & Enablement team, helping our product teams ship features faster.",
+          role: "Fullstack Software Engineer",
+          date: "July 2024 - Present",
+        },
+        {
+          title: "Doxy.me Core Product - Analytics",
+          description:
+            "Built a refresh of our old Analytics page in our new V2 React codebase, using MUI X Charts & our existing API fetched using RTK Query. This was done in just two weeks including QA, Team Reviews, etc.",
+          role: "Fullstack Software Engineer",
+          date: "July 2024 - July 2024",
+        },
+        {
           title: "Doxy.me Core Product - Group Call",
           description:
             "Developing a refresh of a core feature that allows healthcare professionals to host group calls with up to 50 participants.",
           role: "Fullstack Software Engineer",
-          date: "September 2023 - Present",
+          date: "September 2023 - June 2024",
           link: "https://help.doxy.me/en/articles/95902-start-a-group-call",
           tech: ["WebRTC", "TypeScript", "React", "Storybook"],
         },
@@ -155,9 +169,9 @@ const Positions = () => {
               <p className="block mb-3 text-sm font-normal leading-none text-gray-400">
                 {p.role}
               </p>
-              <pre className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300">
+              <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300">
                 {p.description}
-              </pre>
+              </p>
 
               <a
                 href={p.link}
@@ -185,12 +199,21 @@ const Positions = () => {
             </div>
 
             {p.subItems && (
-              <ol className="mt-4 space-y-10 relative border-l dark:border-gray-800">
+              <ol className="mt-7 space-y-10 relative border-l dark:border-gray-800">
                 {p.subItems?.map((subItem, i) => (
                   <li key={i} className="p-1 ml-6">
-                    <span className="flex absolute -left-3.5 justify-center items-center w-7 h-7 bg-blue-200 rounded-full dark:bg-gray-700">
-                      <BriefcaseMetal />
+                    <span className="absolute -left-3.5">
+                      <span className="flex justify-center items-center w-7 h-7 bg-blue-200 rounded-full dark:bg-gray-700">
+                        <Briefcase size="20px" />
+                      </span>
+
+                      <img
+                        src={p.logo}
+                        alt={p.title}
+                        className="w-4 h-4 absolute z-[2] rounded-full bottom-[-2px] right-[-2px]"
+                      />
                     </span>
+
                     <h4 className="flex items-center font-semibold text-md text-gray-900 dark:text-white">
                       {subItem.title}
                     </h4>
@@ -209,16 +232,18 @@ const Positions = () => {
                       {subItem.link}
                     </a>
 
-                    <div className="mt-4 flex flex-wrap">
-                      {subItem.tech.map((tech) => (
-                        <div
-                          key={tech}
-                          className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-800  text-gray-300"
-                        >
-                          {tech}
-                        </div>
-                      ))}
-                    </div>
+                    {subItem.tech && (
+                      <div className="mt-4 flex flex-wrap">
+                        {subItem.tech.map((tech) => (
+                          <div
+                            key={tech}
+                            className="mb-2 py-1 px-2 text-xs rounded-md mr-2 bg-gray-800  text-gray-300"
+                          >
+                            {tech}
+                          </div>
+                        ))}
+                      </div>
+                    )}
 
                     <div className="flex items-center space-x-2 mt-2 text-sm text-gray-400">
                       <Calendar size={16} />

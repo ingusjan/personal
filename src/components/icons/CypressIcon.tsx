@@ -51,7 +51,7 @@ const CypressIcon = ({
       <g mask="url(#mask-2)">
         <use
           fill="black"
-          fill-opacity="1"
+          fillOpacity="1"
           filter="url(#filter-4)"
           xlinkHref="#path-3"
         ></use>

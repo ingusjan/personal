@@ -1,4 +1,4 @@
-import { Calendar } from "phosphor-react";
+import { Calendar } from "@phosphor-icons/react";
 import LogoGloscol from "../assets/img/gloscol.webp";
 import LogoLancaster from "../assets/img/lancaster.webp";
 import LogoRoehampton from "../assets/img/roehampton.webp";

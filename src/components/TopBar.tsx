@@ -1,6 +1,8 @@
-import { LinkedinLogo } from "phosphor-react";
+import { LinkedinLogo } from "@phosphor-icons/react";
 import { useEffect } from "react";
 import Me from "../assets/img/me.webp";
+import { JOB_TITLE } from "../config";
+import { track_linkedin_connect } from "../lib/analytics";
 
 const TopBar = () => {
   useEffect(() => (window.onscroll = () => setStickyNavbar()), []);
@@ -28,19 +30,18 @@ const TopBar = () => {
       id="topNavbar"
       className="hidden z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full"
     >
-      <div className="max-w-4xl mx-auto z-[2]">
+      <div className="max-w-5xl mx-auto z-[2]">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <img className="rounded-full w-10 h-10" src={Me} />
             <div className="leading-none">
               <p className="font-semibold text-md lg:text-xl">Ingus Jansons</p>
-              <p className="text-xs text-gray-400">
-                Frontend Software Engineer
-              </p>
+              <p className="text-xs text-gray-400">{JOB_TITLE}</p>
             </div>
           </div>
           <a
             href="https://www.linkedin.com/in/ingus-jansons/"
+            onClick={track_linkedin_connect}
             target="_blank"
             className="bg-[#005E93] hover:bg-[#0077B5] select-none transition cursor-pointer px-4 py-2 rounded inline-flex items-center space-x-2"
           >

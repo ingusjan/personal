@@ -1,4 +1,4 @@
-import { Gauge, Recycle, Sparkle, TrendUp } from "phosphor-react";
+import { Gauge, Recycle, Sparkle, TrendUp } from "@phosphor-icons/react";
 
 const CoreValues = () => {
   const valueIconSize = 24;

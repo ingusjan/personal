@@ -1,16 +1,14 @@
 import type { ChangeEvent } from "react";
 
-const Checkbox = ({
-  value,
-  onChange,
-  text,
-}: {
+type Props = {
   value: boolean;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   text: string;
-}) => {
+};
+
+const Checkbox = ({ value, onChange, text }: Props) => {
   return (
-    <div className="flex items-center mb-4 cursor-pointer">
+    <div className="flex items-center">
       <input
         id="default-checkbox"
         type="checkbox"
