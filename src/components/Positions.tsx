@@ -246,7 +246,7 @@ const Positions = () => {
                       />
                     </span>
 
-                    <div className="flex align-center">
+                    <div className="flex flex-col md:flex-row items-start">
                       {subItem.isPromotion && (
                         <div className="text-sm font-bold px-2 border rounded mr-2">
                           Promotion
