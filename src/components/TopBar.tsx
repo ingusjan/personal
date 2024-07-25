@@ -7,7 +7,7 @@ import { track_linkedin_connect } from "../lib/analytics";
 const TopBar = () => {
   useEffect(() => (window.onscroll = () => setStickyNavbar()), []);
 
-  // Add the 'fixed' tailwind class when the user scrolls past the LinkedIn button
+  // Add tailwind class when the user scrolls past the LinkedIn button
   const setStickyNavbar = () => {
     const navbar = document.getElementById("topNavbar");
     const linkedInButton = document.getElementById("linkedInButton");
@@ -16,19 +16,19 @@ const TopBar = () => {
 
     if (!sticky) return;
 
-    if (window.pageYOffset >= sticky) {
-      navbar?.classList.add("fixed");
-      navbar?.classList.remove("hidden");
+    if (window.scrollY >= sticky) {
+      navbar?.classList.add("translate-y-0");
+      navbar?.classList.remove("-translate-y-[100%]");
     } else {
-      navbar?.classList.add("hidden");
-      navbar?.classList.remove("fixed");
+      navbar?.classList.add("-translate-y-[100%]");
+      navbar?.classList.remove("translate-y-0");
     }
   };
 
   return (
     <div
       id="topNavbar"
-      className="hidden z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full"
+      className="fixed -translate-y-[100%] z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full transition-all ease-in-out duration-300"
     >
       <div className="max-w-5xl mx-auto z-[2]">
         <div className="flex items-center justify-between">
@@ -36,7 +36,9 @@ const TopBar = () => {
             <img className="rounded-full w-10 h-10" src={Me} />
             <div className="leading-none">
               <p className="font-semibold text-md lg:text-xl">Ingus Jansons</p>
-              <p className="text-xs text-gray-400">{JOB_TITLE}</p>
+              <p className="text-xs md:text-sm md:-mt-0.5 text-gray-400">
+                {JOB_TITLE}
+              </p>
             </div>
           </div>
           <a

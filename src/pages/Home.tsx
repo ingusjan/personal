@@ -57,14 +57,9 @@ const Home = () => (
           alt="Ingus Jansons"
           src={Me}
         />
-
-        {/* <div className="text-xs mr-2 inline-flex items-center font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-green-800 border border-green-700">
-        <Briefcase weight="fill" size="15px" className="mr-2" />
-        Open to Vacancies
-      </div> */}
       </div>
       <div className="flex items-center align-middle space-x-2">
-        <h1 className="text-3xl md:text-4xl font-bold">Ingus Jansons</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold">Ingus Jansons</h1>
       </div>
       <div className="mt-1 flex items-center space-x-2 text-gray-300 text-sm md:text-md">
         <h2>{JOB_TITLE}</h2>

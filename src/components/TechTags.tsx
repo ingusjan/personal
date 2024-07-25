@@ -113,6 +113,14 @@ const TechTags = () => {
 
   return (
     <div className="mt-6">
+      <div className="mb-6">
+        <Checkbox
+          value={isList}
+          text="Show as List"
+          onChange={() => setIsList(!isList)}
+        />
+      </div>
+
       {isList ? (
         <div className="flex flex-wrap">
           {tech.map((tech) => (
@@ -126,14 +134,6 @@ const TechTags = () => {
       ) : (
         <TechTagsMarquee />
       )}
-
-      <div className="mt-6">
-        <Checkbox
-          value={isList}
-          text="Show as List"
-          onChange={() => setIsList(!isList)}
-        />
-      </div>
     </div>
   );
 };
