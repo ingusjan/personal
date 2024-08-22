@@ -38,9 +38,9 @@ const Positions = () => {
       date: "September 2023 - Present",
       subItems: [
         {
-          title: "Frontend Quality and Team Enablement",
+          title: "Doxy.me UI & Platform - Quality and Enablement",
           description:
-            "Building out the internal Doxy.me component library and setting company-wide standards for Frontend quality. Additionally, I work in the Platforms & Enablement team, helping our product teams ship features faster.",
+            "Building the internal Doxy.me component library and setting company-wide standards for Frontend quality. Additionally, I work in the Platforms & Enablement team, helping our product teams ship features faster.",
           date: "July 2024 - Present",
         },
         {
@@ -71,13 +71,6 @@ const Positions = () => {
       date: "September 2019 - September 2023",
       subItems: [
         {
-          isPromotion: true,
-          title: "Lead Frontend Software Engineer",
-          description:
-            "After 2 years of being an Apprentice Software Engineer, I was promoted to Lead Frontend Engineer. My new responsibilities included leading a team of 15 engineers, mentoring and coaching them to deliver high-quality software.",
-          date: "June 2023",
-        },
-        {
           title: "Vodafone Business UC Hub",
           description:
             "Frontend Engineering Lead responsible for pioneering, architecting and building a Next Generation UC Vodafone Business platform using the latest and greatest from the React ecosystem.",
@@ -85,6 +78,13 @@ const Positions = () => {
           date: "December 2021 - September 2023",
           link: "https://www.vodafone.co.uk/business/unified-communications",
           tech: ["Micro Frontends", "Leadership", "Agile"],
+        },
+        {
+          isPromotion: true,
+          title: "Lead Frontend Software Engineer",
+          description:
+            "After 2 years of being an Apprentice Software Engineer, I was promoted to Lead Frontend Engineer. My new responsibilities included leading a team of 15 engineers, mentoring and coaching them to deliver high-quality software.",
+          date: "June 2023",
         },
         {
           title: "Vodafone Business UC with RingCentral",
@@ -193,7 +193,7 @@ const Positions = () => {
               <p className="block mb-3 text-sm font-normal leading-none text-gray-400">
                 {p.role}
               </p>
-              <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300">
+              <p className="mb-4 text-base font-sans whitespace-pre-wrap font-normal text-gray-300 prose prose-invert min-w-full">
                 {p.description}
               </p>
 
@@ -246,7 +246,7 @@ const Positions = () => {
                       />
                     </span>
 
-                    <div className="flex flex-col md:flex-row items-start">
+                    <div className="flex flex-col md:flex-row items-start md:items-center">
                       {subItem.isPromotion && (
                         <div className="text-sm font-bold px-2 border rounded mr-2">
                           Promotion
@@ -264,7 +264,7 @@ const Positions = () => {
                       </p>
                     )}
 
-                    <p className="mb-4 mt-3 text-base font-normal text-gray-400">
+                    <p className="mb-4 mt-3 text-base font-normal text-gray-400 prose prose-invert min-w-full">
                       {subItem.description}
                     </p>
 

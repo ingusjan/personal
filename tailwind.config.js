@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");
-const fontName = "Space Grotesk";
+const fontName = "Switzer";
 
 module.exports = {
   darkMode: "class",
