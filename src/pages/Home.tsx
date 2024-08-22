@@ -35,7 +35,7 @@ import {
 import GitLabIcon from "../components/icons/GitLabIcon";
 import LogoDoxyMe from "../assets/img/doxyme.webp";
 import "tippy.js/dist/tippy.css";
-import { CONSULTATION_MESSAGE, JOB_TITLE } from "../config";
+import { JOB_TITLE } from "../config";
 import Tippy from "@tippyjs/react";
 import CurrentTime from "../components/CurrentTime";
 import {
@@ -117,21 +117,6 @@ const Home = () => (
           <LinkedinLogo size={20} />
           <span>Connect on LinkedIn</span>
         </a>
-
-        <Tippy placement="bottom" content={CONSULTATION_MESSAGE}>
-          <a
-            href="https://cal.com/ingus/hello"
-            onClick={track_schedule_a_call}
-            target="_blank"
-            className="border border-gray-600 hover:bg-gray-600 select-none transition cursor-pointer px-4 py-3 md:py-2 rounded inline-flex items-center space-x-2"
-          >
-            <CalendarPlus size={20} />
-            <span>Schedule a call</span>
-          </a>
-        </Tippy>
-        <p className="text-sm text-gray-500 md:hidden">
-          {CONSULTATION_MESSAGE}
-        </p>
       </div>
     </motion.div>
 
