@@ -1,12 +1,14 @@
 const Footer = () => {
   return (
     <div className="mt-32 pb-12">
-      <div className="text-center text-sm text-gray-300">
-        Copyright &copy; {new Date().getFullYear()} Ingus Jansons <br />{" "}
-        <div className="mt-4 text-xs text-gray-400 max-w-xl mx-auto">
+      <div className="text-sm text-gray-300">
+        <p>
+          Copyright &copy; {new Date().getFullYear()} Ingus Jansons <br />{" "}
+        </p>
+        <div className="mt-4 text-xs text-gray-400">
           <p>
             Built from scratch using Vite, TypeScript, Tailwind CSS and hosted
-            on CloudFlare Pages. This website is open source! You can view the
+            on a private VPS. This website is open source! You can view the
             source code here:{" "}
             <a
               className="underline"

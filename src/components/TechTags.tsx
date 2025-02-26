@@ -19,6 +19,7 @@ import {
   WebpackIcon,
 } from "./icons";
 import FirebaseIcon from "./icons/FirebaseIcon";
+import HetznerIcon from "./icons/HetznerIcon";
 
 const tech = [
   {
@@ -88,6 +89,10 @@ const tech = [
   {
     text: "Adobe Illustrator",
     icon: <IllustratorIcon />,
+  },
+  {
+    text: "Hetzner",
+    icon: <HetznerIcon />,
   },
 ];
 

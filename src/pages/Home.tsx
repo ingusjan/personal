@@ -7,6 +7,8 @@ import {
   LinkedinLogo,
   HouseLine,
   CalendarPlus,
+  InstagramLogo,
+  GithubLogo,
 } from "@phosphor-icons/react";
 import TechTags from "../components/TechTags";
 import DevParadigmBox from "../components/DevParadigmBox";
@@ -71,12 +73,74 @@ const Home = () => (
         <p>Doxy.me</p>
       </div>
       <p className="prose prose-invert min-w-full my-5">
-        Čau!👋 I'm Ingus, originally from Rīga, Latvia. I lead and scale
-        Front-end Projects mainly using React, TypeScript & Monorepos. I also
-        dabble in building my own SaaS tools for content creators.
+        Ingus is a Latvian-born Software Engineer originally from Rīga who
+        specializes in UX, React component libraries and light-as-a-feather
+        frontend apps. When not focusing on his main projects, Ingus develops
+        practical SaaS tools that help content creators streamline their
+        workflows.
       </p>
+
+      <p className="prose prose-invert min-w-full my-5">
+        In 2015, Ingus founded{" "}
+        <a
+          href="https://illumimedia.co"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Illumi Media
+        </a>
+        , a digital marketing agency that worked with such talent as{" "}
+        <a
+          href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MrBeast
+        </a>
+        ,{" "}
+        <a
+          href="https://www.youtube.com/@destiny"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Destiny
+        </a>
+        ,{" "}
+        <a
+          href="https://www.twitch.tv/Loeya"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Loeya
+        </a>{" "}
+        and Misfits Gaming. He is absolutely no stranger to content creator
+        marketing and personal branding.
+      </p>
+
+      <div className="flex space-x-4 my-6">
+        <Tippy content="Instagram">
+          <a
+            href="https://instagram.com/ingusjan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramLogo weight="fill" size={24} className="text-white" />
+          </a>
+        </Tippy>
+
+        <Tippy content="GitHub">
+          <a
+            href="https://github.com/ingusjan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubLogo weight="fill" size={24} className="text-white" />
+          </a>
+        </Tippy>
+      </div>
+
       <div className="my-6 space-y-1">
-        <div className="flex items-center text-gray-400 transition-all ease-in-out">
+        <div className="flex items-center text-gray-300">
           <HouseLine size="20px" className="mr-2" />
           <span>
             Gloucestershire, United Kingdom{" "}

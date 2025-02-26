@@ -33,7 +33,11 @@ const TopBar = () => {
       <div className="max-w-5xl mx-auto z-[2]">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <img className="rounded-full w-10 h-10" src={Me} />
+            <img
+              className="rounded-full w-10 h-10"
+              src={Me}
+              alt="Ingus Jansons"
+            />
             <div className="leading-none">
               <p className="font-semibold text-md lg:text-xl">Ingus Jansons</p>
               <p className="text-xs md:text-sm md:-mt-0.5 text-gray-400">

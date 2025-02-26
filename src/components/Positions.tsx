@@ -33,7 +33,7 @@ const Positions = () => {
       link: "https://doxy.me",
       description:
         "Fullstack Software Engineer at Doxy.me, a telemedicine platform used by ⅓ of the entire U.S. healthcare system. I work on the core product, building new features and improving existing ones.",
-      tech: ["Nest.js", "Next.js", "Agile", "TypeScript", "React"],
+      tech: ["WebRTC", "Realtime", "Nest.js", "Next.js", "Agile", "TypeScript"],
       role: "Software Engineer",
       date: "September 2023 - Present",
       subItems: [
@@ -268,13 +268,15 @@ const Positions = () => {
                       {subItem.description}
                     </p>
 
-                    <a
-                      href={subItem.link}
-                      className="text-blue-300 underline break-all"
-                      target="_blank"
-                    >
-                      {subItem.link}
-                    </a>
+                    {subItem.link && (
+                      <a
+                        href={subItem.link}
+                        className="text-blue-300 underline break-all"
+                        target="_blank"
+                      >
+                        {subItem.link}
+                      </a>
+                    )}
 
                     {subItem.tech && (
                       <div className="mt-4 flex flex-wrap">
