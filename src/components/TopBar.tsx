@@ -28,9 +28,9 @@ const TopBar = () => {
   return (
     <div
       id="topNavbar"
-      className="fixed -translate-y-[100%] z-[3] top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full transition-all ease-in-out duration-300"
+      className="fixed -translate-y-[100%] z-3 top-0 bg-slate-900/50 text-white backdrop-blur-lg p-5 w-full transition-all ease-in-out duration-300"
     >
-      <div className="max-w-5xl mx-auto z-[2]">
+      <div className="max-w-5xl mx-auto z-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <img

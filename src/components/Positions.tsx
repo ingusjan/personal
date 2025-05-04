@@ -242,7 +242,7 @@ const Positions = () => {
                       <img
                         src={p.logo}
                         alt={p.title}
-                        className="w-4 h-4 absolute z-[2] rounded-full bottom-[-2px] right-[-2px]"
+                        className="w-4 h-4 absolute z-2 rounded-full bottom-[-2px] right-[-2px]"
                       />
                     </span>
 
