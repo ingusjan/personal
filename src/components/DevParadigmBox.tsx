@@ -1,5 +1,5 @@
+import React, { Fragment } from "react";
 import Tippy from "@tippyjs/react";
-import { Fragment } from "react";
 import "tippy.js/themes/light.css";
 
 const DevParadigmBox = ({
@@ -9,7 +9,7 @@ const DevParadigmBox = ({
 }: {
   title: string;
   desc: string;
-  techTags: { text: string; icon: JSX.Element }[];
+  techTags: { text: string; icon: React.ReactElement }[];
 }) => {
   return (
     <div className="p-4 bg-gray-900 border border-gray-700 rounded-lg">

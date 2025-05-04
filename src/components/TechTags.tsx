@@ -97,7 +97,7 @@ const tech = [
 ];
 
 const TechTagsMarquee = () => (
-  <Marquee pauseOnHover speed={25} gradientColor={[17, 24, 39]}>
+  <Marquee pauseOnHover speed={25} gradientColor={"rgb(17, 24, 39)"}>
     <div className="flex flex-wrap">
       {tech.map((tech) => (
         <div
